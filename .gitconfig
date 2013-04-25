@@ -3,3 +3,5 @@
 	email = ponde.ponde.pond@gmail.com
 [core]
 	quotepath = off
+[color]
+	ui = true
