@@ -2,10 +2,13 @@ set encoding=utf-8
 
 set number
 
-set noexpandtab
+set expandtab
 set tabstop=2
 set shiftwidth=2
-"set softtabstop=0
+set softtabstop=2
+
+set list
+set listchars=tab:>-
 
 set autoindent
 set smartindent
