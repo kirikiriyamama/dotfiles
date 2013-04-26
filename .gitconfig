@@ -1,7 +1,7 @@
 [user]
-	name = remain
-	email = ponde.ponde.pond@gmail.com
+  name = remain
+  email = ponde.ponde.pond@gmail.com
 [core]
-	quotepath = off
+  quotepath = off
 [color]
-	ui = true
+  ui = true
