@@ -6,5 +6,5 @@ do
     .git) continue;;
   esac
 
-  ln -sf ${PWD}/${file} ${HOME}/${file}
+  ln -sf ${PWD}/${dotfile} ${HOME}/${dotfile}
 done
