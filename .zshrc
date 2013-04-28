@@ -9,6 +9,7 @@ alias ls='ls -v -F --color=auto'
 alias sudo='sudo '
 alias su='su -'
 alias sqlite='sqlite3'
+alias vi='vim'
 
 
 ### complement ###
@@ -46,7 +47,7 @@ autoload -Uz colors
 colors
 PROMPT="
 %{${fg[cyan]}%}%n@%m%{${reset_color}%} %{${fg[magenta]}%}[%/]%{${reset_color}%}
-$ "
+%# "
 
 setopt prompt_subst
 
