@@ -1,11 +1,10 @@
 ### env ###
 export EDITOR=vim
 export LANG=en_US.UTF-8
-# export PATH
+export PATH=/sbin:/usr/sbin:/usr/local/sbin:$PATH
 
 
 ### alias ###
-alias ls='ls -v -F --color=auto'
 alias sudo='sudo '
 alias su='su -'
 alias sqlite='sqlite3'
@@ -24,7 +23,7 @@ setopt pushd_ignore_dups
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*:default' menu select
-zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin /usr/sbin /usr/bin /sbin
+zstyle ':completion:*:sudo:*' command-path $PATH
 zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 
 
@@ -43,6 +42,10 @@ setopt hist_save_no_dups
 
 
 ### prompt ###
+export LS_COLORS='di=01;34:ln=01;36:so=01;35:ex=01;32:bd=40;33;01:cd=40;33;01:su=37;41:sg=30;43:tw=30;42:ow=34;42'
+export CLICOLOR=true
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
 autoload -Uz colors
 colors
 PROMPT="
