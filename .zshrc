@@ -9,6 +9,7 @@ alias sudo='sudo '
 alias su='su -'
 alias sqlite='sqlite3'
 alias vi='vim'
+alias yum='yum -y'
 
 
 ### complement ###
@@ -83,5 +84,3 @@ setopt print_eight_bit
 setopt no_beep
 # umask 
 
-# rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
