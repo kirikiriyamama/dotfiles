@@ -5,7 +5,7 @@ export PATH=/sbin:/usr/sbin:/usr/local/sbin:$PATH
 
 
 ### alias ###
-alias sudo='sudo '
+alias sudo='sudo -E'
 alias su='su -'
 alias sqlite='sqlite3'
 alias vi='vim'
