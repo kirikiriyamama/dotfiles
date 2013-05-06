@@ -1,11 +1,11 @@
 ### env ###
 export EDITOR=vim
 export LANG=en_US.UTF-8
-export PATH=/sbin:/usr/sbin:/usr/local/sbin:$PATH
+# export PATH=/sbin:/usr/sbin:/usr/local/sbin:$PATH
 
 
 ### alias ###
-alias sudo='sudo -E'
+alias sudo='sudo -E ' 
 alias su='su -'
 alias sqlite='sqlite3'
 alias vi='vim'
@@ -35,8 +35,8 @@ unsetopt caseglob
 
 ### history ###
 HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 setopt share_history
 setopt hist_ignore_all_dups
 setopt hist_save_no_dups
