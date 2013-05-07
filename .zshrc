@@ -5,6 +5,7 @@ export LANG=en_US.UTF-8
 
 
 ### alias ###
+alias ls='ls -F --color=auto'
 alias sudo='sudo -E ' 
 alias su='su -'
 alias sqlite='sqlite3'
