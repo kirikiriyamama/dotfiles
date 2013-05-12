@@ -70,7 +70,7 @@ bindkey "^[[Z" reverse-menu-complete
 
 
 ### function ###
-function chpwd() { ls -v -F --color=auto }
+function chpwd() { ls -F --color=auto }
 function cdup() {
   echo
   cd ..
