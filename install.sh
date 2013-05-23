@@ -1,3 +1,5 @@
+repository=$(cd $(dirname $0);pwd)
+
 find . -regex "^\.\/\.[a-z.]+$" |
 sed -e "s/.\///" |
 while read dotfile
@@ -6,5 +8,6 @@ do
     .git) continue;;
   esac
 
-  ln -sf ${PWD}/${dotfile} ${HOME}/${dotfile}
+  ln -sf ${repository}/${dotfile} ${HOME}/${dotfile}
+  echo "ln -sf ${repository}/${dotfile} ${HOME}/${dotfile}"
 done
