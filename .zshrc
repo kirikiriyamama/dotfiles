@@ -1,7 +1,6 @@
 ### env ###
 export EDITOR=vim
 export LANG=en_US.UTF-8
-# export PATH=/sbin:/usr/sbin:/usr/local/sbin:$PATH
 
 
 ### alias ###
