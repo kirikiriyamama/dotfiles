@@ -1,7 +1,7 @@
 repository=$(cd $(dirname $0);pwd)
 
-find . -regex "^\.\/\.[a-z.]+$" |
-sed -e "s/.\///" |
+find ${repository} -regex "${repository}/\.[a-z.]+$" |
+sed -e "s|${repository}/||" |
 while read dotfile
 do
   case ${dotfile} in
