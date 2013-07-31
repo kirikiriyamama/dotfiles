@@ -17,9 +17,12 @@ alias be='bundle exec'
 ### complement ###
 autoload -Uz compinit
 compinit
+zmodload zsh/complist
 
 setopt auto_menu
 setopt menu_complete
+
+setopt magic_equal_subst
 
 setopt auto_pushd
 setopt pushd_ignore_dups
@@ -30,16 +33,10 @@ zstyle ':completion:*:sudo:*' command-path $PATH
 zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
 
 
-### glob ###
-setopt extended_glob
-unsetopt caseglob
-
-
 ### history ###
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
-setopt share_history
 setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 
@@ -59,15 +56,17 @@ setopt prompt_subst
 
 
 ### keybind ###
-# bindkey -v
-
-zmodload zsh/complist
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 
-bindkey "^[[Z" reverse-menu-complete
+bindkey -e
+bindkey "^?"    backward-delete-char
+bindkey "^H"    backward-delete-char
+bindkey "^[[3~" delete-char
+bindkey "^[[1~" beginning-of-line
+bindkey "^[[4~" end-of-line
 
 
 ### function ###
