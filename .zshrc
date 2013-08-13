@@ -1,88 +1,49 @@
-### env ###
-export EDITOR=vim
-export LANG=en_US.UTF-8
+# Path to your oh-my-zsh configuration.
+ZSH=$HOME/oh-my-zsh
 
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="original"
 
-### alias ###
-alias ls='ls -F --color=auto'
-alias sudo='sudo -E ' 
-alias su='su -'
-alias sqlite='sqlite3'
-alias vi='vim'
-alias yum='yum -y'
-alias tmux='tmux -2'
-alias be='bundle exec'
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Set to this to use case-sensitive completion
+# CASE_SENSITIVE="true"
 
-### complement ###
-autoload -Uz compinit
-compinit
-zmodload zsh/complist
+# Comment this out to disable bi-weekly auto-update checks
+DISABLE_AUTO_UPDATE="true"
 
-setopt auto_menu
-setopt menu_complete
+# Uncomment to change how often before auto-updates occur? (in days)
+# export UPDATE_ZSH_DAYS=13
 
-setopt magic_equal_subst
+# Uncomment following line if you want to disable colors in ls
+# DISABLE_LS_COLORS="true"
 
-setopt auto_pushd
-setopt pushd_ignore_dups
+# Uncomment following line if you want to disable autosetting terminal title.
+DISABLE_AUTO_TITLE="true"
 
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
-zstyle ':completion:*:default' menu select
-zstyle ':completion:*:sudo:*' command-path $PATH
-zstyle ':completion:*:processes' command 'ps x -o pid,s,args'
+# Uncomment following line if you want to disable command autocorrection
+DISABLE_CORRECTION="true"
 
+# Uncomment following line if you want red dots to be displayed while waiting for completion
+# COMPLETION_WAITING_DOTS="true"
 
-### history ###
-HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
-setopt hist_ignore_all_dups
-setopt hist_save_no_dups
+# Uncomment following line if you want to disable marking untracked files under
+# VCS as dirty. This makes repository status check for large repositories much,
+# much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
 
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+plugins=(git)
 
-### prompt ###
-export LS_COLORS='di=01;34:ln=01;36:so=01;35:ex=01;32:bd=40;33;01:cd=40;33;01:su=37;41:sg=30;43:tw=30;42:ow=34;42'
-export CLICOLOR=true
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+ZSH_CUSTOM=$HOME/.zsh
+source $ZSH/oh-my-zsh.sh
 
-autoload -Uz colors
-colors
-PROMPT="
-%{${fg[cyan]}%}%n@%m%{${reset_color}%} %{${fg[magenta]}%}[%/]%{${reset_color}%}
-%# "
-
-setopt prompt_subst
-
-
-### keybind ###
-bindkey -M menuselect 'h' vi-backward-char
-bindkey -M menuselect 'j' vi-down-line-or-history
-bindkey -M menuselect 'k' vi-up-line-or-history
-bindkey -M menuselect 'l' vi-forward-char
-
-bindkey -e
-bindkey "^?"    backward-delete-char
-bindkey "^H"    backward-delete-char
-bindkey "^[[3~" delete-char
-bindkey "^[[1~" beginning-of-line
-bindkey "^[[4~" end-of-line
-
-
-### function ###
-function chpwd() { ls -F --color=auto }
-function cdup() {
-  echo
-  cd ..
-  zle reset-prompt
-}
-zle -N cdup
-bindkey '\^' cdup
-
-
-### other ###
-setopt print_eight_bit
-setopt no_beep
-# umask 
-
-source ~/.zsh/.zshrc
+# Customize to your needs...
+[ -f ~/.zshrc.local ] && source ~/.zshrc.local

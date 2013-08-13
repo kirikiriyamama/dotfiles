@@ -1,0 +1,1 @@
+setopt hist_save_no_dups
