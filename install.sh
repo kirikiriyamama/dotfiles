@@ -6,17 +6,13 @@ while read dotfile
 do
   case ${dotfile} in
     .git) continue;;
+    .gitmodules) continue;;
+    .gitignore) continue;;
   esac
 
   ln -sf ${repository}/${dotfile} ${HOME}/${dotfile}
   echo "ln -sf ${repository}/${dotfile} ${HOME}/${dotfile}"
 done
 
-if [ ! -d ${HOME}/.zsh ]; then
-  mkdir ${HOME}/.zsh
-  echo "mkdir ${HOME}/.zsh"
-fi
-if [ ! -f ${HOME}/.zsh/.zshrc ]; then
-  touch ${HOME}/.zsh/.zshrc
-  echo "touch ${HOME}/.zsh/.zshrc"
-fi
+ln -sf ${repository}/oh-my-zsh ${HOME}/oh-my-zsh
+echo "ln -sf ${repository}/oh-my-zsh ${HOME}/oh-my-zsh"
