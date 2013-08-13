@@ -1,4 +1,7 @@
 repository=$(cd $(dirname $0);pwd)
+cd ${repository}
+git submodule init
+git submodule update
 
 find ${repository} -regex "${repository}/\.[a-z.]+$" |
 sed -e "s|${repository}/||" |
