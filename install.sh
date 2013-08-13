@@ -10,9 +10,13 @@ do
     .gitignore) continue;;
   esac
 
-  echo "ln -sf ${repository}/${dotfile} ${HOME}/${dotfile}"
-  ln -sf ${repository}/${dotfile} ${HOME}/${dotfile}
+  if [ -f ${HOME}/${dotfile} -a -d ${HOME}/${dotfile} ]; then
+    echo "ln -s ${repository}/${dotfile} ${HOME}/${dotfile}"
+    ln -s ${repository}/${dotfile} ${HOME}/${dotfile}
+  fi
 done
 
-echo "ln -sf ${repository}/oh-my-zsh ${HOME}/.oh-my-zsh"
-ln -sf ${repository}/oh-my-zsh ${HOME}/.oh-my-zsh
+if [ ! -d ${HOME}/.oh-my-zsh ]; then
+  echo "ln -s ${repository}/oh-my-zsh ${HOME}/.oh-my-zsh"
+  ln -s ${repository}/oh-my-zsh ${HOME}/.oh-my-zsh
+fi
