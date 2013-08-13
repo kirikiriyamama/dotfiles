@@ -5,3 +5,12 @@
   quotepath = off
 [color]
   ui = true
+[alias]
+  st = status -s
+  # st = status -sb
+  co = checkout
+  br = branch
+  ci = commit -v
+  df = diff --staged
+  d = diff HEAD
+  l = log --name-status --graph --decorate=short
