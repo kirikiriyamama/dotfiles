@@ -10,9 +10,9 @@ do
     .gitignore) continue;;
   esac
 
-  ln -sf ${repository}/${dotfile} ${HOME}/${dotfile}
   echo "ln -sf ${repository}/${dotfile} ${HOME}/${dotfile}"
+  ln -sf ${repository}/${dotfile} ${HOME}/${dotfile}
 done
 
-ln -sf ${repository}/oh-my-zsh ${HOME}/oh-my-zsh
-echo "ln -sf ${repository}/oh-my-zsh ${HOME}/oh-my-zsh"
+echo "ln -sf ${repository}/oh-my-zsh ${HOME}/.oh-my-zsh"
+ln -sf ${repository}/oh-my-zsh ${HOME}/.oh-my-zsh
