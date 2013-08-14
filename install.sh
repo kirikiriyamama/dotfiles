@@ -13,15 +13,19 @@ do
     .gitignore) continue;;
   esac
 
-  if [ -f ${HOME}/${dotfile} -a -d ${HOME}/${dotfile} ]; then
+  if [ ! -f ${HOME}/${dotfile} -a ! -d ${HOME}/${dotfile} ]; then
     echo "ln -s ${repository}/${dotfile} ${HOME}/${dotfile}"
     ln -s ${repository}/${dotfile} ${HOME}/${dotfile}
+  else
+    echo "${HOME}/${dotfile} exists"
   fi
 done
 
 if [ ! -d ${HOME}/.oh-my-zsh ]; then
   echo "ln -s ${repository}/oh-my-zsh ${HOME}/.oh-my-zsh"
   ln -s ${repository}/oh-my-zsh ${HOME}/.oh-my-zsh
+else
+  echo "${HOME}/.oh-my-zsh exists"
 fi
 
 if [ ! -d ${HOME}/bin ]; then
