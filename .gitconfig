@@ -6,8 +6,7 @@
 [color]
   ui = true
 [alias]
-  st = status -s
-  # st = status -sb
+  st = status -sb
   co = checkout
   br = branch
   ci = commit -v
