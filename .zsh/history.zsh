@@ -1,1 +1,2 @@
 setopt hist_save_no_dups
+unsetopt share_history
