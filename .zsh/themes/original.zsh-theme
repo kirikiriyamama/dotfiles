@@ -1,11 +1,16 @@
-local ruby_version=""
-if which rvm-prompt &> /dev/null; then
-  ruby_version=" [$(rvm-prompt i v g)]"
-else
-  if which rbenv &> /dev/null; then
-    ruby_version=" [$(rbenv version | sed -e 's/ (set.*$//')]"
+function ruby_prompt() {
+  if which rvm-prompt &> /dev/null; then
+    VERSION="$(rvm-prompt i v g)"
+  elif which rbenv &> /dev/null; then
+    VERSION="$(rbenv version | sed -e 's/ (set.*$//')"
+  else
+    return
   fi
-fi
+  echo "${ZSH_THEME_RUBY_PROMPT_PREFIX}${VERSION}${ZSH_THEME_RUBY_PROMPT_SUFFIX}"
+}
+
+ZSH_THEME_RUBY_PROMPT_PREFIX=" ["
+ZSH_THEME_RUBY_PROMPT_SUFFIX="]"
 
 
 function git_prompt() {
@@ -54,4 +59,4 @@ $(git_prompt) \
 $FG[105]%(!.#.»)%{$reset_color%} '
 PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
 
-RPROMPT='$FG[240]%n@%m$ruby_version%{$reset_color%}'
+RPROMPT='$FG[240]%n@%m$(ruby_prompt)%{$reset_color%}'
