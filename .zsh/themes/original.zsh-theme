@@ -55,7 +55,8 @@ if [ $UID -eq 0 ]; then NCOLOR="red"; else NCOLOR="green"; fi
 
 PROMPT='$FG[240]------------------------------------------------------------%{$reset_color%}
 $FG[032]%~\
-$(git_prompt) \
+$(git_prompt)%5(~|
+| )\
 $FG[105]%(!.#.»)%{$reset_color%} '
 PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
 
