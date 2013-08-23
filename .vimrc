@@ -29,3 +29,5 @@ nmap n nzz
 nmap N Nzz
 
 nmap ; :
+
+autocmd BufWritePre * :%s/\s\+$//ge
