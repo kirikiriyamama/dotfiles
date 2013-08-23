@@ -1,5 +1,9 @@
 set encoding=utf-8
 
+syntax on
+set t_Co=256
+colorscheme molokai
+
 set number
 
 set expandtab
@@ -15,11 +19,8 @@ set smartindent
 
 set backspace=indent,eol,start
 
+set cursorline
+
 set ignorecase
 set smartcase
-
 set hlsearch
-
-syntax on
-set t_Co=256
-colorscheme molokai
