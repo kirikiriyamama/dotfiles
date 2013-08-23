@@ -7,4 +7,6 @@ alias yum='yum -y'
 alias tmux='tmux -2 -u'
 alias be='bundle exec'
 
+alias -g @x='| xargs grep'
+
 unalias sl
