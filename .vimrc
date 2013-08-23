@@ -24,3 +24,5 @@ set cursorline
 set ignorecase
 set smartcase
 set hlsearch
+
+nmap ; :
