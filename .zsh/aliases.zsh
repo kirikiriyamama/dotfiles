@@ -8,5 +8,6 @@ alias tmux='tmux -2 -u'
 alias be='bundle exec'
 
 alias -g @x='| xargs grep'
+alias -g @g='| grep'
 
 unalias sl
