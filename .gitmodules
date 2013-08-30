@@ -4,3 +4,6 @@
 [submodule "tmux-mem-cpu-load"]
 	path = tmux-mem-cpu-load
 	url = github.com:thewtex/tmux-mem-cpu-load.git
+[submodule ".vim/bundle/neobundle.vim"]
+	path = .vim/bundle/neobundle.vim
+	url = github.com:Shougo/neobundle.vim.git
