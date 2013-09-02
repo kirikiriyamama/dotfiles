@@ -1,33 +1,23 @@
-set encoding=utf-8
+set nocompatible
+filetype off
+
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim
+  call neobundle#rc(expand('~/.vim/bundle/'))
+endif
+
+NeoBundle 'Shougo/neobundle.vim.git'
+NeoBundle 'kien/ctrlp.vim.git'
+NeoBundle 'scrooloose/nerdtree.git'
+NeoBundle 'Lokaltog/vim-powerline.git'
+NeoBundle 'tpope/vim-endwise.git'
 
 syntax on
-set t_Co=256
-colorscheme molokai
+filetype indent plugin on
 
-set number
 
-set expandtab
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-
-set list
-set listchars=tab:>-
-
-set autoindent
-set smartindent
-
-set backspace=indent,eol,start
-
-set cursorline
-
-set ignorecase
-set smartcase
-set hlsearch
-nmap <ESC><ESC> :nohlsearch<CR><ESC>
-nmap n nzz
-nmap N Nzz
-
-nmap ; :
-
-autocmd BufWritePre * :%s/\s\+$//ge
+source ~/.vim/editor.vim
+source ~/.vim/appearance.vim
+source ~/.vim/search.vim
+source ~/.vim/misc.vim
+source ~/.vim/nerdtree.vim
