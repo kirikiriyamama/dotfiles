@@ -1,12 +1,15 @@
-function ruby_prompt() {
+function ruby_version() {
   if which rvm-prompt &> /dev/null; then
-    VERSION="$(rvm-prompt i v g)"
+    echo "$(rvm-prompt i v g)"
   elif which rbenv &> /dev/null; then
-    VERSION="$(rbenv version | sed -e 's/ (set.*$//')"
+    echo "$(rbenv version | sed -e 's/ (set.*$//')"
   else
     return
   fi
-  echo "${ZSH_THEME_RUBY_PROMPT_PREFIX}${VERSION}${ZSH_THEME_RUBY_PROMPT_SUFFIX}"
+}
+
+function ruby_prompt() {
+  echo "${ZSH_THEME_RUBY_PROMPT_PREFIX}$(ruby_version)${ZSH_THEME_RUBY_PROMPT_SUFFIX}"
 }
 
 ZSH_THEME_RUBY_PROMPT_PREFIX=" ["
@@ -67,3 +70,4 @@ RPROMPT='$FG[240]%n@%m$(ruby_prompt)%{$reset_color%}'
 
 # tmux-powerline
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXRUBY_$(tmux display -p "#D" | tr -d %) "$(ruby_version)")'
