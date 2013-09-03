@@ -63,3 +63,7 @@ $FG[105]%(!.#.»)%{$reset_color%} '
 PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
 
 RPROMPT='$FG[240]%n@%m$(ruby_prompt)%{$reset_color%}'
+
+
+# tmux-powerline
+PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
