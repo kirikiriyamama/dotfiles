@@ -28,6 +28,13 @@ else
   echo "${HOME}/.oh-my-zsh exists"
 fi
 
+if [ ! -d ${HOME}/.tmux-powerline ]; then
+  echo "ln -s ${repository}/tmux-powerline ${HOME}/.tmux-powerline"
+  ln -s ${repository}/tmux-powerline ${HOME}/.tmux-powerline
+else
+  echo "${HOME}/.tmux-powerline exists"
+fi
+
 if [ ! -d ${HOME}/bin ]; then
   echo "mkdir ${HOME}/bin"
   mkdir ${HOME}/bin
