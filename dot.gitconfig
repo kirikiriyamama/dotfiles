@@ -3,6 +3,7 @@
   email = ponde.ponde.pond@gmail.com
 [core]
   quotepath = off
+  excludesfile = ~/.gitignore
 [color]
   ui = true
 [alias]
