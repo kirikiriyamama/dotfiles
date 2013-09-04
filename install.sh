@@ -1,36 +1,15 @@
-repository=$(cd $(dirname $0);pwd)
-cd ${repository}
-git submodule init
-git submodule update
+repository=$(cd $(dirname $0); pwd)
+(cd ${repository} && git submodule init && git submodule update)
 
-find ${repository} -regex "${repository}/\.[a-z.]+$" |
+find ${repository} -regex "${repository}/dot\.[^/]+$" |
 sed -e "s|${repository}/||" |
 while read dotfile
 do
-  case ${dotfile} in
-    .git) continue;;
-    .gitmodules) continue;;
-    .gitignore) continue;;
-  esac
-
-  if [ ! -f ${HOME}/${dotfile} -a ! -d ${HOME}/${dotfile} ]; then
-    echo "ln -s ${repository}/${dotfile} ${HOME}/${dotfile}"
-    ln -s ${repository}/${dotfile} ${HOME}/${dotfile}
+  link_name=$(echo ${dotfile} | sed -e "s/^dot//g")
+  if [ ! -e ${HOME}/${link_name} ]; then
+    echo "ln -s ${repository}/${dotfile} ${HOME}/${link_name}"
+    ln -s ${repository}/${dotfile} ${HOME}/${link_name}
   else
-    echo "${HOME}/${dotfile} exists"
+    echo "${HOME}/${link_name} exists"
   fi
 done
-
-if [ ! -d ${HOME}/.oh-my-zsh ]; then
-  echo "ln -s ${repository}/oh-my-zsh ${HOME}/.oh-my-zsh"
-  ln -s ${repository}/oh-my-zsh ${HOME}/.oh-my-zsh
-else
-  echo "${HOME}/.oh-my-zsh exists"
-fi
-
-if [ ! -d ${HOME}/.tmux-powerline ]; then
-  echo "ln -s ${repository}/tmux-powerline ${HOME}/.tmux-powerline"
-  ln -s ${repository}/tmux-powerline ${HOME}/.tmux-powerline
-else
-  echo "${HOME}/.tmux-powerline exists"
-fi
