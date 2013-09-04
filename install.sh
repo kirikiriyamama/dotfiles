@@ -34,12 +34,3 @@ if [ ! -d ${HOME}/.tmux-powerline ]; then
 else
   echo "${HOME}/.tmux-powerline exists"
 fi
-
-if [ ! -d ${HOME}/bin ]; then
-  echo "mkdir ${HOME}/bin"
-  mkdir ${HOME}/bin
-fi
-if [ ! -f ${HOME}/bin/tmux-mem-cpu-load ]; then
-  echo "g++ -Wall ${repository}/tmux-mem-cpu-load/tmux-mem-cpu-load.cpp -o ${HOME}/bin/tmux-mem-cpu-load"
-  g++ -Wall ${repository}/tmux-mem-cpu-load/tmux-mem-cpu-load.cpp -o ${HOME}/bin/tmux-mem-cpu-load
-fi
