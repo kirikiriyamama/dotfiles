@@ -40,7 +40,7 @@ if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 		"pwd 89 211" \
 		"my_weather 37 255" \
 		"memory 236 247" \
-		"load 240 250" \
+		"my_load 240 250" \
 		"date_day 252 236" \
 		"date 252 236 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
 		"time 252 236 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
