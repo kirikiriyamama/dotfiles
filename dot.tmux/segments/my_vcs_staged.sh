@@ -36,7 +36,7 @@ __parse_git_stats(){
   [[ -z $(git rev-parse --git-dir 2> /dev/null) ]] && return
 
   # Return the number of staged items.
-  staged=$(git diff --staged --name-status | wc -l)
+  staged=$(git status --porcelain | grep -E -c '^(D[ M]|[MARC][ MD]) ')
   echo "$staged"
 }
 
