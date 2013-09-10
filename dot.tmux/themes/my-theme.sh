@@ -28,7 +28,7 @@ if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 		"my_lan_ip 236 247" \
 		"ruby_version 24 255" \
 		"my_vcs_branch 29 253" \
-		"vcs_compare 60 255" \
+		"my_vcs_compare 60 255" \
 		"my_vcs_staged 64 255" \
 		"my_vcs_modified 9 255" \
 		"my_vcs_others 245 0" \

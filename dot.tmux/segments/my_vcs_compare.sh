@@ -33,13 +33,8 @@ __parse_git_stats() {
   # check if git
   [[ -z $(git rev-parse --git-dir 2> /dev/null) ]] && return
 
-  tracking_branch=$(git for-each-ref --format='%(upstream:short)' $(git symbolic-ref -q HEAD))
-
-  # creates global variables $1 and $2 based on left vs. right tracking
-  set -- $(git rev-list --left-right --count $tracking_branch...HEAD)
-
-  behind=$1
-  ahead=$2
+  ahead=$(git rev-list ${hook_com[branch]}@{upstream}..HEAD 2>/dev/null | wc -l)
+  behind=$(git rev-list HEAD..${hook_com[branch]}@{upstream} 2>/dev/null | wc -l)
 
   # print out the information
   if [[ $behind -gt 0 ]] ; then
