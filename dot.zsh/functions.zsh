@@ -21,13 +21,23 @@ function dir_status() {
     zle accept-line
     return 0
   fi
+
   echo
   ls_abbrev
+
   if [ "$(git rev-parse --is-inside-work-tree 2> /dev/null)" = 'true' ]; then
     echo
     echo "--- git status ---"
     git status -sb
+
+    stash=$(git stash list)
+    if [ -n "$stash" ]; then
+      echo
+      echo "--- git stash ---"
+      echo $stash
+    fi
   fi
+
   echo
   zle reset-prompt
 }
