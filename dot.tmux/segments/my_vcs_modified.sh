@@ -32,8 +32,8 @@ __parse_git_stats(){
   # check if git
   [[ -z $(git rev-parse --git-dir 2> /dev/null) ]] && return
 
-  # return the number of staged items
-  staged=$(git ls-files --modified | wc -l)
+  # return the number of unstaged items
+  staged=$(git status --porcelain | grep -E -c '^[ MARC][MD] ')
   echo $staged
 }
 __parse_hg_stats(){
