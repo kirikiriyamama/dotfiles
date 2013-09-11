@@ -37,11 +37,12 @@ __parse_git_stats() {
   behind=$(git rev-list HEAD..${hook_com[branch]}@{upstream} 2>/dev/null | wc -l)
 
   # print out the information
-  if [[ $behind -gt 0 ]] ; then
+  if [ $ahead -eq 0 ] && [ $behind -gt 0 ]; then
     local ret="↓ $behind"
-  fi
-  if [[ $ahead -gt 0 ]] ; then
-    local ret="${ret}↑ $ahead"
+  elif [ $ahead -gt 0 ] && [ $behind -eq 0 ]; then
+    local ret="↑ $ahead"
+  elif [ $ahead -gt 0 ] && [ $behind -gt 0 ]; then
+    local ret="↓ $behind ↑ $ahead"
   fi
   echo "$ret"
 }
