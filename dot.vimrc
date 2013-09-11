@@ -16,7 +16,7 @@ NeoBundle 'tpope/vim-fugitive.git'
 NeoBundle 'AndrewRadev/switch.vim'
 
 function! g:meet_neocomplete_requirements()
-  return has('lua') && v:version >= 703 && has('patch885')
+  return has('lua') && ( (v:version == 703 && has('patch885')) || v:version >= 704 )
 endfunction
 
 if g:meet_neocomplete_requirements()
