@@ -1,0 +1,13 @@
+# dotfiles
+
+## Requirements
+ * zsh
+ * tmux
+ * vim
+ * powerline font
+
+## How To
+<pre><code>$ install.sh
+
+$ vim
+:NeoBundleInstall</code></pre>
