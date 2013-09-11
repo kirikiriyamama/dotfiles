@@ -12,6 +12,7 @@ NeoBundle 'scrooloose/nerdtree.git'
 NeoBundle 'Lokaltog/vim-powerline.git'
 NeoBundle 'tpope/vim-endwise.git'
 NeoBundle 'tpope/vim-fugitive.git'
+NeoBundle 'AndrewRadev/switch.vim'
 
 syntax on
 filetype indent plugin on
