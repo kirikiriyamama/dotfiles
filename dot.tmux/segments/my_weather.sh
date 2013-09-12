@@ -125,7 +125,7 @@ __get_condition_symbol() {
   local sunrise="$2"
   local sunset="$3"
   case "$condition" in
-    "sunny" | "hot")
+    "sunny" | "hot" | "clear" | "fair" | "partly cloudy" )
       hourmin=$(date +%H%M)
       if [ "$hourmin" -ge "$sunset" -o "$hourmin" -le "$sunrise" ]; then
         #echo "☽"
@@ -135,7 +135,7 @@ __get_condition_symbol() {
         #echo "☼"
       fi
       ;;
-    "rain" | "mixed rain and snow" | "mixed rain and sleet" | "freezing drizzle" | "drizzle" | "light drizzle" | "freezing rain" | "showers" | "mixed rain and hail" | "scattered showers" | "isolated thundershowers" | "thundershowers" | "light rain with thunder" | "light rain" | "rain and snow" | "light rain shower" | "rain shower" )
+    "rain" | "mixed rain and snow" | "mixed rain and sleet" | "freezing drizzle" | "drizzle" | "light drizzle" | "freezing rain" | "showers" | "mixed rain and hail" | "scattered showers" | "isolated thundershowers" | "thundershowers" | "light rain with thunder" | "light rain" | "rain and snow" | "light rain shower" | "rain shower")
       echo "☂"
       #echo "☔"
       ;;
@@ -143,7 +143,7 @@ __get_condition_symbol() {
       #echo "☃"
       echo "❅"
       ;;
-    "cloudy" | "mostly cloudy" | "partly cloudy" | "partly cloudy/windy")
+    "cloudy" | "mostly cloudy" | "partly cloudy/windy")
       echo "☁"
       ;;
     "tornado" | "tropical storm" | "hurricane" | "severe thunderstorms" | "thunderstorms" | "isolated thunderstorms" | "scattered thunderstorms")
@@ -159,7 +159,7 @@ __get_condition_symbol() {
       #echo "⚐"
       echo "⚑"
       ;;
-    "clear" | "fair" | "cold")
+    "cold")
       hourmin=$(date +%H%M)
       if [ "$hourmin" -ge "$sunset" -o "$hourmin" -le "$sunrise" ]; then
         echo "☾"
