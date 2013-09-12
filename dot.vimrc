@@ -7,7 +7,8 @@ if has('vim_starting')
 endif
 
 NeoBundle 'Shougo/neobundle.vim.git'
-NeoBundle 'kien/ctrlp.vim.git'
+" NeoBundle 'kien/ctrlp.vim.git'
+NeoBundle 'remain/ctrlp.vim.git'
 NeoBundle 'scrooloose/nerdtree.git'
 NeoBundle 'Lokaltog/vim-powerline.git'
 NeoBundle 'tpope/vim-endwise.git'
@@ -20,6 +21,7 @@ filetype indent plugin on
 
 source ~/.vim/editor.vim
 source ~/.vim/appearance.vim
+source ~/.vim/keymaps.vim
 source ~/.vim/search.vim
 source ~/.vim/misc.vim
 source ~/.vim/nerdtree.vim
