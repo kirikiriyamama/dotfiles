@@ -1,15 +1,13 @@
-# Default Theme
-
 if patched_font_in_use; then
-	TMUX_POWERLINE_SEPARATOR_LEFT_BOLD="⮂"
-	TMUX_POWERLINE_SEPARATOR_LEFT_THIN="⮃"
-	TMUX_POWERLINE_SEPARATOR_RIGHT_BOLD="⮀"
-	TMUX_POWERLINE_SEPARATOR_RIGHT_THIN="⮁"
+  TMUX_POWERLINE_SEPARATOR_LEFT_BOLD="⮂"
+  TMUX_POWERLINE_SEPARATOR_LEFT_THIN="⮃"
+  TMUX_POWERLINE_SEPARATOR_RIGHT_BOLD="⮀"
+  TMUX_POWERLINE_SEPARATOR_RIGHT_THIN="⮁"
 else
-	TMUX_POWERLINE_SEPARATOR_LEFT_BOLD="◀"
-	TMUX_POWERLINE_SEPARATOR_LEFT_THIN="❮"
-	TMUX_POWERLINE_SEPARATOR_RIGHT_BOLD="▶"
-	TMUX_POWERLINE_SEPARATOR_RIGHT_THIN="❯"
+  TMUX_POWERLINE_SEPARATOR_LEFT_BOLD="◀"
+  TMUX_POWERLINE_SEPARATOR_LEFT_THIN="❮"
+  TMUX_POWERLINE_SEPARATOR_RIGHT_BOLD="▶"
+  TMUX_POWERLINE_SEPARATOR_RIGHT_THIN="❯"
 fi
 
 TMUX_POWERLINE_DEFAULT_BACKGROUND_COLOR=${TMUX_POWERLINE_DEFAULT_BACKGROUND_COLOR:-'236'}
@@ -22,27 +20,23 @@ TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SEPARATOR=${TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SE
 # Format: segment_name background_color foreground_color [non_default_separator]
 
 if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
-	TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
-		"my_tmux_session_info 148 22" \
-		"hostname 240 250" \
-		"my_lan_ip 236 247" \
-		"ruby_version 24 255" \
-		"my_vcs_branch 29 253" \
-		"my_vcs_compare 60 255" \
-		"my_vcs_staged 64 255" \
-		"my_vcs_modified 9 255" \
-		"my_vcs_others 245 0" \
-	)
+  TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
+    "hostname 148 22" \
+    "my_lan_ip 4 0" \
+    "ruby_version 2 0" \
+    "my_vcs_branch 29 253" \
+    "my_vcs_compare 60 255" \
+    "my_vcs_staged 64 255" \
+    "my_vcs_modified 9 255" \
+    "my_vcs_others 245 0" \
+  )
 fi
 
 if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
-	TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS=(
-		"pwd 89 211" \
-		"my_weather 37 255" \
-		"memory 236 247" \
-		"my_load 240 250" \
-		"date_day 252 236" \
-		"date 252 236 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
-		"time 252 236 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
-	)
+  TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS=(
+    "pwd 89 211" \
+    "my_weather 37 255" \
+    "memory 240 250" \
+    "my_load 252 236" \
+  )
 fi
