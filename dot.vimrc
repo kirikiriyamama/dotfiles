@@ -15,6 +15,14 @@ NeoBundle 'tpope/vim-endwise.git'
 NeoBundle 'tpope/vim-fugitive.git'
 NeoBundle 'AndrewRadev/switch.vim'
 
+function! g:meet_neocomplete_requirements()
+  return has('lua') && v:version >= 703 && has('patch885')
+endfunction
+
+if g:meet_neocomplete_requirements()
+  NeoBundle 'Shougo/neocomplete.vim'
+endif
+
 syntax on
 filetype indent plugin on
 
@@ -25,3 +33,4 @@ source ~/.vim/keymaps.vim
 source ~/.vim/search.vim
 source ~/.vim/misc.vim
 source ~/.vim/nerdtree.vim
+source ~/.vim/neocomplete.vim
