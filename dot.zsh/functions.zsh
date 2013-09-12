@@ -38,7 +38,6 @@ function dir_status() {
     fi
   fi
 
-  echo
   zle reset-prompt
 }
 zle -N dir_status

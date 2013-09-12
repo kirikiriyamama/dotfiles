@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="my-theme"
+ZSH_THEME="my-agnoster"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -47,3 +47,17 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+# tmux-powerline
+function ruby_version() {
+  if which rvm-prompt &> /dev/null; then
+    echo "$(rvm-prompt i v g)"
+  elif which rbenv &> /dev/null; then
+    echo "$(rbenv version | sed -e 's/ (set.*$//')"
+  else
+    return
+  fi
+}
+
+PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXRUBY_$(tmux display -p "#D" | tr -d %) "$(ruby_version)")'
