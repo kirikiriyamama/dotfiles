@@ -48,7 +48,6 @@ function chpwd() { ls_abbrev }
 function cdup() {
   echo
   cd ..
-  echo
   zle reset-prompt
 }
 zle -N cdup
