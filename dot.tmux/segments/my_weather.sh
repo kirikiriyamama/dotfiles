@@ -122,8 +122,8 @@ __yahoo_weather() {
 # Get symbol for condition. Available conditions: http://developer.yahoo.com/weather/#codes
 __get_condition_symbol() {
   local condition=$(echo "$1" | tr '[:upper:]' '[:lower:]')
-    local sunrise="$2"
-    local sunset="$3"
+  local sunrise="$2"
+  local sunset="$3"
   case "$condition" in
     "sunny" | "hot")
       hourmin=$(date +%H%M)
