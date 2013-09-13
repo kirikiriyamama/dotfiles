@@ -6,8 +6,11 @@
  * vim
  * powerline font
 
-## How To
+## Installation
 <pre><code>$ install.sh
 
 $ vim
-:NeoBundleInstall</code></pre>
+:NeoBundleInstall
+
+$ vim ~/.zshrc.local
+DEFAULT_USER=""</code></pre>
