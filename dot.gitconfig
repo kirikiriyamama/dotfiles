@@ -1,6 +1,6 @@
 [user]
   name = remain
-  email = ponde.ponde.pond@gmail.com
+  email = ponde.ponde.ponde@gmail.com
 [core]
   quotepath = off
   excludesfile = ~/.gitignore
@@ -10,7 +10,9 @@
   st = status -sb
   co = checkout
   br = branch
-  ci = commit -v
+  ci = commit --verbose
   df = diff --staged
   d = diff HEAD
   l = log --name-status --graph --decorate=short
+  fp = fetch --prune
+  sf = submodule foreach 'git pull origin master'
