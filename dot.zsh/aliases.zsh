@@ -6,6 +6,7 @@ alias vi='vim'
 alias yum='yum -y'
 alias tmux='tmux -2 -u'
 alias be='bundle exec'
+alias grt='cd $(git rev-parse --show-toplevel || echo ".")'
 
 alias -g @x='| xargs'
 alias -g @xg='| xargs grep'
