@@ -4,6 +4,7 @@
 source "${TMUX_POWERLINE_DIR_LIB}/tmux_adapter.sh"
 
 branch_symbol="⭠"
+no_branch_symbol="➦"
 git_colour="253"
 svn_colour="220"
 hg_colour="45"
@@ -35,23 +36,20 @@ __parse_git_branch() {
     return
   fi
 
-  #git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \[\1\]/'
-
   # Quit if this is not a Git repo.
-  branch=$(git symbolic-ref HEAD 2> /dev/null)
-  if [[ -z $branch ]] ; then
-    # attempt to get short-sha-name
-    branch=":$(git rev-parse --short HEAD 2> /dev/null)"
-  fi
-  if [ "$?" -ne 0 ]; then
-    # this must not be a git repo
-    return
+  ref=$(git symbolic-ref HEAD 2> /dev/null)
+  if [ -n "$ref" ]; then
+    symbol=${branch_symbol}
+  else
+    ref=$(git rev-parse --short HEAD 2> /dev/null)
+    if [ -n "$ref" ]; then
+      symbol=${no_branch_symbol}
+    else
+      return
+    fi
   fi
 
-  # Clean off unnecessary information.
-  branch=${branch##*/}
-
-  echo  -n "#[fg=colour${git_colour}]${branch_symbol} #[fg=colour${TMUX_POWERLINE_CUR_SEGMENT_FG}]${branch}"
+  echo "#[fg=colour${git_colour}]${symbol} #[fg=colour${TMUX_POWERLINE_CUR_SEGMENT_FG}]${ref#refs/heads/}"
 }
 
 # Show SVN branch.
