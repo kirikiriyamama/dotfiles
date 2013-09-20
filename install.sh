@@ -1,5 +1,5 @@
 repository=$(cd $(dirname $0); pwd)
-(cd ${repository} && git submodule init && git submodule update)
+(cd ${repository} && git submodule update --init)
 
 find ${repository} -regex "${repository}/dot\.[^/]+$" |
 sed -e "s|${repository}/||" |
