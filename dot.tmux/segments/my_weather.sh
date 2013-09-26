@@ -135,7 +135,7 @@ __get_condition_symbol() {
         #echo "☼"
       fi
       ;;
-    "rain" | "mixed rain and snow" | "mixed rain and sleet" | "freezing drizzle" | "drizzle" | "light drizzle" | "freezing rain" | "showers" | "mixed rain and hail" | "scattered showers" | "isolated thundershowers" | "thundershowers" | "light rain with thunder" | "light rain" | "rain and snow" | "light rain shower" | "rain shower")
+    "rain" | "mixed rain and snow" | "mixed rain and sleet" | "freezing drizzle" | "drizzle" | "light drizzle" | "freezing rain" | "showers" | "mixed rain and hail" | "scattered showers" | "isolated thundershowers" | "thundershowers" | "light rain with thunder" | "light rain" | "rain and snow" | "light rain shower" | "rain shower" | "light rain shower/windy" | "showers in the vicinity")
       echo "☂"
       #echo "☔"
       ;;
