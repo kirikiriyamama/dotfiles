@@ -16,7 +16,6 @@ imap [ []<Left>
 imap ( ()<Left>
 inoremap " ""<Left>
 inoremap ' ''<Left>
-imap < <><Left>
 
 nmap ; :
 
