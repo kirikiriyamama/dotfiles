@@ -42,7 +42,7 @@ DISABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # plugins=(git)
 
-ZSH_CUSTOM=$HOME/.zsh
+ZSH_CUSTOM=$HOME/.zsh.d
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...

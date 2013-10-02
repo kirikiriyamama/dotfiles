@@ -3,7 +3,7 @@ filetype off
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
+  call neobundle#rc(expand('~/.vim.d/bundle/'))
 endif
 
 NeoBundle 'Shougo/neobundle.vim.git'
@@ -28,10 +28,10 @@ syntax on
 filetype indent plugin on
 
 
-source ~/.vim/editor.vim
-source ~/.vim/appearance.vim
-source ~/.vim/keymaps.vim
-source ~/.vim/search.vim
-source ~/.vim/misc.vim
-source ~/.vim/nerdtree.vim
-source ~/.vim/neocomplete.vim
+source ~/.vim.d/editor.vim
+source ~/.vim.d/appearance.vim
+source ~/.vim.d/keymaps.vim
+source ~/.vim.d/search.vim
+source ~/.vim.d/misc.vim
+source ~/.vim.d/nerdtree.vim
+source ~/.vim.d/neocomplete.vim
