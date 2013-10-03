@@ -15,6 +15,7 @@ NeoBundle 'tpope/vim-endwise.git'
 NeoBundle 'tpope/vim-fugitive.git'
 NeoBundle 'AndrewRadev/switch.vim'
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'tpope/vim-markdown'
 
 function! g:meet_neocomplete_requirements()
   return has('lua') && ( (v:version == 703 && has('patch885')) || v:version >= 704 )
