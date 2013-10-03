@@ -42,22 +42,17 @@ DISABLE_CORRECTION="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # plugins=(git)
 
+arch=$(/usr/bin/uname 2> /dev/null) || \
+arch=$(/bin/uname 2> /dev/null) || \
+arch="unknown"
+case $arch in
+  Linux*) export ARCH="linux" ;;
+  CYGWIN*) export ARCH="cygwin" ;;
+  unknown) export ARCH="unknown" ;;
+esac
+
 ZSH_CUSTOM=$HOME/.zsh.d
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
-
-# tmux-powerline
-function ruby_version() {
-  if which rvm-prompt &> /dev/null; then
-    echo "$(rvm-prompt i v g)"
-  elif which rbenv &> /dev/null; then
-    echo "$(rbenv version | sed -e 's/ (set.*$//')"
-  else
-    return
-  fi
-}
-
-PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
-PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXRUBY_$(tmux display -p "#D" | tr -d %) "$(ruby_version)")'
