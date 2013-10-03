@@ -5,7 +5,7 @@ encoding utf-8 utf-8
 
 
 # key-binding
-escape ^Tt
+escape ^Ee
 
 bind j eval 'focus down'
 bind k eval 'focus up'
