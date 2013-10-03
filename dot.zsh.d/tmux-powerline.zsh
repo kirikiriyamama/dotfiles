@@ -29,17 +29,4 @@ if [ $ARCH != "cygwin" ]; then
   # 2. Find the weather for you location
   # 3. Copy the last numbers in that URL. e.g. "http://weather.yahoo.com/united-states/california/newport-beach-12796587/" has the numbers "12796587"
   export TMUX_POWERLINE_SEG_WEATHER_LOCATION="26237038"
-
-  function ruby_version() {
-    if which rvm-prompt &> /dev/null; then
-      echo "$(rvm-prompt i v g)"
-    elif which rbenv &> /dev/null; then
-      echo "$(rbenv version | sed -e 's/ (set.*$//')"
-    else
-      return
-    fi
-  }
-
-  PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
-  PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXRUBY_$(tmux display -p "#D" | tr -d %) "$(ruby_version)")'
 fi
