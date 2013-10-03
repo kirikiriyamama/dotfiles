@@ -1,0 +1,41 @@
+# encoding
+defutf8 on
+defencoding utf8
+encoding utf-8 utf-8
+
+
+# key-binding
+escape ^Tt
+
+bind j eval 'focus down'
+bind k eval 'focus up'
+bind h eval 'focus left'
+bind l eval 'focus right'
+
+bind + eval 'resize -v +1'
+bind - eval 'resize -v -1'
+bind > eval 'resize -h +1'
+bind < eval 'resize -h -1'
+
+bind v eval 'split -v' focus screen
+bind s eval 'split' focus screen
+
+bind x remove
+bind & kill
+
+
+# appearance
+term xterm-256color
+
+hardstatus off
+caption always '%{= kw}%L=%-w%{=u .y}%n %t%{= .w}%+w'
+sorendition '= ky'
+
+
+# misc
+startup_message off
+msgwait 0
+autodetach off
+vbell off
+altscreen on
+defscrollback 10000
