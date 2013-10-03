@@ -7,9 +7,9 @@ if [ $ARCH != "cygwin" ]; then
   # The theme to use.
   export TMUX_POWERLINE_THEME="my-theme"
   # Overlay dirctory to look for themes. There you can put your own themes outside the repo. Fallback will still be the "themes" directory in the repo.
-  export TMUX_POWERLINE_DIR_USER_THEMES="~/.tmux/themes"
+  export TMUX_POWERLINE_DIR_USER_THEMES="~/.tmux.d/themes"
   # Overlay dirctory to look for segments. There you can put your own segments outside the repo. Fallback will still be the "segments" directory in the repo.
-  export TMUX_POWERLINE_DIR_USER_SEGMENTS="~/.tmux/segments"
+  export TMUX_POWERLINE_DIR_USER_SEGMENTS="~/.tmux.d/segments"
 
   # pwd.sh
   # Maximum length of output.
