@@ -56,3 +56,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+if [ $ARCH = "cygwin" ]; then
+  source $HOME/.mintty-colors-solarized/sol.dark
+fi

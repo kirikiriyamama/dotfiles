@@ -7,3 +7,6 @@
 [submodule "dot.vim.d/bundle/neobundle.vim"]
 	path = dot.vim.d/bundle/neobundle.vim
 	url = github.com:Shougo/neobundle.vim.git
+[submodule "dot.mintty-colors-solarized"]
+	path = dot.mintty-colors-solarized
+	url = github.com:mavnn/mintty-colors-solarized.git
