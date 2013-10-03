@@ -32,6 +32,5 @@ source ~/.vim.d/editor.vim
 source ~/.vim.d/appearance.vim
 source ~/.vim.d/keymaps.vim
 source ~/.vim.d/search.vim
-source ~/.vim.d/misc.vim
 source ~/.vim.d/nerdtree.vim
 source ~/.vim.d/neocomplete.vim
