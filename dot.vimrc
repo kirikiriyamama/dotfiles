@@ -2,8 +2,8 @@ set nocompatible
 filetype off
 
 if has('vim_starting')
-  set runtimepath+=~/.vim.d/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim.d/bundle/'))
+  set runtimepath+=~/.vim/bundle/neobundle.vim
+  call neobundle#rc(expand('~/.vim/bundle/'))
 endif
 
 NeoBundle 'Shougo/neobundle.vim.git'
@@ -29,9 +29,12 @@ syntax on
 filetype indent plugin on
 
 
-source ~/.vim.d/editor.vim
-source ~/.vim.d/appearance.vim
-source ~/.vim.d/keymaps.vim
-source ~/.vim.d/search.vim
-source ~/.vim.d/nerdtree.vim
-source ~/.vim.d/neocomplete.vim
+source ~/.vim/editor.vim
+source ~/.vim/appearance.vim
+source ~/.vim/keymaps.vim
+source ~/.vim/search.vim
+source ~/.vim/nerdtree.vim
+
+if g:meet_neocomplete_requirements()
+  source ~/.vim/neocomplete.vim
+endif
