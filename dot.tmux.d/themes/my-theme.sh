@@ -22,21 +22,21 @@ TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SEPARATOR=${TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SE
 if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
   TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
     "hostname 148 22" \
-    "my_lan_ip 4 0" \
+    "lan_ip 4 0" \
     "ruby_version 2 0" \
-    "my_vcs_branch 29 253" \
-    "my_vcs_compare 60 255" \
-    "my_vcs_staged 64 255" \
-    "my_vcs_modified 9 255" \
-    "my_vcs_others 245 0" \
+    "vcs_branch 29 253" \
+    "vcs_compare 60 255" \
+    "vcs_staged 64 255" \
+    "vcs_modified 9 255" \
+    "vcs_others 245 0" \
   )
 fi
 
 if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
   TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS=(
     "pwd 89 211" \
-    "my_weather 37 255" \
+    "weather 37 255" \
     "memory 240 250" \
-    "my_load 252 236" \
+    "load 252 236" \
   )
 fi
