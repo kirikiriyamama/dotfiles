@@ -40,12 +40,17 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-# plugins=(git)
+plugins=(bundler cap colored-man knife rails3 screen thor)
 
 case $OSTYPE in
   linux*) export ARCH="linux" ;;
   cygwin*) export ARCH="cygwin" ;;
 esac
+
+if [ $ARCH != "cygwin" ]; then
+  # tmux-powerline
+  plugins=($plugins tmux-powerline)
+fi
 
 ZSH_CUSTOM=$HOME/.zsh.d
 source $ZSH/oh-my-zsh.sh
@@ -57,16 +62,6 @@ if [ $ARCH = "cygwin" ]; then
   source $HOME/.mintty-colors-solarized/sol.dark
 else
   # tmux-powerline
-  function ruby_version() {
-    if which rvm-prompt &> /dev/null; then
-      echo "$(rvm-prompt i v g)"
-    elif which rbenv &> /dev/null; then
-      echo "$(rbenv version | sed -e 's/ (set.*$//')"
-    else
-      return
-    fi
-  }
-
   PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
   PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXRUBY_$(tmux display -p "#D" | tr -d %) "$(ruby_version)")'
 fi
