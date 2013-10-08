@@ -36,8 +36,6 @@ bind & kill
 
 
 # appearance
-term xterm-256color
-
 hardstatus off
 caption always '%{= kw}%L=%-w%{=u .y}%n %t%{= .w}%+w'
 sorendition '= ky'
