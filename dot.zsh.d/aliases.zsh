@@ -13,5 +13,6 @@ alias -g @x='| xargs'
 alias -g @xg='| xargs grep'
 alias -g @g='| grep'
 alias -g @l='| less'
+alias -g @h='| head'
 
 unalias sl
