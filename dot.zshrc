@@ -40,7 +40,7 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(bundler cap colored-man knife rails3 screen thor)
+plugins=(bundler cap colored-man knife rails3 thor)
 
 case $OSTYPE in
   linux*) export ARCH="linux" ;;
