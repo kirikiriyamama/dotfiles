@@ -1,6 +1,6 @@
 # The following is based on https://github.com/gma/bundler-exec
 
-bundled_commands=(atig berks cap foodcritic foreman guard jekyll knife middleman pry rackup rainbows rails rake rspec ruby shotgun spec spork strainer thin thor unicorn unicorn_rails puma)
+bundled_commands=(atig berks cap foodcritic foreman guard irb jekyll knife middleman pry rackup rainbows rails rake rspec ruby shotgun spec spork strainer thin thor unicorn unicorn_rails puma)
 
 ## Functions
 
