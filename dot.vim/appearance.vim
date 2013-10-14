@@ -6,7 +6,7 @@ let g:Powerline_symbols='fancy'
 set laststatus=2
 
 set number
-set cursorline
+"set cursorline
 
 set list
 set listchars=tab:>-
