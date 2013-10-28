@@ -33,8 +33,8 @@ __parse_git_stats(){
   [[ -z $(git rev-parse --git-dir 2> /dev/null) ]] && return
 
   # return the number of unstaged items
-  staged=$(git status --porcelain | grep -E -c '^[ MARC][MD] ')
-  echo $staged
+  modified=$(git status --porcelain | grep -E -c '^[ MARC][MD] ')
+  echo $modified
 }
 __parse_hg_stats(){
   type hg >/dev/null 2>&1
@@ -49,22 +49,12 @@ __parse_svn_stats() {
     return
   fi
 
-  local svn_info=$(svn info 2>/dev/null)
-  if [ -z "${svn_info}" ]; then
+  local svn_st=$(svn st 2>/dev/null)
+  if [ -z "${svn_st}" ]; then
     return
   fi
 
-  local svn_wcroot=$(echo "${svn_info}" | sed -ne 's#^Working Copy Root Path: ##p')
-  local svn_st=$(cd "${svn_wcroot}"; svn st)
   local modified=$(echo "${svn_st}" | egrep '^M' | wc -l)
   local conflicted=$(echo "${svn_st}" | egrep '^!?\s*C' | wc -l)
-
-  #print
-  if [[ $modified -gt 0 ]] ; then
-    local ret="#[fg=colour${TMUX_POWERLINE_CUR_SEGMENT_FG}]±${modified}"
-  fi
-  if [[ $conflicted -gt 0 ]] ; then
-    local ret="#[fg=colour${svn_colour}]ϟ${conflicted} ${ret}"
-  fi
-  echo "${ret}"
+  echo $modified
 }
