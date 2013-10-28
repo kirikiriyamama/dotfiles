@@ -9,12 +9,6 @@ imap <C-e> <Esc>$<Insert><Right>
 imap <C-k> <Esc><Right>d$<Insert><Right>
 imap <C-d> <Del>
 
-imap { {}<Left>
-imap [ []<Left>
-imap ( ()<Left>
-inoremap " ""<Left>
-inoremap ' ''<Left>
-
 nmap ; :
 
 " switch
