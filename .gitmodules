@@ -1,12 +1,12 @@
 [submodule "dot.oh-my-zsh"]
 	path = dot.oh-my-zsh
 	url = github.com:robbyrussell/oh-my-zsh.git
-[submodule "dot.tmux-powerline"]
-	path = dot.tmux-powerline
-	url = github.com:erikw/tmux-powerline.git
 [submodule "dot.mintty-colors-solarized"]
 	path = dot.mintty-colors-solarized
 	url = github.com:mavnn/mintty-colors-solarized.git
 [submodule "dot.vim/bundle/neobundle.vim"]
 	path = dot.vim/bundle/neobundle.vim
 	url = github.com:Shougo/neobundle.vim.git
+[submodule "dot.tmux-powerline"]
+	path = dot.tmux-powerline
+	url = github.com:remain/tmux-powerline.git
