@@ -64,7 +64,7 @@ __parse_svn_branch() {
     return
   fi
 
-  local svn_revision=$(echo "${svn_info}" | sed -ne 's#^Revision: ##p')
+  local svn_revision=$(echo "${svn_info}" | sed -ne 's#^Last Changed Rev: ##p')
 
   echo "#[fg=colour${svn_colour}]${branch_symbol} #[fg=colour${TMUX_POWERLINE_CUR_SEGMENT_FG}]r${svn_revision}"
 }
