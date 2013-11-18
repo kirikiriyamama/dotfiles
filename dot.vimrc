@@ -24,6 +24,17 @@ NeoBundle 'tpope/vim-markdown'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'vim-scripts/YankRing.vim'
+NeoBundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \     'windows' : 'make -f make_mingw32.mak',
+      \     'cygwin' : 'make -f make_cygwin.mak',
+      \     'mac' : 'make -f make_mac.mak',
+      \     'unix' : 'make -f make_unix.mak',
+      \    },
+      \ }
+NeoBundle 'Shougo/vimshell'
+" NeoBundle 'thinca/vim-quickrun'
+NeoBundle 'vim-scripts/yanktmp.vim'
 
 if g:meet_neocomplete_requirements()
   NeoBundle 'Shougo/neocomplete.vim'
