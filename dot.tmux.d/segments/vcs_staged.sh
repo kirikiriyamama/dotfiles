@@ -41,7 +41,7 @@ __parse_git_stats(){
 }
 
 __parse_hg_stats(){
-  type svn >/dev/null 2>&1
+  type hg >/dev/null 2>&1
   if [ "$?" -ne 0 ]; then
     return
   fi
@@ -49,9 +49,16 @@ __parse_hg_stats(){
 }
 
 __parse_svn_stats(){
-  type hg >/dev/null 2>&1
+  type svn >/dev/null 2>&1
   if [ "$?" -ne 0 ]; then
     return
   fi
-  # not yet implemented
+
+  local svn_st=$(svn st 2>/dev/null)
+  if [ -z "${svn_st}" ]; then
+    return
+  fi
+
+  local added=$(echo "${svn_st}" | egrep '^A' | wc -l)
+  echo $added
 }
