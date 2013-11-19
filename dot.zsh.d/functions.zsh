@@ -39,6 +39,12 @@ if [ $ARCH != "cygwin" ]; then
       fi
     fi
 
+    if svn info &> /dev/null; then
+      echo
+      echo "--- svn status ---"
+      svn st
+    fi
+
     zle reset-prompt
   }
   zle -N dir_status
