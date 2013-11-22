@@ -33,8 +33,10 @@ NeoBundle 'Shougo/vimproc', {
       \    },
       \ }
 NeoBundle 'Shougo/vimshell'
-" NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'vim-scripts/yanktmp.vim'
+NeoBundle 'terryma/vim-smooth-scroll'
+NeoBundle 'mbbill/undotree'
+" NeoBundle 'thinca/vim-quickrun'
 
 if g:meet_neocomplete_requirements()
   NeoBundle 'Shougo/neocomplete.vim'
