@@ -19,3 +19,6 @@ nmap ; :
 nmap ZZ <Nop>
 nmap ZQ <Nop>
 nmap Q <Nop>
+
+" CtrlP
+let g:ctrlp_map = '<Space>p'
