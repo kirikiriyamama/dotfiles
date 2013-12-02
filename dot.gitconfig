@@ -17,3 +17,6 @@
   l = log --name-status --graph --decorate=short
   fp = fetch --prune
   sf = submodule foreach 'git pull origin master'
+[tig "bind"]
+  generic = g move-first-line
+  generic = G move-last-line
