@@ -10,6 +10,7 @@
   st = status -sb
   co = checkout
   br = branch
+  bra = branch -a
   ci = commit --verbose
   df = diff --staged
   d = diff HEAD
