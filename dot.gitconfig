@@ -7,19 +7,41 @@
 [color]
   ui = true
 [alias]
-  st = status -sb
+  # pull/push/fetch
+  poh = push origin HEAD
+  pohn = push origin HEAD -n
+  fp = fetch --prune
+  # rebase
+  rbi = rebase -i
+  rbc = rebase --continue
+  rba = rebase --abort
+  # add/commit/checkout
+  a = add
+  ap = add -p
+  ci = commit --verbose
+  cia = commit --verbose --amend
   co = checkout
+  cob = checkout -b
+  # branch
   br = branch
   bra = branch -a
-  ci = commit --verbose
-  df = diff --staged
+  # diff
   d = diff HEAD
+  dw = diff HEAD --color-words
+  ds = diff --staged
+  dsw = diff --staged --color-words
+  # log
   l = log --name-status --graph --decorate=short
   lp = log -p --graph --decorate=short
-  fp = fetch --prune
-  sf = submodule foreach 'git pull origin master'
-  s = show --decorate=short
+  # reset
+  r = reset
+  rs = reset --soft
   rh = reset --hard
+  # misc
+  st = status -sb
+  sh = show --decorate=short
+  g = grep
+  sf = submodule foreach 'git pull origin master'
 [tig "bind"]
   generic = g move-first-line
   generic = G move-last-line
