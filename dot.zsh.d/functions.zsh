@@ -42,7 +42,7 @@ if [ $ARCH != "cygwin" ]; then
     if svn info &> /dev/null; then
       echo
       echo "--- svn status ---"
-      svn st
+      svn st --ignore-externals
     fi
 
     zle reset-prompt
