@@ -54,6 +54,6 @@ __parse_svn_stats() {
     return
   fi
 
-  local modified=$(echo "${svn_st}" | egrep '^[ M!DR] ' | wc -l)
+  local modified=$(echo "${svn_st}" | egrep '^[ M!DRA] ' | wc -l)
   echo $modified
 }

@@ -53,12 +53,5 @@ __parse_svn_stats(){
   if [ "$?" -ne 0 ]; then
     return
   fi
-
-  local svn_st=$(svn st 2>/dev/null)
-  if [ -z "${svn_st}" ]; then
-    return
-  fi
-
-  local added=$(echo "${svn_st}" | egrep '^A' | wc -l)
-  echo $added
+  # not yet implemented
 }
