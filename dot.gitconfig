@@ -8,13 +8,16 @@
   ui = true
 [alias]
   # pull/push/fetch
-  poh = push origin HEAD
-  pohn = push origin HEAD -n
+  ph = push origin HEAD
+  phn = push origin HEAD -n
   fp = fetch --prune
   # rebase
   rbi = rebase -i
   rbc = rebase --continue
   rba = rebase --abort
+  # merge
+  m = merge --no-ff
+  mm = merge --noff origin/master
   # add/commit/checkout
   a = add
   ap = add -p
