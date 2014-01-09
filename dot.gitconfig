@@ -17,7 +17,7 @@
   rba = rebase --abort
   # merge
   m = merge --no-ff
-  mm = merge --noff origin/master
+  mm = merge --no-ff origin/master
   # add/commit/checkout
   a = add
   ap = add -p
