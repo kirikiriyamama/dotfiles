@@ -11,6 +11,7 @@ augroup CursorLineOnlyCurrentWindow
 augroup END
 
 set background=dark
+let g:solarized_termtrans=1
 colorscheme solarized
 
 let g:Powerline_symbols='fancy'
