@@ -33,8 +33,8 @@ __parse_git_stats() {
   # check if git
   [[ -z $(git rev-parse --git-dir 2> /dev/null) ]] && return
 
-  ahead=$(git rev-list ${hook_com[branch]}@{upstream}..HEAD 2>/dev/null | wc -l)
-  behind=$(git rev-list HEAD..${hook_com[branch]}@{upstream} 2>/dev/null | wc -l)
+  ahead=$(git rev-list ${hook_com[branch]}@{upstream}..HEAD 2>/dev/null | wc -l | tr -d " ")
+  behind=$(git rev-list HEAD..${hook_com[branch]}@{upstream} 2>/dev/null | wc -l | tr -d " ")
 
   # print out the information
   if [ $ahead -eq 0 ] && [ $behind -gt 0 ]; then
