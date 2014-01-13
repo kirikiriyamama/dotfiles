@@ -43,11 +43,13 @@ DISABLE_CORRECTION="true"
 plugins=(bundler cap colored-man knife rails3 thor)
 
 case $OSTYPE in
-  linux*) export ARCH="linux" ;;
-  cygwin*) export ARCH="cygwin" ;;
+  linux*) export PLATFORM="linux" ;;
+  cygwin*) export PLATFORM="cygwin" ;;
+  darwin*) export PLATFORM="osx" ;;
+  *) export PLATFORM="unknown" ;;
 esac
 
-if [ $ARCH != "cygwin" ]; then
+if [ "$PLATFORM" != "cygwin" ]; then
   # tmux-powerline
   plugins=($plugins tmux-powerline)
 fi
@@ -58,7 +60,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
-if [ $ARCH = "cygwin" ]; then
+if [ "$PLATFORM" = "cygwin" ]; then
   source $HOME/.mintty-colors-solarized/sol.dark
 else
   # tmux-powerline

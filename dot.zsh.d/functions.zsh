@@ -1,4 +1,4 @@
-if [ $ARCH != "cygwin" ]; then
+if [ "$PLATFORM" != "cygwin" ]; then
   function ls_abbrev() {
     if [[ ! -r $PWD ]]; then
       return

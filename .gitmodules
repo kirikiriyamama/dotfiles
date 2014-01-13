@@ -10,3 +10,6 @@
 [submodule "dot.tmux-powerline"]
 	path = dot.tmux-powerline
 	url = github.com:remain/tmux-powerline.git
+[submodule "tmux-mem-cpu-load"]
+	path = tmux-mem-cpu-load
+	url = github.com:thewtex/tmux-mem-cpu-load.git
