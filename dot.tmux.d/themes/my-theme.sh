@@ -34,9 +34,7 @@ fi
 
 if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
   TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS=(
-    "pwd 89 211" \
-    "weather 37 255" \
-    "memory 240 250" \
-    "load 252 236" \
+    "weather 240 250" \
+    "tmux_mem_cpu_load 252 236" \
   )
 fi

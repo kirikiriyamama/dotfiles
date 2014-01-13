@@ -1,9 +1,4 @@
-if [ "$ARCH" = "mac" ]; then
-  alias ls='ls -FG'
-else
-  alias ls='ls -F --color=auto'
-fi
-
+alias ls='ls -F --color=auto'
 alias sudo='sudo -E '
 alias sqlite='sqlite3'
 alias vi='vim'

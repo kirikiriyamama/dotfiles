@@ -1,24 +1,17 @@
-if [ "$ARCH" != "cygwin" ]; then
+if [ "$PLATFORM" != "cygwin" ]; then
   function ls_abbrev() {
     if [[ ! -r $PWD ]]; then
       return
     fi
 
-    local ls_cmd="ls"
-    local ls_opts
-    if [ "$ARCH" = "mac" ]; then
-      ls_opts=("-CFG")
-    else
-      ls_opts=("-CF" "--color=always")
-    fi
     local ls_result
-    ls_result=$(CLICOLOR_FORCE=1 COLUMNS=$COLUMNS command $ls_cmd ${ls_opts[@]} | sed $'/^\e\[[0-9;]*m$/d')
+    ls_result=$(COLUMNS=$COLUMNS ls -CF --color=always | sed $'/^\e\[[0-9;]*m$/d')
 
-    if [ $(echo $ls_result | wc -l | tr -d " ") -gt 12 ]; then
+    if [ $(echo $ls_result | wc -l) -gt 12 ]; then
       echo $ls_result | head -n 5
-      echo "..."
+      echo '...'
       echo $ls_result | tail -n 5
-      echo "$(ls -1 | wc -l | tr -d " ") files exist"
+      echo "$(ls -1 | wc -l) files exist"
     else
       echo $ls_result
     fi
