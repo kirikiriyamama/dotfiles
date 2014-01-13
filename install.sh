@@ -1,13 +1,7 @@
-#!/bin/sh
-
 repository=$(cd $(dirname $0); pwd)
 (cd ${repository} && git submodule update --init)
 
-case $OSTYPE in
-  darwin*) find_opts=("-E") ;;
-  *) find_opts=() ;;
-esac
-find ${find_opts[@]} ${repository} -regex "${repository}/dot\.[^/]+$" |
+find ${repository} -regex "${repository}/dot\.[^/]+$" |
 sed -e "s|${repository}/||" |
 while read dotfile
 do
