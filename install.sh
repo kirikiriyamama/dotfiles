@@ -8,7 +8,7 @@ esac
 
 type tmux-mem-cpu-load &>/dev/null
 if [ "$?" -ne 0 ]; then
-  if [ "$PLATFORM" = "osx" ]
+  if [ "$PLATFORM" = "osx" ]; then
     echo "Please execute the following command: brew install tmux-mem-cpu-load"
   else
     if [ ! -d ${HOME}/bin ]; then
@@ -23,7 +23,7 @@ fi
 if [ "$PLATFORM" = "osx" ]; then
   find_opts=("-E")
 else
-  find_opts=() ;;
+  find_opts=()
 fi
 find ${find_opts[@]} ${repository} -regex "${repository}/dot\.[^/]+$" |
 sed -e "s|${repository}/||" |
