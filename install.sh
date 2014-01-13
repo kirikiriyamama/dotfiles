@@ -1,7 +1,17 @@
 repository=$(cd $(dirname $0); pwd)
+case $OSTYPE in
+  darwin*) PLATFORM="osx" ;;
+  *) PLATFORM="unknown" ;;
+esac
+
 (cd ${repository} && git submodule update --init)
 
-find ${repository} -regex "${repository}/dot\.[^/]+$" |
+if [ "$PLATFORM" = "osx" ]; then
+  find_opts=("-E")
+else
+  find_opts=() ;;
+fi
+find ${find_opts[@]} ${repository} -regex "${repository}/dot\.[^/]+$" |
 sed -e "s|${repository}/||" |
 while read dotfile
 do
