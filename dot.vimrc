@@ -12,18 +12,18 @@ if has('vim_starting')
 endif
 
 NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'Lokaltog/vim-powerline'
+NeoBundle 'altercation/vim-colors-solarized'
 " NeoBundle 'kien/ctrlp.vim.git'
 NeoBundle 'remain/ctrlp.vim'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'AndrewRadev/switch.vim'
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'tpope/vim-markdown'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'vim-scripts/YankRing.vim'
+NeoBundle 'vim-scripts/yanktmp.vim'
+" NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
       \     'windows' : 'make -f make_mingw32.mak',
@@ -32,10 +32,32 @@ NeoBundle 'Shougo/vimproc', {
       \     'unix' : 'make -f make_unix.mak',
       \    },
       \ }
-NeoBundle 'Shougo/vimshell'
-NeoBundle 'vim-scripts/yanktmp.vim'
-NeoBundle 'mbbill/undotree'
-" NeoBundle 'thinca/vim-quickrun'
+
+NeoBundleLazy 'AndrewRadev/switch.vim', {
+      \ 'autoload' : {
+      \     'commands' : ['Switch'],
+      \    },
+      \ }
+NeoBundleLazy 'tpope/vim-markdown', {
+      \ 'autoload' : {
+      \     'filetypes' : ['markdown'],
+      \    },
+      \ }
+NeoBundleLazy 'Shougo/vimshell', {
+      \ 'autoload' : {
+      \     'commands' : ['VimShell'],
+      \    },
+      \ }
+" NeoBundleLazy 'mbbill/undotree', {
+"       \ 'autoload' : {
+"       \     'commands' : ['UndotreeToggle'],
+"       \    },
+"       \ }
+" NeoBundleLazy 'chrisbra/csv.vim', {
+"       \ 'autoload' : {
+"       \     'filetypes' : ['csv'],
+"       \    },
+"       \ }
 
 if g:meet_neocomplete_requirements()
   NeoBundle 'Shougo/neocomplete.vim'
