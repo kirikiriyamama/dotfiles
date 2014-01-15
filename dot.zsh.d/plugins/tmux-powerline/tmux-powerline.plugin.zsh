@@ -39,3 +39,10 @@ function ruby_version() {
     return
   fi
 }
+
+# tmux_mem_cpu_load.sh
+if [ "$PLATFORM" = "osx" ]; then
+  # pending
+else
+  export TMUX_POWERLINE_SEG_TMUX_MEM_CPU_LOAD_NUMBER_OF_CORES=`nproc`
+fi
