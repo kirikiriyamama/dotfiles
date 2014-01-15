@@ -10,10 +10,6 @@ export TMUX_POWERLINE_DIR_USER_THEMES="~/.tmux.d/themes"
 # Overlay dirctory to look for segments. There you can put your own segments outside the repo. Fallback will still be the "segments" directory in the repo.
 export TMUX_POWERLINE_DIR_USER_SEGMENTS="~/.tmux.d/segments"
 
-# pwd.sh
-# Maximum length of output.
-export TMUX_POWERLINE_SEG_PWD_MAX_LEN="24"
-
 # weather.sh
 # The data provider to use. Currently only "yahoo" is supported.
 export TMUX_POWERLINE_SEG_WEATHER_DATA_PROVIDER="yahoo"
