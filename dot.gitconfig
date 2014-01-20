@@ -8,8 +8,8 @@
   ui = true
 [alias]
   # pull/push/fetch
-  ph = push origin HEAD
-  phn = push origin HEAD -n
+  poh = push origin HEAD
+  pohn = push origin HEAD -n
   fp = fetch --prune
   # rebase
   rbi = rebase -i
@@ -19,8 +19,8 @@
   m = merge --no-ff
   mm = merge --no-ff origin/master
   # add/commit/checkout
-  a = add
-  ap = add -p
+  ad = add
+  adp = add -p
   ci = commit --verbose
   cia = commit --verbose --amend
   co = checkout
@@ -38,8 +38,7 @@
   lp = log -p --graph --decorate=short
   # reset
   r = reset
-  rs = reset --soft
-  rh = reset --hard
+  rh = reset HEAD
   # misc
   st = status -sb
   sh = show --decorate=short
