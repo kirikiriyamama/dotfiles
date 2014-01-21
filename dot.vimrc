@@ -19,7 +19,6 @@ NeoBundle 'remain/ctrlp.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'honza/vim-snippets'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'vim-scripts/YankRing.vim'
 NeoBundle 'vim-scripts/yanktmp.vim'
@@ -62,6 +61,7 @@ NeoBundleLazy 'Shougo/vimshell', {
 if g:meet_neocomplete_requirements()
   NeoBundle 'Shougo/neocomplete.vim'
   NeoBundle 'Shougo/neosnippet.vim'
+  NeoBundle 'honza/vim-snippets'
 endif
 
 syntax on
