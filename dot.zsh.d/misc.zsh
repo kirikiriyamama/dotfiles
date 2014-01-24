@@ -1,4 +1,4 @@
 setopt print_eight_bit
 setopt no_beep
 
-compdef tig=git
+compdef tig=git-checkout
