@@ -12,9 +12,10 @@ augroup END
 
 set background=dark
 let g:solarized_termtrans=1
+let g:solarized_diffmode="high"
 colorscheme solarized
 
-let g:Powerline_symbols='fancy'
+let g:Powerline_symbols="fancy"
 set laststatus=2
 
 set list
