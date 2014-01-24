@@ -13,6 +13,7 @@ augroup END
 set background=dark
 let g:solarized_termtrans=1
 let g:solarized_diffmode="high"
+let g:solarized_contrast="high"
 colorscheme solarized
 
 let g:Powerline_symbols="fancy"
