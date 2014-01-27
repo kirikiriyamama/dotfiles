@@ -13,9 +13,5 @@ autocmd FileType ruby let b:switch_custom_definitions =
     \   ['be_true', 'be_false'],
     \   ['get', 'post', 'put', 'delete'],
     \   ['==', 'eq', 'eql', 'equal'],
-    \ ]
-
-autocmd FileType Gemfile,Berksfile let b:switch_custom_definitions =
-    \ [
     \   ['=', '<', '<=', '>', '>=', '~>'],
     \ ]
