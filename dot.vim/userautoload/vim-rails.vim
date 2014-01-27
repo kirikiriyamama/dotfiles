@@ -1,0 +1,9 @@
+nnoremap <Leader>a :A<CR>
+nnoremap <Leader>m :Rmodel<Space>
+nnoremap <Leader>c :Rcontroller<Space>
+nnoremap <Leader>v :Rview<Space>
+nnoremap <Leader>l :Rlayout<Space>
+nnoremap <Leader>j :Rjavascript<Space>
+nnoremap <Leader>s :Rstylesheet<Space>
+nnoremap <Leader>h :Rhelper<Space>
+nnoremap <Leader>g :Rgenerate<Space>
