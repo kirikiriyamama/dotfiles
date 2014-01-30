@@ -13,6 +13,7 @@ nmap ; :
 nmap ZZ <Nop>
 nmap ZQ <Nop>
 nmap Q <Nop>
+nmap K <nop>
 
 " CtrlP
 let g:ctrlp_map = '<Space>p'
