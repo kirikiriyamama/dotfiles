@@ -7,8 +7,8 @@
 [submodule "dot.vim/bundle/neobundle.vim"]
 	path = dot.vim/bundle/neobundle.vim
 	url = github.com:Shougo/neobundle.vim.git
-[submodule "dot.tmux-powerline"]
-	path = dot.tmux-powerline
+[submodule "dot.tmux.d/tmux-powerline"]
+	path = dot.tmux.d/tmux-powerline
 	url = github.com:remain/tmux-powerline.git
 [submodule "tmux-mem-cpu-load"]
 	path = tmux-mem-cpu-load
