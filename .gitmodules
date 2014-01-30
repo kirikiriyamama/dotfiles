@@ -13,3 +13,6 @@
 [submodule "tmux-mem-cpu-load"]
 	path = tmux-mem-cpu-load
 	url = github.com:thewtex/tmux-mem-cpu-load.git
+[submodule "dot.zsh.d/plugins/zsh-syntax-highlighting"]
+	path = dot.zsh.d/plugins/zsh-syntax-highlighting
+	url = github.com:zsh-users/zsh-syntax-highlighting.git
