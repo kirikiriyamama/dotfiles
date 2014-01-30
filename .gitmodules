@@ -1,5 +1,5 @@
-[submodule "dot.oh-my-zsh"]
-	path = dot.oh-my-zsh
+[submodule "dot.zsh.d/oh-my-zsh"]
+	path = dot.zsh.d/oh-my-zsh
 	url = github.com:robbyrussell/oh-my-zsh.git
 [submodule "dot.mintty-colors-solarized"]
 	path = dot.mintty-colors-solarized
