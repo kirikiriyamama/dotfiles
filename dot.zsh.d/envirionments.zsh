@@ -7,7 +7,9 @@ function add_path() {
 
 add_path $HOME/dev/bin
 
-export EDITOR=vim
-export LANG=en_US.UTF-8
-
-unset LESS
+export LANG='en_US.UTF-8'
+export LC_CTYPE=$LANG
+export EDITOR='vim'
+export PAGER='less'
+export GREP_OPTIONS='--color=auto'
+export GREP_COLOR='1;32'
