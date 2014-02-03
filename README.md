@@ -18,7 +18,7 @@ $ vi ~/.zshrc.local
   * See also [Coreutils - GNU core utilities](http://www.gnu.org/software/coreutils/ "Coreutils - GNU core utilities")
   * For OSX
 <pre><code>$ brew install coreutils
-$ vi ~/..zshrc.local
+$ vi ~/.zshrc.local
 +PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 </code></pre>
  * Patched font
