@@ -60,7 +60,7 @@ zstyle ':completion:*:*:*:users' ignored-patterns \
 
 # appearance
 zstyle ':completion:*' verbose yes
-zstyle ':completion:*' completer _expand _complete _match _prefix _list _history
+zstyle ':completion:*' completer _expand _complete _match _prefix _list
 zstyle ':completion:*:descriptions' format '%F{yellow}'%d'%f'
 zstyle ':completion:*:options' description 'yes'
 zstyle ':completion:*' group-name ''
