@@ -46,7 +46,7 @@ done
 unset function
 
 # theme
-antigen theme $ZSH_CUSTOM/themes/my-agnoster.zsh-theme
+antigen theme $ZSH_CUSTOM/themes/agnoster.zsh-theme
 
 if [ "$USE_TMUX" ]; then
   PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
