@@ -23,41 +23,40 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'vim-scripts/YankRing.vim'
 NeoBundle 'vim-scripts/yanktmp.vim'
 NeoBundle 'tpope/vim-rails'
-" NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'Shougo/vimproc', {
-      \ 'build' : {
-      \     'windows' : 'make -f make_mingw32.mak',
-      \     'cygwin' : 'make -f make_cygwin.mak',
-      \     'mac' : 'make -f make_mac.mak',
-      \     'unix' : 'make -f make_unix.mak',
-      \    },
-      \ }
+\   'build' : {
+\     'windows' : 'make -f make_mingw32.mak',
+\     'cygwin' : 'make -f make_cygwin.mak',
+\     'mac' : 'make -f make_mac.mak',
+\     'unix' : 'make -f make_unix.mak',
+\   },
+\ }
 
 NeoBundleLazy 'AndrewRadev/switch.vim', {
-      \ 'autoload' : {
-      \     'commands' : ['Switch'],
-      \    },
-      \ }
+\   'autoload' : {
+\     'commands' : ['Switch'],
+\   },
+\ }
 NeoBundleLazy 'tpope/vim-markdown', {
-      \ 'autoload' : {
-      \     'filetypes' : ['markdown'],
-      \    },
-      \ }
+\   'autoload' : {
+\     'filetypes' : ['markdown'],
+\   },
+\ }
 NeoBundleLazy 'Shougo/vimshell', {
-      \ 'autoload' : {
-      \     'commands' : ['VimShell'],
-      \    },
-      \ }
-" NeoBundleLazy 'mbbill/undotree', {
-"       \ 'autoload' : {
-"       \     'commands' : ['UndotreeToggle'],
-"       \    },
-"       \ }
-" NeoBundleLazy 'chrisbra/csv.vim', {
-"       \ 'autoload' : {
-"       \     'filetypes' : ['csv'],
-"       \    },
-"       \ }
+\   'autoload' : {
+\     'commands' : ['VimShell'],
+\   },
+\ }
+NeoBundleLazy 'mbbill/undotree', {
+\   'autoload' : {
+\     'commands' : ['UndotreeToggle'],
+\   },
+\ }
+NeoBundleLazy 'thinca/vim-quickrun', {
+\   'autoload' : {
+\     'commands' : ['QuickRun'],
+\   },
+\ }
 
 if g:meet_neocomplete_requirements()
   NeoBundle 'Shougo/neocomplete.vim'
