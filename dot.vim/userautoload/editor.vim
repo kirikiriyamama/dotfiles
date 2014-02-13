@@ -14,3 +14,5 @@ set smartindent
 set backspace=indent,eol,start
 
 set nowrap
+
+autocmd QuickFixCmdPost *grep* cwindow
