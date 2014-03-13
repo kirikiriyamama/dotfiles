@@ -1,5 +1,5 @@
 [user]
-  name = remain
+  name  = remain
   email = ponde.ponde.ponde@gmail.com
 [core]
   quotepath = off
@@ -7,11 +7,18 @@
 [color]
   ui = true
 [alias]
-  # pull/push/fetch
-  poh  = push origin HEAD
-  pohn = push origin HEAD -n
+  # push
+  p  = push
+  pf = push --force
+  pn = push -n
+  # pull/fetch/merge
+  pl = pull
+  f  = fetch
   fp = fetch --prune
+  m  = merge
+  mn = merge --no-ff
   # rebase
+  rb  = rebase
   rbi = rebase -i
   rbc = rebase --continue
   rba = rebase --abort
@@ -43,7 +50,6 @@
   st = status -sb
   sh = show --decorate=short
   gr = grep
-  mn = merge --no-ff
 [tig "bind"]
   generic = g move-first-line
   generic = G move-last-line
