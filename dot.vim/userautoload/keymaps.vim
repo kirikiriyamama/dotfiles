@@ -1,3 +1,8 @@
+nmap ZZ <Nop>
+nmap ZQ <Nop>
+nmap Q <Nop>
+nmap K <Nop>
+
 imap <C-n> <Down>
 imap <C-p> <Up>
 imap <C-b> <Left>
@@ -10,10 +15,8 @@ nmap <C-k> d$a
 
 nmap ; :
 
-nmap ZZ <Nop>
-nmap ZQ <Nop>
-nmap Q <Nop>
-nmap K <nop>
-
 " CtrlP
 let g:ctrlp_map = '<Space>p'
+
+" git grep
+nmap <Space>g :Ggrep!<Space>
