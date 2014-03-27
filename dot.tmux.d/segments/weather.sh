@@ -140,15 +140,15 @@ __get_condition_symbol() {
       #echo "☔"
       ;;
     "snow" | "mixed snow and sleet" | "snow flurries" | "light snow showers" | "blowing snow" | "sleet" | "hail" | "heavy snow" | "scattered snow showers" | "snow showers" | "light snow" | "snow/windy" | "snow grains" | "snow/fog")
-      #echo "☃"
-      echo "❅"
+      echo "☃"
+      #echo "❅"
       ;;
     "cloudy" | "mostly cloudy" | "mostly cloudy/windy" | "partly cloudy/windy")
       echo "☁"
       ;;
     "tornado" | "tropical storm" | "hurricane" | "severe thunderstorms" | "thunderstorms" | "isolated thunderstorms" | "scattered thunderstorms")
-      #echo "⚡"
-      echo "☈"
+      echo "⚡"
+      #echo "☈"
       ;;
     "dust" | "foggy" | "fog" | "haze" | "smoky" | "blustery" | "mist")
       #echo "♨"
