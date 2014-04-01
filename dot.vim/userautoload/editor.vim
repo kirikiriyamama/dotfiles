@@ -11,8 +11,9 @@ set softtabstop=4
 set autoindent
 set smartindent
 
-set backspace=indent,eol,start
-
-set nowrap
-
 autocmd QuickFixCmdPost *grep* cwindow
+
+" misc
+set backspace=indent,eol,start
+set nowrap
+set wildmode=list,full

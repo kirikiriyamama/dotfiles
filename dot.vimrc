@@ -23,6 +23,7 @@ NeoBundle 'tpope/vim-surround'
 NeoBundle 'vim-scripts/YankRing.vim'
 NeoBundle 'vim-scripts/yanktmp.vim'
 NeoBundle 'tpope/vim-rails'
+NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'Shougo/vimproc', {
 \   'build' : {
 \     'windows' : 'make -f make_mingw32.mak',
