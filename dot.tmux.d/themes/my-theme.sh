@@ -22,7 +22,8 @@ TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SEPARATOR=${TMUX_POWERLINE_DEFAULT_RIGHTSIDE_SE
 if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
   TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
     "hostname 148 22" \
-    "lan_ip 4 0" \
+    "lan_ip 4 0 $TMUX_POWERLINE_SEPARATOR_RIGHT_THIN" \
+    "wan_ip 4 0" \
     "ruby_version 2 0" \
     "vcs_branch 29 253" \
     "vcs_compare 60 255" \
