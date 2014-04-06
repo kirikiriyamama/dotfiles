@@ -19,6 +19,7 @@ fi
 alias -g @x='| xargs'
 alias -g @xg='| xargs grep'
 alias -g @g='| grep'
+alias -g @gv='| grep -v'
 alias -g @l='| less'
 alias -g @lr='| less -r'
 alias -g @h='| head'
