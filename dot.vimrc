@@ -62,6 +62,7 @@ NeoBundleLazy 'thinca/vim-quickrun', {
 if g:meet_neocomplete_requirements()
   NeoBundle 'Shougo/neocomplete.vim'
   NeoBundle 'Shougo/neosnippet.vim'
+  NeoBundle 'Shougo/neosnippet-snippets'
   NeoBundle 'honza/vim-snippets'
 endif
 
