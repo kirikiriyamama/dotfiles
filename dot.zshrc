@@ -6,16 +6,9 @@ ZSH_CUSTOM=$HOME/.zsh.d
 
 case $OSTYPE in
   linux*) PLATFORM="linux" ;;
-  cygwin*) PLATFORM="cygwin" ;;
   darwin*) PLATFORM="osx" ;;
   *) PLATFORM="unknown" ;;
 esac
-
-if [ "$PLATFORM" = "cygwin" ]; then
-  USE_TMUX=false
-else
-  USE_TMUX=true
-fi
 
 # completions
 fpath=($ZSH_CUSTOM/completions $fpath)
@@ -27,10 +20,7 @@ antigen bundle robbyrussell/oh-my-zsh plugins/colored-man
 antigen bundle robbyrussell/oh-my-zsh plugins/knife
 antigen bundle robbyrussell/oh-my-zsh plugins/thor
 antigen bundle zsh-users/zsh-syntax-highlighting
-
-if [ "$USE_TMUX" ]; then
-  antigen bundle $ZSH_CUSTOM/plugins/tmux-powerline
-fi
+antigen bundle $ZSH_CUSTOM/plugins/tmux-powerline
 
 # configurations
 for config_file ($ZSH_CUSTOM/*.zsh(N)); do
@@ -47,10 +37,8 @@ unset function
 # theme
 antigen theme $ZSH_CUSTOM/themes/agnoster.zsh-theme
 
-if [ "$USE_TMUX" ]; then
-  PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
-  PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXRUBY_$(tmux display -p "#D" | tr -d %) "$(ruby_version)")'
-fi
+PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
+PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXRUBY_$(tmux display -p "#D" | tr -d %) "$(ruby_version)")'
 
 # local configuration
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
