@@ -25,7 +25,6 @@ antigen bundle $ZSH_CUSTOM/plugins/bundler
 antigen bundle robbyrussell/oh-my-zsh plugins/capistrano
 antigen bundle robbyrussell/oh-my-zsh plugins/colored-man
 antigen bundle robbyrussell/oh-my-zsh plugins/knife
-antigen bundle robbyrussell/oh-my-zsh plugins/rails
 antigen bundle robbyrussell/oh-my-zsh plugins/thor
 antigen bundle zsh-users/zsh-syntax-highlighting
 
