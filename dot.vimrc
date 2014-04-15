@@ -58,6 +58,11 @@ NeoBundleLazy 'thinca/vim-quickrun', {
 \     'commands' : ['QuickRun'],
 \   },
 \ }
+NeoBundleLazy 'slim-template/vim-slim', {
+\   'autoload' : {
+\     'filetypes' : ['slim'],
+\   },
+\ }
 
 if g:meet_neocomplete_requirements()
   NeoBundle 'Shougo/neocomplete.vim'
