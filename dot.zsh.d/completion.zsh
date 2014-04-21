@@ -66,3 +66,6 @@ zstyle ':completion:*:options' description 'yes'
 zstyle ':completion:*' group-name ''
 
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
+
+compdef tig git-checkout
