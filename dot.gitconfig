@@ -49,7 +49,7 @@
   # misc
   st = status -sb
   sh = show --decorate=short
-  gr = grep
+  gr = grep --line-number --heading --break
 [tig "bind"]
   generic = g move-first-line
   generic = G move-last-line
