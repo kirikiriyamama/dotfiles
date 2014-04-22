@@ -23,12 +23,13 @@
   rbc = rebase --continue
   rba = rebase --abort
   # add/commit/checkout
-  ad  = add
-  adp = add -p
-  ci  = commit --verbose
-  cia = commit --verbose --amend
-  co  = checkout
-  cob = checkout -b
+  ad   = add
+  adp  = add -p
+  ci   = commit --verbose
+  cia  = commit --verbose --amend
+  co   = checkout
+  cob  = checkout -b
+  undo = checkout --
   # branch
   br  = branch
   bra = branch -a
@@ -41,8 +42,8 @@
   l  = log --name-status --graph --decorate=short
   lp = log -p --graph --decorate=short
   # reset
-  rs   = reset
-  undo = reset --hard
+  rs  = reset
+  uns = reset --
   # submodule
   sm       = submodule
   smupdate = submodule foreach 'git pull origin master'
