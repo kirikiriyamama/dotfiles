@@ -16,6 +16,7 @@ colorscheme solarized
 
 let g:Powerline_symbols="fancy"
 set laststatus=2
+set runtimepath+=~/.powerline/powerline/bindings/vim
 
 set list
 set listchars=tab:>-

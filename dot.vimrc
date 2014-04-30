@@ -12,7 +12,6 @@ if has('vim_starting')
 endif
 
 NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'altercation/vim-colors-solarized'
 " NeoBundle 'kien/ctrlp.vim.git'
 NeoBundle 'remain/ctrlp.vim'

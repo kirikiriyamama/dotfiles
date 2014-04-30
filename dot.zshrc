@@ -35,7 +35,7 @@ done
 unset function
 
 # theme
-antigen theme $ZSH_CUSTOM/themes/agnoster.zsh-theme
+. ~/.powerline/powerline/bindings/zsh/powerline.zsh
 
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
 PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXRUBY_$(tmux display -p "#D" | tr -d %) "$(ruby_version)")'
