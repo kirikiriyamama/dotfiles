@@ -1,8 +1,6 @@
 set t_Co=256
 
 set cursorline
-autocmd ColorScheme * highlight clear CursorLine
-autocmd ColorScheme * highlight CursorLine cterm=underline ctermfg=NONE ctermbg=NONE
 
 augroup CursorLineOnlyCurrentWindow
   autocmd!
