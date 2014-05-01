@@ -15,3 +15,6 @@ export GREP_COLOR='1;32'
 
 export EDITOR='vim'
 export PAGER='less'
+
+# for powerline
+export XDG_CONFIG_DIRS="$HOME/.powerline.d"

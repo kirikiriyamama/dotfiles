@@ -10,21 +10,6 @@ esac
 # update submodules
 (cd ${repository} && git submodule update --init)
 
-# build tmux-mem-cpu-load
-type tmux-mem-cpu-load &>/dev/null
-if [ "$?" -ne 0 ]; then
-  if [ "$PLATFORM" = "osx" ]; then
-    echo "Please execute the following command: brew install tmux-mem-cpu-load"
-  else
-    if [ ! -d ${HOME}/dev/bin ]; then
-      command="mkdir -p ${HOME}/dev/bin"
-      echo $command && command $command
-    fi
-    command="g++ -Wall ${repository}/tmux-mem-cpu-load/tmux-mem-cpu-load.cpp -o ${HOME}/dev/bin/tmux-mem-cpu-load"
-    echo $command && command $command
-  fi
-fi
-
 # create symlinks
 if [ "$PLATFORM" = "osx" ]; then
   find_opts=("-E")

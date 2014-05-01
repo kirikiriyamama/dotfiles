@@ -20,7 +20,6 @@ antigen bundle robbyrussell/oh-my-zsh plugins/colored-man
 antigen bundle robbyrussell/oh-my-zsh plugins/knife
 antigen bundle robbyrussell/oh-my-zsh plugins/thor
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle $ZSH_CUSTOM/plugins/tmux-powerline
 
 # configurations
 for config_file ($ZSH_CUSTOM/*.zsh(N)); do
@@ -36,9 +35,6 @@ unset function
 
 # theme
 . ~/.powerline/powerline/bindings/zsh/powerline.zsh
-
-PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
-PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXRUBY_$(tmux display -p "#D" | tr -d %) "$(ruby_version)")'
 
 # local configuration
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
