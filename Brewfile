@@ -29,6 +29,7 @@ install rbenv
 install ruby-build
 install mysql
 install redis
+install mongodb
 install imagemagick
 
 # Remove outdated versions
