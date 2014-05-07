@@ -2,7 +2,7 @@
 update
 
 # Install homebrew-cask
-tap phinze/homebrew-cask || true
+tap caskroom/homebrew-cask || true
 install brew-cask
 
 # .dmg
@@ -29,6 +29,7 @@ install rbenv
 install ruby-build
 install mysql
 install redis
+install imagemagick
 
 # Remove outdated versions
 cleanup
