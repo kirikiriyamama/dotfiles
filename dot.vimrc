@@ -1,4 +1,4 @@
-function! g:meet_neocomplete_requirements()
+function! g:MeetNeocompleteRequirements()
   return has('lua') && ( (v:version == 703 && has('patch885')) || v:version >= 704 )
 endfunction
 
@@ -63,7 +63,7 @@ NeoBundleLazy 'slim-template/vim-slim', {
 \   },
 \ }
 
-if g:meet_neocomplete_requirements()
+if g:MeetNeocompleteRequirements()
   NeoBundle 'Shougo/neocomplete.vim'
   NeoBundle 'Shougo/neosnippet.vim'
   NeoBundle 'Shougo/neosnippet-snippets'
@@ -77,7 +77,7 @@ filetype indent plugin on
 set runtimepath+=~/.vim/
 runtime! userautoload/*.vim
 
-if g:meet_neocomplete_requirements()
+if g:MeetNeocompleteRequirements()
   source ~/.vim/neocomplete.vim
   source ~/.vim/neosnippet.vim
 endif
