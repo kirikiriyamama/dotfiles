@@ -27,6 +27,8 @@ install hub
 install tig
 install rbenv
 install ruby-build
+install mysql
+install redis
 
 # Remove outdated versions
 cleanup
