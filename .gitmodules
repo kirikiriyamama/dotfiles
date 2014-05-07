@@ -1,9 +1,15 @@
 [submodule "dot.vim/bundle/neobundle.vim"]
 	path = dot.vim/bundle/neobundle.vim
-	url = github.com:Shougo/neobundle.vim.git
+	url = git@github.com:Shougo/neobundle.vim.git
 [submodule "dot.zsh.d/antigen"]
 	path = dot.zsh.d/antigen
-	url = github.com:zsh-users/antigen.git
+	url = git@github.com:zsh-users/antigen.git
 [submodule "dot.powerline"]
 	path = dot.powerline
-	url = github.com:Lokaltog/powerline.git
+	url = git@github.com:Lokaltog/powerline.git
+[submodule "solarized"]
+	path = solarized
+	url = git@github.com:altercation/solarized.git
+[submodule "powerline-fonts"]
+	path = powerline-fonts
+	url = git@github.com:Lokaltog/powerline-fonts.git

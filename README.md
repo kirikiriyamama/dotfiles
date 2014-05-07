@@ -21,7 +21,3 @@ $ vi +NeoBundleInstall +q
 $ vi ~/.zshrc.local
 +PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 </code></pre>
- * Patched font
-  * See also [Lokaltog/powerline-fonts](https://github.com/Lokaltog/powerline-fonts "Lokaltog/powerline-fonts")
- * Solarized Dark colorscheme
-  * See also [altercation/solarized](https://github.com/altercation/solarized "altercation/solarized")
