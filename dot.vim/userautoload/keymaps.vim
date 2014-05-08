@@ -17,6 +17,7 @@ nmap ; :
 
 " CtrlP
 let g:ctrlp_map = '<Space>p'
-
 " ag
 nmap <Space>g :Ag<Space>
+" git blame
+nmap <Space>b :Gblame<CR>
