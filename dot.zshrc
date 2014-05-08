@@ -14,7 +14,6 @@ esac
 fpath=($ZSH_CUSTOM/completions $fpath)
 
 # plugins
-antigen bundle $ZSH_CUSTOM/plugins/bundler
 antigen bundle robbyrussell/oh-my-zsh plugins/colored-man
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions src

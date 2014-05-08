@@ -31,6 +31,7 @@ install hub
 install tig
 install rbenv
 install ruby-build
+install rbenv-binstubs
 install mysql
 install redis
 install mongodb
