@@ -7,6 +7,8 @@ alias sqlite='sqlite3'
 alias vi='vim'
 alias yum='yum -y'
 alias tmux='tmux -2 -u'
+
+alias g='git'
 alias be='bundle exec'
 alias grt='cd $(git rev-parse --show-toplevel 2> /dev/null || echo ".")'
 
