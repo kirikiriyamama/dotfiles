@@ -19,6 +19,7 @@ install sl
 install watch
 install wget
 install colordiff
+install git
 install zsh
 install vim --override-system-vi --with-lua
 install tmux
