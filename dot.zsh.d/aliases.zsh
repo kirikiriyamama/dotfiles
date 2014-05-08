@@ -9,7 +9,7 @@ alias yum='yum -y'
 alias tmux='tmux -2 -u'
 
 alias g='git'
-alias bi='bundle install --path vendor/budnle'
+alias bi='bundle install --path vendor/bundle'
 alias grt='cd $(git rev-parse --show-toplevel 2> /dev/null || echo ".")'
 
 if type colordiff &> /dev/null; then
