@@ -18,5 +18,5 @@ nmap ; :
 " CtrlP
 let g:ctrlp_map = '<Space>p'
 
-" git grep
-nmap <Space>g :Ggrep!<Space>
+" ag
+nmap <Space>g :Ag<Space>

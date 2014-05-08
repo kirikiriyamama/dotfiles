@@ -20,6 +20,7 @@ install sl
 install watch
 install wget
 install colordiff
+install ag
 install git
 install zsh
 install vim --override-system-vi --with-lua
