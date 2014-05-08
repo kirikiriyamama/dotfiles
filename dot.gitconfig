@@ -34,8 +34,8 @@
   br  = branch
   bra = branch -a
   # diff
-  d   = diff HEAD
-  dw  = diff HEAD --color-words
+  d   = diff
+  dw  = diff --color-words
   ds  = diff --staged
   dsw = diff --staged --color-words
   # log
