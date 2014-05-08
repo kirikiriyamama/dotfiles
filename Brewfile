@@ -17,6 +17,7 @@ cask install virtualbox
 # Packages
 install coreutils
 install sl
+install tree
 install watch
 install wget
 install colordiff
