@@ -2,7 +2,7 @@
   name  = remain
   email = ponde.ponde.ponde@gmail.com
 [core]
-  quotepath = off
+  quotepath    = false
   excludesfile = ~/.gitignore
 [color]
   ui = true
