@@ -12,6 +12,7 @@ cask install google-japanese-ime
 cask install iterm2
 cask install dash
 cask install yorufukurou
+cask install virtualbox
 
 # Packages
 install coreutils
