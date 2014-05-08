@@ -15,11 +15,9 @@ fpath=($ZSH_CUSTOM/completions $fpath)
 
 # plugins
 antigen bundle $ZSH_CUSTOM/plugins/bundler
-antigen bundle robbyrussell/oh-my-zsh plugins/capistrano
 antigen bundle robbyrussell/oh-my-zsh plugins/colored-man
-antigen bundle robbyrussell/oh-my-zsh plugins/knife
-antigen bundle robbyrussell/oh-my-zsh plugins/thor
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-completions src
 
 # configurations
 for config_file ($ZSH_CUSTOM/*.zsh(N)); do
