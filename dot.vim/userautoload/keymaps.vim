@@ -21,3 +21,5 @@ let g:ctrlp_map = '<Space>p'
 nmap <Space>g :Ag<Space>
 " git blame
 nmap <Space>b :Gblame<CR>
+" git diff
+nmap <Space>d :Gdiff<CR>
