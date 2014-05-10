@@ -14,14 +14,6 @@ function git_status() {
   fi
 }
 
-function svn_status() {
-  if svn info &> /dev/null; then
-    echo
-    echo "--- svn status ---"
-    svn st --ignore-externals
-  fi
-}
-
 function dir_status() {
   if [ -n "$BUFFER" ]; then
     zle accept-line
@@ -30,7 +22,6 @@ function dir_status() {
 
   echo && ls_abbrev
   git_status
-  svn_status
   zle reset-prompt
 }
 zle -N dir_status
