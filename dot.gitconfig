@@ -42,8 +42,7 @@
   l  = log --name-status --graph --decorate=short
   lp = log -p --graph --decorate=short
   # reset
-  rs  = reset
-  uns = reset --
+  rs = reset
   # submodule
   sm       = submodule
   smupdate = submodule foreach 'git pull origin master'
