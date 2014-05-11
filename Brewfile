@@ -14,7 +14,6 @@ cask install dash
 cask install yorufukurou
 cask install virtualbox
 cask install butter
-cask install github
 
 # Packages
 install coreutils
