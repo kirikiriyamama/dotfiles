@@ -8,16 +8,16 @@ alias vi='vim'
 alias yum='yum -y'
 alias tmux='tmux -2 -u'
 
-alias g='git'
-alias be='bundle exec'
-alias bi='bundle install --path vendor/bundle'
-alias grt='cd $(git rev-parse --show-toplevel 2> /dev/null || echo ".")'
-
 if type colordiff &> /dev/null; then
   alias diff='colordiff -u'
 else
   alias diff='diff -u'
 fi
+
+alias g='git'
+alias be='bundle exec'
+alias bi='bundle install --path vendor/bundle'
+alias grt='cd $(git rev-parse --show-toplevel 2> /dev/null || echo ".")'
 
 alias -g :x='| xargs'
 alias -g :xg='| xargs grep'
