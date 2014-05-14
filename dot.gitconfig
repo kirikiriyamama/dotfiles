@@ -12,7 +12,7 @@
   pf = push --force
   pn = push -n
   # pull/fetch/merge
-  l  = pull
+  pl = pull
   f  = fetch
   fp = fetch --prune
   m  = merge
