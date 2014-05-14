@@ -30,6 +30,7 @@ install tmux
 install reattach-to-user-namespace
 install hub
 install tig
+install heroku-toolbelt
 install rbenv
 install ruby-build
 install mysql
