@@ -13,6 +13,7 @@ cask install iterm2
 cask install dash
 cask install yorufukurou
 cask install virtualbox
+cask install vagrant
 cask install butter
 
 # Packages
@@ -22,6 +23,7 @@ install tree
 install watch
 install wget
 install colordiff
+install nkf
 install ag
 install git
 install zsh
