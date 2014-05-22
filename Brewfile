@@ -14,6 +14,7 @@ cask install dash
 cask install yorufukurou
 cask install virtualbox
 cask install vagrant
+cask install slack
 cask install butter
 
 # Packages
