@@ -24,7 +24,7 @@ NeoBundle 'vim-scripts/yanktmp.vim'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'rking/ag.vim'
-NeoBundle 'puppetlabs/puppet-syntax-vim'
+NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/vimproc', {
 \   'build' : {
 \     'windows' : 'make -f make_mingw32.mak',
@@ -62,6 +62,11 @@ NeoBundleLazy 'thinca/vim-quickrun', {
 NeoBundleLazy 'slim-template/vim-slim', {
 \   'autoload' : {
 \     'filetypes' : ['slim'],
+\   },
+\ }
+NeoBundleLazy 'puppetlabs/puppet-syntax-vim', {
+\   'autoload' : {
+\     'filetypes' : ['pp'],
 \   },
 \ }
 
