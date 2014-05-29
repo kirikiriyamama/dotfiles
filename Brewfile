@@ -19,6 +19,7 @@ cask install butter
 
 # Packages
 install coreutils
+install apg
 install sl
 install tree
 install watch
