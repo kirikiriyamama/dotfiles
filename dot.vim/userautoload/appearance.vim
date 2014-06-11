@@ -21,6 +21,8 @@ set runtimepath+=~/.powerline/powerline/bindings/vim
 set list
 set listchars=tab:>-
 
+set colorcolumn=100
+
 augroup AdditionalHighlights
   autocmd!
 
