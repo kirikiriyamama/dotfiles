@@ -17,4 +17,3 @@ autocmd QuickFixCmdPost *grep* cwindow
 set backspace=indent,eol,start
 set nowrap
 set wildmode=list,full
-set number
