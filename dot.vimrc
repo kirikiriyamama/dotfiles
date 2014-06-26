@@ -66,7 +66,7 @@ NeoBundleLazy 'slim-template/vim-slim', {
 \ }
 NeoBundleLazy 'puppetlabs/puppet-syntax-vim', {
 \   'autoload' : {
-\     'filetypes' : ['pp'],
+\     'filetypes' : ['puppet'],
 \   },
 \ }
 NeoBundleLazy 'vim-scripts/nginx.vim', {
