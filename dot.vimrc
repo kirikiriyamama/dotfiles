@@ -69,6 +69,11 @@ NeoBundleLazy 'puppetlabs/puppet-syntax-vim', {
 \     'filetypes' : ['pp'],
 \   },
 \ }
+NeoBundleLazy 'vim-scripts/nginx.vim', {
+\   'autoload' : {
+\     'filetypes' : ['nginx'],
+\   },
+\ }
 
 if g:MeetNeocompleteRequirements()
   NeoBundle 'Shougo/neocomplete.vim'
