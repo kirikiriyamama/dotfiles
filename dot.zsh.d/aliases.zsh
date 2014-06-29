@@ -28,7 +28,4 @@ alias -g :lr='| less -r'
 alias -g :h='| head'
 alias -g :t='| tail'
 alias -g :tf='| tail -f'
-
-alias @d='~/dev'
-alias @g='~/dev/github'
-alias @r='~/dev/remain'
+alias -g :p='| peco'
