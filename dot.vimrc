@@ -74,6 +74,11 @@ NeoBundleLazy 'vim-scripts/nginx.vim', {
 \     'filetypes' : ['nginx'],
 \   },
 \ }
+NeoBundleLazy 'jnwhiteh/vim-golang', {
+\   'autoload' : {
+\     'filetypes' : ['go'],
+\   },
+\ }
 
 if g:MeetNeocompleteRequirements()
   NeoBundle 'Shougo/neocomplete.vim'

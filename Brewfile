@@ -41,6 +41,7 @@ install mysql
 install redis
 install mongodb
 install imagemagick
+install go
 
 # Remove outdated versions
 cleanup

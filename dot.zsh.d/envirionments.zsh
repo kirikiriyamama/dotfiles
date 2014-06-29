@@ -5,8 +5,6 @@ function add_path() {
   esac
 }
 
-add_path $HOME/dev/bin
-
 export LANG='en_US.UTF-8'
 export LC_CTYPE=$LANG
 
@@ -17,4 +15,9 @@ export EDITOR='vim'
 export PAGER='less'
 
 # for powerline
-export XDG_CONFIG_DIRS="$HOME/.powerline.d"
+export XDG_CONFIG_DIRS=$HOME/.powerline.d
+
+export GOPATH=$HOME/.go
+
+add_path $HOME/dev/bin
+add_path $GOPATH/bin
