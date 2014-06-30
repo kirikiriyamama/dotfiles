@@ -29,3 +29,5 @@ alias -g :h='| head'
 alias -g :t='| tail'
 alias -g :tf='| tail -f'
 alias -g :p='| peco'
+
+alias @d='~/dev'
