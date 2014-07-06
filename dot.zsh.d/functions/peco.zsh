@@ -1,5 +1,3 @@
-alias e='cd `ghq list -p | peco`'
-
 function d() {
   git ls-files --modified --others --exclude-standard | peco | xargs $@
 }
@@ -14,6 +12,12 @@ function c() {
   git ls-files --cached | peco | xargs $@
 }
 alias cv='vim `c`'
+
+function peco-src() {
+  local selected_dir=`ghq list | peco`
+  [ -n "$selected_dir" ] && cd "$HOME/.ghq/$selected_dir"
+}
+alias e=peco-src
 
 function peco-select-history() {
   local tac
