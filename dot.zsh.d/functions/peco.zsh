@@ -1,17 +1,6 @@
-function d() {
-  git ls-files --modified --others --exclude-standard | peco | xargs $@
-}
-alias dv='vim `d`'
-
-function s() {
-  git diff --staged --name-only | peco | xargs $@
-}
-alias sv='vim `s`'
-
-function c() {
-  git ls-files --cached | peco | xargs $@
-}
-alias cv='vim `c`'
+alias -g D='`git ls-files --modified --others --exclude-standard | peco`'
+alias -g S='`git diff --staged --name-only | peco`'
+alias -g C='`git ls-files --cached | peco`'
 
 function peco-src() {
   local selected_dir=`ghq list | peco`
