@@ -16,6 +16,7 @@ cask install virtualbox
 cask install vagrant
 cask install slack
 cask install butter
+cask install atom
 
 # Packages
 install coreutils
