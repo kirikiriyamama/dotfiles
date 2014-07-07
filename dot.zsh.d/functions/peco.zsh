@@ -1,6 +1,7 @@
 alias -g D='`git ls-files --modified --others --exclude-standard | peco`'
 alias -g S='`git diff --staged --name-only | peco`'
 alias -g C='`git ls-files --cached | peco`'
+alias -g B='`git branch -a | peco | sed -E -e "s/^[* ]+//" | cut -d" " -f1`'
 
 function peco-src() {
   local selected_dir=`ghq list | peco`
