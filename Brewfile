@@ -20,6 +20,7 @@ cask install atom
 
 # Packages
 install coreutils
+install gnu-sed
 install apg
 install sl
 install tree
