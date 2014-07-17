@@ -47,9 +47,10 @@
   sm       = submodule
   smupdate = submodule foreach 'git pull origin master'
   # misc
-  st = status -sb
-  sh = show --decorate=short
-  gr = grep --line-number --heading --break
+  st   = status -sb
+  sh   = show --decorate=short
+  gr   = grep --line-number --heading --break
+  gsub = git-gsub
 [tig "bind"]
   generic = g move-first-line
   generic = G move-last-line
