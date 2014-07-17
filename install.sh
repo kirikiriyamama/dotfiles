@@ -1,30 +1,38 @@
 #!/bin/sh
 
 # initialize
-repository=$(cd $(dirname $0); pwd)
-case $OSTYPE in
+repository=$(cd $(dirname ${0}); pwd)
+
+case ${OSTYPE} in
   darwin*) PLATFORM="osx" ;;
   *) PLATFORM="unknown" ;;
 esac
 
+find_opts=()
+[ "${PLATFORM}" = "osx" ] && find_opts=("-E")
+
 # update submodules
 (cd ${repository} && git submodule update --init)
 
+# make directories
+dirs=("dev")
+for dir in ${dirs[@]}; do
+  target="${HOME}/${dir}"
+  if [ ! -e "${target}" ]; then
+    command="mkdir ${target}"
+    echo ${command} && command ${command}
+  fi
+done
+
 # create symlinks
-if [ "$PLATFORM" = "osx" ]; then
-  find_opts=("-E")
-else
-  find_opts=()
-fi
-find ${find_opts[@]} ${repository} -regex "${repository}/dot\.[^/]+$" |
-sed -e "s|${repository}/||" |
-while read dotfile
-do
-  link_name=$(echo ${dotfile} | sed -e "s/^dot//g")
-  if [ ! -e ${HOME}/${link_name} ]; then
-    command="ln -s ${repository}/${dotfile} ${HOME}/${link_name}"
-    echo $command && command $command
+files=($(find ${find_opts[@]} ${repository} -regex "${repository}/dot\.[^/]+$" | sed -e "s|${repository}/||") "dev/bin")
+for file in ${files[@]}; do
+  source="${repository}/${file}"
+  target="${HOME}/$(echo ${file} | sed -e "s|^dot||g")"
+  if [ ! -e "${target}" ]; then
+    command="ln -s ${source} ${target}"
+    echo ${command} && command ${command}
   else
-    echo "${HOME}/${link_name} exists"
+    echo "${target} exists"
   fi
 done
