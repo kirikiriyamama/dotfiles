@@ -79,6 +79,12 @@ NeoBundleLazy 'jnwhiteh/vim-golang', {
 \     'filetypes' : ['go'],
 \   },
 \ }
+NeoBundleLazy 'elzr/vim-json', {
+\   'autoload' : {
+\     'filetypes' : ['json'],
+\   },
+\ }
+
 
 if g:MeetNeocompleteRequirements()
   NeoBundle 'Shougo/neocomplete.vim'
