@@ -9,7 +9,6 @@
 [alias]
   # push
   p  = push
-  pf = push --force
   pn = push -n
   # pull/fetch/merge
   pl = pull
