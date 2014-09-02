@@ -31,6 +31,7 @@
   undo = checkout --
   # branch
   br  = branch
+  brm = branch --merged
   bra = branch -a
   # diff
   d   = diff
