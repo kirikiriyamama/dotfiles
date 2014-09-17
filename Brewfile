@@ -6,44 +6,44 @@ tap caskroom/homebrew-cask || true
 install brew-cask
 
 # .dmg
-cask install keyremap4macbook
+cask install atom
+cask install butter
+cask install dash
 cask install google-chrome
 cask install google-japanese-ime
 cask install iterm2
-cask install dash
-cask install yorufukurou
-cask install virtualbox
-cask install vagrant
+cask install keyremap4macbook
 cask install slack
-cask install butter
-cask install atom
+cask install vagrant
+cask install virtualbox
+cask install yorufukurou
 
 # Packages
-install coreutils
-install gnu-sed
+install ag
 install apg
+install colordiff
+install coreutils
+install git
+install gnu-sed
+install go
+install heroku-toolbelt
+install hub
+install imagemagick
+install mongodb
+install mysql
+install nkf
+install rbenv
+install reattach-to-user-namespace
+install redis
+install ruby-build
 install sl
+install tig
+install tmux
 install tree
+install vim --override-system-vi --with-lua
 install watch
 install wget
-install colordiff
-install nkf
-install ag
-install git
 install zsh
-install vim --override-system-vi --with-lua
-install tmux
-install reattach-to-user-namespace
-install hub
-install tig
-install heroku-toolbelt
-install rbenv
-install ruby-build
-install mysql
-install redis
-install mongodb
-install imagemagick
-install go
 
 # Remove outdated versions
 cleanup
