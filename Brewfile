@@ -32,6 +32,7 @@ install imagemagick
 install mongodb
 install mysql
 install nkf
+install phantomjs
 install rbenv
 install reattach-to-user-namespace
 install redis
