@@ -84,6 +84,11 @@ NeoBundleLazy 'elzr/vim-json', {
 \     'filetypes' : ['json'],
 \   },
 \ }
+NeoBundleLazy 'kchmck/vim-coffee-script', {
+\   'autoload' : {
+\     'filetypes' : ['coffee'],
+\   },
+\ }
 
 
 if g:MeetNeocompleteRequirements()
