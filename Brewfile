@@ -13,6 +13,7 @@ cask install google-chrome
 cask install google-japanese-ime
 cask install iterm2
 cask install keyremap4macbook
+cask install serf
 cask install slack
 cask install vagrant
 cask install virtualbox
