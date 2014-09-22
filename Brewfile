@@ -34,6 +34,7 @@ install mongodb
 install mysql
 install nkf
 install phantomjs
+install pstree
 install rbenv
 install reattach-to-user-namespace
 install redis
