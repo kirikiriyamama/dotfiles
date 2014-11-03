@@ -12,5 +12,6 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 " misc
 set backspace=indent,eol,start
-set nowrap
 set wildmode=list,full
+set nowrap
+set lazyredraw
