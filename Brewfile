@@ -15,6 +15,7 @@ cask install iterm2
 cask install keyremap4macbook
 cask install serf
 cask install slack
+cask install sqwiggle
 cask install vagrant
 cask install virtualbox
 cask install yorufukurou
