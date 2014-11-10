@@ -14,9 +14,10 @@ else
   alias diff='diff -u'
 fi
 
-alias g='git'
 alias be='bundle exec'
 alias bi='bundle install --path vendor/bundle --without production'
+
+alias g='git'
 alias grt='cd $(git rev-parse --show-toplevel 2> /dev/null || echo ".")'
 
 alias -g :x='| xargs'
