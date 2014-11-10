@@ -20,6 +20,8 @@ alias bi='bundle install --path vendor/bundle --without production'
 alias g='git'
 alias grt='cd $(git rev-parse --show-toplevel 2> /dev/null || echo ".")'
 
+alias tailf='tail -f'
+
 alias -g :x='| xargs'
 alias -g :xg='| xargs grep'
 alias -g :g='| grep'
