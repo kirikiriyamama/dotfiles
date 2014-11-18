@@ -41,7 +41,6 @@ install reattach-to-user-namespace
 install redis
 install ruby-build
 install sl
-install terminal-notifier
 install tig
 install tmux
 install tree
