@@ -1,23 +1,42 @@
-alias -g M='`git ls-files --modified | peco`'
-alias -g U='`git ls-files --others --exclude-standard | peco`'
-alias -g S='`git diff --staged --name-only | peco`'
+alias -g B='`git branch -a | sed -E -e "s/remotes\///g" | grep -v "origin/HEAD" | peco | sed -E -e "s/^[* ]+//"`'
+alias -g R='`git log --date=short --pretty=format:"%h %ad [%an] %s%d" "$@" | peco | cut -d" " -f1`'
+alias -g T='`git tag | peco`'
 alias -g C='`git ls-files --cached | peco`'
-alias -g B='`git branch -a | peco | sed -E -e "s/^[* ]+//" | cut -d" " -f1`'
 
 function peco-src() {
-  local selected_dir=`ghq list | peco`
-  [ -n "$selected_dir" ] && cd "$HOME/.ghq/$selected_dir"
+  local dir=`ghq list | peco`
+  [ -n "$dir" ] && cd "$HOME/.ghq/$dir"
 }
 alias e=peco-src
 
+function gim() {
+  local file=`echo C`
+  [ -n "$file" ] && vim $file
+}
+
+function peco-git-cherry-pick() {
+  for revision in `echo R | tr " " "\n" | tac`; do
+    git cherry-pick $revision
+  done
+}
+alias gp=peco-git-cherry-pick
+
+function peco-git-reflog() {
+  local revision=`git reflog | peco | cut -d' ' -f1`
+  [ -n "$revision" ] && git reset $revision
+}
+alias gr=peco-git-reflog
+
+function peco-kill-processes() {
+  for pid in `ps aux | peco | awk '{ print $2 }'`; do
+    kill $pid
+    echo "Killed $pid"
+  done
+}
+alias pk=peco-kill-processes
+
 function peco-select-history() {
-  local tac
-  if which tac > /dev/null; then
-    tac="tac"
-  else
-    tac="tail -r"
-  fi
-  BUFFER=$(history -n 1 | eval $tac | peco --query "$LBUFFER")
+  BUFFER=$(history -n 1 | tac | peco --query "$LBUFFER")
   CURSOR=$#BUFFER
   zle clear-screen
 }
