@@ -11,9 +11,8 @@
   p  = push
   pn = push -n
   # pull/fetch/merge
-  pl = pull
-  f  = fetch
-  fp = fetch --prune
+  pl = pull --prune
+  f  = fetch --prune
   m  = merge
   mn = merge --no-ff
   # rebase
@@ -39,8 +38,7 @@
   ds  = diff --staged
   dsw = diff --staged --color-words
   # log
-  l  = log --name-status --graph --decorate=short
-  lp = log -p --graph --decorate=short
+  l  = log --graph --date-order --date=short --all --pretty=format:\"%C(yellow)%h%Creset %C(blue)%ad%Creset [%an] %s%C(cyan)%d%Creset\"
   # reset
   rs = reset
   # submodule
@@ -48,9 +46,10 @@
   smupdate = submodule foreach 'git pull origin master'
   # misc
   st   = status -sb
-  sh   = show --decorate=short
-  gr   = grep --line-number --heading --break
+  s    = show --decorate=short
+  g    = grep --line-number --heading --break
   gsub = git-gsub
+  pick = cherry-pick
 [tig "bind"]
   generic = g move-first-line
   generic = G move-last-line
