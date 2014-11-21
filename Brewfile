@@ -12,7 +12,7 @@ cask install dash
 cask install google-chrome
 cask install google-japanese-ime
 cask install iterm2
-cask install keyremap4macbook
+cask install karabiner
 cask install serf
 cask install slack
 cask install sqwiggle
