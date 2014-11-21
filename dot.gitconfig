@@ -15,6 +15,7 @@
   f  = fetch --prune
   m  = merge
   mn = merge --no-ff
+  ma = merge --abort
   # rebase
   rb  = rebase
   rbi = rebase -i
