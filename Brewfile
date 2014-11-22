@@ -31,6 +31,7 @@ install go
 install heroku-toolbelt
 install hub
 install imagemagick
+install ipcalc
 install mongodb
 install mysql
 install nkf
