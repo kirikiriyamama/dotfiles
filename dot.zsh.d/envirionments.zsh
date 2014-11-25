@@ -18,6 +18,5 @@ export PAGER='less'
 export XDG_CONFIG_DIRS=$HOME/.powerline.d
 
 export GOPATH=$HOME/.go
-
 add_path $HOME/dev/bin
 add_path $GOPATH/bin
