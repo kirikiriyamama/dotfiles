@@ -15,12 +15,9 @@ else
   alias diff='diff -u'
 fi
 
-alias be='bundle exec'
-alias bi='bundle install --path vendor/bundle --without production'
-
 alias g='git'
 alias grt='cd $(git rev-parse --show-toplevel 2> /dev/null || echo ".")'
-
+alias be='bundle exec'
 alias tailf='tail -f'
 
 alias -g :l='| less'
