@@ -2,7 +2,7 @@
 
 ## Installation
 ```
-$ git clone https://github.com/remain/dotfiles.git
+$ git clone https://github.com/kirikiriyamama/dotfiles.git
 $ cd dotfiles && ./install.sh
 
 $ vi +NeoBundleInstall +q
