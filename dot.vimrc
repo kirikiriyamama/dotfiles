@@ -2,8 +2,6 @@ function! g:MeetNeocompleteRequirements()
   return has('lua') && ( (v:version == 703 && has('patch885')) || v:version >= 704 )
 endfunction
 
-
-set nocompatible
 filetype off
 
 if has('vim_starting')
