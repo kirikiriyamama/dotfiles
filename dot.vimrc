@@ -88,7 +88,6 @@ NeoBundleLazy 'kchmck/vim-coffee-script', {
 \   },
 \ }
 
-
 if g:MeetNeocompleteRequirements()
   NeoBundle 'Shougo/neocomplete.vim'
   NeoBundle 'Shougo/neosnippet.vim'
@@ -98,7 +97,6 @@ endif
 
 syntax on
 filetype indent plugin on
-
 
 set runtimepath+=~/.vim/
 runtime! userautoload/*.vim
