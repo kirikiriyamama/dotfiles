@@ -4,7 +4,7 @@ alias la='ls -lA'
 
 alias less='less -r'
 alias sqlite='sqlite3'
-alias sudo='sudo -E '
+alias sudo='sudo -E'
 alias tmux='tmux -2 -u'
 alias vi='vim'
 alias yum='yum -y'
