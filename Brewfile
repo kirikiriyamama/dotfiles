@@ -32,6 +32,7 @@ install heroku-toolbelt
 install hub
 install imagemagick
 install ipcalc
+install jq
 install mongodb
 install mysql
 install nkf
