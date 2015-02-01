@@ -14,6 +14,7 @@ cask install google-japanese-ime
 cask install iterm2
 cask install karabiner
 cask install serf
+cask install skitch
 cask install slack
 cask install sqwiggle
 cask install vagrant
