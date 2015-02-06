@@ -13,6 +13,10 @@ function gim() {
   local file=$(echo C)
   [[ -n ${file} ]] && vim ${file}
 }
+function agvim() {
+  local args="$(ag ${@} | peco | awk -F: '{ printf("-c %d %s\n", $2, $1) }')"
+  [[ -n ${args} ]] && eval "vim ${args}"
+}
 
 function peco-git-cherry-pick() {
   for revision in $(echo R | tr ' ' '\n' | tac); do
