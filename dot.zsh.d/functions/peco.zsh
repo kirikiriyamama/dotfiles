@@ -23,13 +23,13 @@ alias gp=peco-git-cherry-pick
 
 function peco-git-reflog() {
 local revision=$(git reflog | peco | cut -d' ' -f1)
-  [[ -n ${revision} ]] && git reset ${revision}
+  [[ -n ${revision} ]] && git reset ${@} ${revision}
 }
 alias gr=peco-git-reflog
 
 function peco-kill-processes() {
   for pid in $(ps aux | peco | awk '{ print $2 }'); do
-    kill ${pid}
+    kill ${@} ${pid}
     echo "Killed ${pid}"
   done
 }
