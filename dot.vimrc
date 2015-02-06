@@ -11,8 +11,7 @@ endif
 
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'altercation/vim-colors-solarized'
-" NeoBundle 'kien/ctrlp.vim.git'
-NeoBundle 'kirikiriyamama/ctrlp.vim'
+NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-fugitive'

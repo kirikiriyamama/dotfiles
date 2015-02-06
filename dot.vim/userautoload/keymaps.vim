@@ -10,10 +10,13 @@ imap <C-f> <Right>
 imap <C-a> <Esc>^i
 imap <C-e> <Esc>$a
 imap <C-d> <Del>
-
-nmap <C-k> d$a
+imap <C-k> <Esc>ld$a
 
 nmap ; :
+
+nmap <C-w>c :tabnew<CR>
+nmap <C-w>n gt
+nmap <C-w>p gT
 
 " CtrlP
 let g:ctrlp_map = '<Space>p'
