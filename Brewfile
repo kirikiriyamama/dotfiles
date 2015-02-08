@@ -14,13 +14,13 @@ cask install google-japanese-ime
 cask install iterm2
 cask install karabiner
 cask install kindle
+cask install night-owl
 cask install serf
 cask install skitch
 cask install slack
 cask install sqwiggle
 cask install vagrant
 cask install virtualbox
-cask install yorufukurou
 
 # Packages
 install ag
