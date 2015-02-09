@@ -1,4 +1,4 @@
-nnoremap <Leader>m :Rmodel<Space>
-nnoremap <Leader>c :Rcontroller<Space>
-nnoremap <Leader>v :Rview<Space>
-nnoremap <Leader>s :Rspec<Space>
+nnoremap <Leader>m :Emodel<Space>
+nnoremap <Leader>c :Econtroller<Space>
+nnoremap <Leader>v :Eview<Space>
+nnoremap <Leader>s :Espec<Space>
