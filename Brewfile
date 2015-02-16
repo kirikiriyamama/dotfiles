@@ -13,6 +13,7 @@ cask install google-chrome
 cask install google-japanese-ime
 cask install iterm2
 cask install karabiner
+cask install kindle
 cask install serf
 cask install skitch
 cask install slack
