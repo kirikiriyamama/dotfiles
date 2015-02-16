@@ -1,17 +1,17 @@
 # initialize
-. $HOME/.zsh.d/antigen/antigen.zsh
+. ${HOME}/.zsh.d/antigen/antigen.zsh
 
 # environments
-ZSH_CUSTOM=$HOME/.zsh.d
+ZSH_CUSTOM=${HOME}/.zsh.d
 
-case $OSTYPE in
+case ${OSTYPE} in
   linux*) PLATFORM="linux" ;;
   darwin*) PLATFORM="osx" ;;
   *) PLATFORM="unknown" ;;
 esac
 
 # completions
-fpath=($ZSH_CUSTOM/completions $fpath)
+fpath=(${ZSH_CUSTOM}/completions ${fpath})
 
 # plugins
 antigen bundle colored-man
@@ -19,14 +19,14 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions src
 
 # configurations
-for config_file ($ZSH_CUSTOM/*.zsh(N)); do
-  . $config_file
+for file (${ZSH_CUSTOM}/*.zsh(N)); do
+  . ${file}
 done
 unset config_file
 
 # functions
-for function ($ZSH_CUSTOM/functions/*.zsh(N)); do
-  . $function
+for file ($ZSH_CUSTOM/functions/*.zsh(N)); do
+  . ${file}
 done
 unset function
 
@@ -34,7 +34,7 @@ unset function
 . ~/.powerline/powerline/bindings/zsh/powerline.zsh
 
 # local configuration
-[ -f ~/.zshrc.local ] && source ~/.zshrc.local
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 # finalize
 antigen apply
