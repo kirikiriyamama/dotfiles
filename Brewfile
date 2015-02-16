@@ -15,6 +15,7 @@ cask install iterm2
 cask install karabiner
 cask install kindle
 cask install night-owl
+cask install postgresql
 cask install serf
 cask install skitch
 cask install slack
