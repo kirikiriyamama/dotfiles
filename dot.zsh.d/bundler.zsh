@@ -23,8 +23,10 @@ _run-with-bundler() {
 bundled_commands=(
 berks
 cap
+capify
 foreman
 guard
+html2haml
 irb
 jekyll
 knife
