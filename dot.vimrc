@@ -90,9 +90,6 @@ NeoBundleLazy 'kchmck/vim-coffee-script', {
 
 if g:MeetNeocompleteRequirements()
   NeoBundle 'Shougo/neocomplete.vim'
-  NeoBundle 'Shougo/neosnippet.vim'
-  NeoBundle 'Shougo/neosnippet-snippets'
-  NeoBundle 'honza/vim-snippets'
 endif
 
 syntax on
@@ -103,5 +100,4 @@ runtime! userautoload/*.vim
 
 if g:MeetNeocompleteRequirements()
   source ~/.vim/neocomplete.vim
-  source ~/.vim/neosnippet.vim
 endif
