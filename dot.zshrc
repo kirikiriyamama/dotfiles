@@ -22,13 +22,13 @@ antigen bundle zsh-users/zsh-completions src
 for file (${ZSH_CUSTOM}/*.zsh(N)); do
   . ${file}
 done
-unset config_file
+unset file
 
 # functions
 for file ($ZSH_CUSTOM/functions/*.zsh(N)); do
   . ${file}
 done
-unset function
+unset file
 
 # theme
 . ~/.powerline/powerline/bindings/zsh/powerline.zsh
