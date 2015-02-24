@@ -38,3 +38,4 @@ unset function
 
 # finalize
 antigen apply
+typeset -U path

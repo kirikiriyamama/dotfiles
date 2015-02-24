@@ -1,10 +1,3 @@
-function add_path() {
-  case ":${PATH}:" in
-    *:"$1":*) ;;
-    *) export PATH=$PATH:$1 ;;
-  esac
-}
-
 export LANG='en_US.UTF-8'
 export LC_CTYPE=$LANG
 
@@ -18,5 +11,5 @@ export PAGER='less'
 export XDG_CONFIG_DIRS=$HOME/.powerline.d
 
 export GOPATH=$HOME/.go
-add_path $HOME/dev/bin
-add_path $GOPATH/bin
+export PATH=${HOME}/dev/bin:${PATH}
+export PATH=${GOPATH}/bin:${PATH}
