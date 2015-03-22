@@ -16,6 +16,7 @@ cask install karabiner
 cask install kindle
 cask install night-owl
 cask install postgresql
+cask install rescuetime
 cask install serf
 cask install skitch
 cask install slack
