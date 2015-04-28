@@ -51,5 +51,7 @@
   g    = grep --line-number --heading --break
   gsub = !git-gsub
   pick = cherry-pick
+  # miku
+  miku = !git stash 1> /dev/null && echo 'もうしょうがないにゃぁ、この変更はみくが覚えておくにゃ！'
 [hub]
   protocol = ssh
