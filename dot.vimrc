@@ -86,6 +86,11 @@ NeoBundleLazy 'kchmck/vim-coffee-script', {
 \     'filetypes' : ['coffee'],
 \   },
 \ }
+NeoBundleLazy 'tpope/vim-haml', {
+\   'autoload' : {
+\     'filetypes' : ['haml'],
+\   },
+\ }
 
 if g:MeetNeocompleteRequirements()
   NeoBundle 'Shougo/neocomplete.vim'
