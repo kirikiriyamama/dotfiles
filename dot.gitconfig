@@ -43,13 +43,13 @@
   # reset
   rs = reset
   # submodule
-  sm       = submodule
-  smupdate = submodule foreach 'git pull origin master'
+  sm  = submodule
+  smu = submodule foreach 'git pull origin master'
   # misc
   st   = status -sb
   s    = show --decorate=short
   g    = grep --line-number --heading --break
-  gsub = git-gsub
+  gsub = !git-gsub
   pick = cherry-pick
 [hub]
   protocol = ssh
