@@ -24,8 +24,10 @@ cask install virtualbox
 # Packages
 install ag
 install apg
+install cabal-install
 install colordiff
 install coreutils
+install ghc
 install git
 install gnu-sed
 install go
