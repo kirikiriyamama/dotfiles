@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [[ -z ${1} ]]; then
+  exit 1
+fi
+
+pr=$(git log ${1}..master --merges --ancestry-path --reverse --oneline | head -n1 | awk '$0 = substr($5, 2)')
+if [[ -z ${pr} ]]; then
+  exit 1
+fi
+
+origin=$(git config --get remote.origin.url)
+if echo ${origin} | grep 'https://' &> /dev/null; then
+  open "${origin}/pull/${pr}"
+elif echo ${origin} | grep 'ssh://' &> /dev/null; then
+  open "https://github.com/$(echo ${origin} | awk -F/ '{ printf "%s/%s", $4, $5 }')/pull/${pr}"
+else
+  open "https://github.com/$(echo ${origin} | awk -F[:.] '$0 = $3')/pull/${pr}"
+fi
