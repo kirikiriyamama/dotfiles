@@ -34,6 +34,7 @@ install gnu-sed
 install go
 install heroku-toolbelt
 install hub
+install icu4c
 install imagemagick
 install ipcalc
 install jq
