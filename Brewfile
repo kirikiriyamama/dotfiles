@@ -25,6 +25,7 @@ cask install virtualbox
 install ag
 install apg
 install cabal-install
+install cmake
 install colordiff
 install coreutils
 install ghc
