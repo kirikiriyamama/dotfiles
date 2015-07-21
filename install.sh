@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # initialize
 repository=$(cd $(dirname ${0}); pwd)
