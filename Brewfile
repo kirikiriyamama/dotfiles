@@ -6,7 +6,6 @@ tap caskroom/homebrew-cask || true
 install brew-cask
 
 # .dmg
-cask install atom
 cask install butter
 cask install google-chrome
 cask install google-japanese-ime
