@@ -41,6 +41,8 @@ install jq
 install mongodb
 install mysql
 install nkf
+install node
+install npm
 install phantomjs
 install pstree
 install rbenv
