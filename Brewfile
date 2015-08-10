@@ -17,6 +17,7 @@ cask install postgresql
 cask install rescuetime
 cask install serf
 cask install sqwiggle
+cask install trailer
 cask install vagrant
 cask install virtualbox
 
