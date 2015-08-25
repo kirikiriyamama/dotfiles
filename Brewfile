@@ -5,7 +5,7 @@ update
 tap caskroom/homebrew-cask || true
 install brew-cask
 
-# .dmg
+# Applications
 cask install butter
 cask install google-chrome
 cask install google-japanese-ime
@@ -44,6 +44,7 @@ install nkf
 install node
 install npm
 install phantomjs
+install potrace
 install pstree
 install rbenv
 install reattach-to-user-namespace
