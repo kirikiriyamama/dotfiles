@@ -34,11 +34,6 @@ NeoBundle 'Shougo/vimproc', {
 \   },
 \ }
 
-NeoBundleLazy 'AndrewRadev/switch.vim', {
-\   'autoload' : {
-\     'commands' : ['Switch'],
-\   },
-\ }
 NeoBundleLazy 'tpope/vim-markdown', {
 \   'autoload' : {
 \     'filetypes' : ['markdown'],
