@@ -22,7 +22,6 @@ NeoBundle 'vim-scripts/yanktmp.vim'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'rking/ag.vim'
-NeoBundle 'scrooloose/syntastic'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'wakatime/vim-wakatime'
 NeoBundle 'Shougo/vimproc', {
