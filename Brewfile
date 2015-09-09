@@ -30,6 +30,7 @@ install colordiff
 install coreutils
 install ghc
 install git
+install elixir
 install gnu-sed
 install go
 install heroku-toolbelt

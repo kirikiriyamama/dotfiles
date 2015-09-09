@@ -89,6 +89,11 @@ NeoBundleLazy 'tpope/vim-haml', {
 \     'filetypes' : ['haml'],
 \   },
 \ }
+NeoBundleLazy 'elixir-lang/vim-elixir', {
+\   'autoload' : {
+\     'filetypes' : ['elixir'],
+\   },
+\ }
 
 if g:MeetNeocompleteRequirements()
   NeoBundle 'Shougo/neocomplete.vim'
