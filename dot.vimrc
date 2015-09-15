@@ -1,7 +1,3 @@
-function! g:MeetNeocompleteRequirements()
-  return has('lua') && ( (v:version == 703 && has('patch885')) || v:version >= 704 )
-endfunction
-
 filetype off
 
 if has('vim_starting')
@@ -10,6 +6,7 @@ if has('vim_starting')
 endif
 
 NeoBundle 'Shougo/neobundle.vim'
+NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'ctrlpvim/ctrlp.vim'
@@ -113,16 +110,8 @@ NeoBundleLazy 'tpope/vim-endwise', {
 \   },
 \ }
 
-if g:MeetNeocompleteRequirements()
-  NeoBundle 'Shougo/neocomplete.vim'
-endif
-
 syntax on
 filetype indent plugin on
 
 set runtimepath+=~/.vim/
 runtime! userautoload/*.vim
-
-if g:MeetNeocompleteRequirements()
-  source ~/.vim/neocomplete.vim
-endif
