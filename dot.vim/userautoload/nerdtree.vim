@@ -5,3 +5,16 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 let g:NERDTreeQuitOnOpen=1
 let g:NERDTreeShowHidden=1
+
+" nerdtree-git-plugin
+let g:NERDTreeIndicatorMapCustom = {
+\    'Modified'  : 'M',
+\    'Staged'    : '✚',
+\    'Untracked' : '?',
+\    'Renamed'   : 'R',
+\    'Unmerged'  : 'U',
+\    'Deleted'   : 'D',
+\    'Dirty'     : '✗',
+\    "Clean"     : '✔︎',
+\    'Unknown'   : ''
+\  }
