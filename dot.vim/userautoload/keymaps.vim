@@ -20,11 +20,5 @@ nmap <C-w>c :tabnew<CR>
 nmap <C-w>n gt
 nmap <C-w>p gT
 
-" CtrlP
+" ctrlp
 let g:ctrlp_map = '<Space>p'
-" ag
-nmap <Space>g :Ag<Space>
-" git blame
-nmap <Space>b :Gblame<CR>
-" git diff
-nmap <Space>d :Gdiff<CR>
