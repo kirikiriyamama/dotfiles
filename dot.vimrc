@@ -25,6 +25,7 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'wakatime/vim-wakatime'
+NeoBundle 'jceb/vim-hier'
 NeoBundle 'Shougo/vimproc', {
 \   'build' : {
 \     'windows' : 'make -f make_mingw32.mak',
