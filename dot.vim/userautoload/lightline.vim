@@ -1,7 +1,7 @@
 let g:lightline = {
 \   'colorscheme': 'solarized',
 \   'active': {
-\     'left': [['mode', 'paste'], ['fugitive', 'filename']]
+\     'left': [['mode', 'paste'], ['fugitive', 'filename', 'watchdogs']],
 \   },
 \   'component_function': {
 \     'modified':     'LightLineModified',
@@ -12,7 +12,13 @@ let g:lightline = {
 \     'filetype':     'LightLineFiletype',
 \     'fileencoding': 'LightLineFileencoding',
 \     'mode':         'LightLineMode',
-\   }
+\   },
+\   'component_expand': {
+\     'watchdogs': 'qfstatusline#Update',
+\   },
+\   'component_type': {
+\     'watchdogs': 'error',
+\   },
 \ }
 
 function! LightLineModified()
