@@ -14,19 +14,16 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'ctrlpvim/ctrlp.vim'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'tpope/vim-endwise'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-surround'
-NeoBundle 'vim-scripts/ruby-matchit'
 NeoBundle 'vim-scripts/YankRing.vim'
 NeoBundle 'vim-scripts/yanktmp.vim'
-NeoBundle 'tpope/vim-rails'
 NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'rking/ag.vim'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'wakatime/vim-wakatime'
 NeoBundle 'jceb/vim-hier'
 NeoBundle 'dannyob/quickfixstatus'
+NeoBundle 'tpope/vim-rails'
 NeoBundle 'Shougo/vimproc', {
 \   'build' : {
 \     'windows' : 'make -f make_mingw32.mak',
@@ -36,11 +33,6 @@ NeoBundle 'Shougo/vimproc', {
 \   },
 \ }
 
-NeoBundleLazy 'tpope/vim-markdown', {
-\   'autoload' : {
-\     'filetypes' : ['markdown'],
-\   },
-\ }
 NeoBundleLazy 'Shougo/vimshell', {
 \   'autoload' : {
 \     'commands' : ['VimShell'],
@@ -51,9 +43,20 @@ NeoBundleLazy 'mbbill/undotree', {
 \     'commands' : ['UndotreeToggle'],
 \   },
 \ }
+NeoBundleLazy 'rking/ag.vim', {
+\   'autoload' : {
+\     'commands' : ['Ag'],
+\   },
+\ }
 NeoBundleLazy 'thinca/vim-quickrun', {
 \   'autoload' : {
 \     'commands' : ['QuickRun'],
+\   },
+\ }
+
+NeoBundleLazy 'tpope/vim-markdown', {
+\   'autoload' : {
+\     'filetypes' : ['markdown'],
 \   },
 \ }
 NeoBundleLazy 'slim-template/vim-slim', {
@@ -94,6 +97,16 @@ NeoBundleLazy 'tpope/vim-haml', {
 NeoBundleLazy 'elixir-lang/vim-elixir', {
 \   'autoload' : {
 \     'filetypes' : ['elixir'],
+\   },
+\ }
+NeoBundleLazy 'vim-scripts/ruby-matchit', {
+\   'autoload' : {
+\     'filetypes' : ['ruby'],
+\   },
+\ }
+NeoBundleLazy 'tpope/vim-endwise', {
+\   'autoload' : {
+\     'filetypes' : ['ruby'],
 \   },
 \ }
 
