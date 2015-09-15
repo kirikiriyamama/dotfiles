@@ -1,3 +1,5 @@
+set backspace=indent,eol,start
+
 nmap ZZ <Nop>
 nmap ZQ <Nop>
 nmap Q <Nop>

@@ -10,8 +10,9 @@ set smartindent
 
 autocmd QuickFixCmdPost *grep* cwindow
 
-" misc
-set backspace=indent,eol,start
-set wildmode=list,full
 set nowrap
+
+set wildmode=list,full
+
 set lazyredraw
+set updatetime=1000
