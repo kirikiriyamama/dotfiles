@@ -7,6 +7,7 @@ install brew-cask
 
 # Applications
 cask install butter
+cask install cumulus
 cask install google-chrome
 cask install google-japanese-ime
 cask install iterm2
