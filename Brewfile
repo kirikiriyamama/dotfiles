@@ -45,6 +45,7 @@ install mysql
 install nkf
 install node
 install npm
+install oniguruma
 install phantomjs
 install potrace
 install pstree
