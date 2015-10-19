@@ -13,3 +13,6 @@
 [submodule "powerline-fonts"]
 	path = powerline-fonts
 	url = git@github.com:Lokaltog/powerline-fonts.git
+[submodule "dot.tmux/plugins/tpm"]
+	path = dot.tmux/plugins/tpm
+	url = git@github.com:tmux-plugins/tpm.git
