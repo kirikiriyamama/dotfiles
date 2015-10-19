@@ -57,6 +57,7 @@ install ruby-build
 install sl
 install tig
 install tmux
+install tmux-mem-cpu-load
 install tree
 install vim --override-system-vi --with-lua
 install watch
