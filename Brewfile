@@ -37,6 +37,7 @@ install go
 install heroku-toolbelt
 install hub
 install icu4c
+install ifstat
 install imagemagick
 install ipcalc
 install jq
