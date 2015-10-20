@@ -40,11 +40,6 @@ NeoBundleLazy 'Shougo/vimshell', {
 \     'commands' : ['VimShell'],
 \   },
 \ }
-NeoBundleLazy 'mbbill/undotree', {
-\   'autoload' : {
-\     'commands' : ['UndotreeToggle'],
-\   },
-\ }
 NeoBundleLazy 'rking/ag.vim', {
 \   'autoload' : {
 \     'commands' : ['Ag'],
