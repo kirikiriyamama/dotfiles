@@ -2,8 +2,8 @@ set backspace=indent,eol,start
 
 nmap ZZ <Nop>
 nmap ZQ <Nop>
-nmap Q <Nop>
-nmap K <Nop>
+nmap Q  <Nop>
+nmap K  <Nop>
 
 imap <C-n> <Down>
 imap <C-p> <Up>
