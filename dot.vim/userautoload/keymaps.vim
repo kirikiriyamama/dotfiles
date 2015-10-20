@@ -19,6 +19,3 @@ nmap ; :
 nmap <C-w>c :tabnew<CR>
 nmap <C-w>n gt
 nmap <C-w>p gT
-
-" ctrlp
-let g:ctrlp_map = '<Space>p'
