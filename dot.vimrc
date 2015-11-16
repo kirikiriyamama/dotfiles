@@ -74,6 +74,11 @@ NeoBundleLazy 'jnwhiteh/vim-golang', {
 \     'filetypes' : ['go'],
 \   },
 \ }
+NeoBundleLazy 'othree/yajs.vim', {
+\   'autoload' : {
+\     'filetypes' : ['javascript'],
+\   },
+\ }
 NeoBundleLazy 'elzr/vim-json', {
 \   'autoload' : {
 \     'filetypes' : ['json'],
