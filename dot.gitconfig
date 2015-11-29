@@ -40,8 +40,6 @@
   dsw = diff --staged --color-words
   # log
   l  = log --graph --date-order --date=short --all --pretty=format:\"%C(yellow)%h%Creset %C(blue)%ad%Creset [%an] %s%C(cyan)%d%Creset\"
-  # reset
-  rs = reset
   # submodule
   sm  = submodule
   smu = submodule foreach 'git pull origin master'
@@ -49,13 +47,14 @@
   sl  = stash list
   ss  = stash show
   ssv = stash show -v
+  # miku
+  miku = !git stash 1> /dev/null && echo 'もうしょうがないにゃぁ、この変更はみくが覚えておくにゃ！'
   # misc
-  st   = status -sb
   s    = show --decorate=short
+  st   = status -sb
   g    = grep --line-number --heading --break
   gsub = !git-gsub
   pick = cherry-pick
-  # miku
-  miku = !git stash 1> /dev/null && echo 'もうしょうがないにゃぁ、この変更はみくが覚えておくにゃ！'
+  rs   = reset
 [hub]
   protocol = ssh
