@@ -45,6 +45,10 @@
   # submodule
   sm  = submodule
   smu = submodule foreach 'git pull origin master'
+  # stash
+  sl  = stash list
+  ss  = stash show
+  ssv = stash show -v
   # misc
   st   = status -sb
   s    = show --decorate=short
