@@ -4,15 +4,9 @@
 [submodule "dot.zsh.d/antigen"]
 	path = dot.zsh.d/antigen
 	url = git@github.com:zsh-users/antigen.git
-[submodule "dot.powerline"]
-	path = dot.powerline
-	url = git@github.com:Lokaltog/powerline.git
 [submodule "solarized"]
 	path = solarized
 	url = git@github.com:altercation/solarized.git
-[submodule "powerline-fonts"]
-	path = powerline-fonts
-	url = git@github.com:Lokaltog/powerline-fonts.git
 [submodule "dot.tmux/plugins/tpm"]
 	path = dot.tmux/plugins/tpm
 	url = git@github.com:tmux-plugins/tpm.git

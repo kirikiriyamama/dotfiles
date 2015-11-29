@@ -30,9 +30,6 @@ for file ($ZSH_CUSTOM/functions/*.zsh(N)); do
 done
 unset file
 
-# theme
-. ~/.powerline/powerline/bindings/zsh/powerline.zsh
-
 # local configuration
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
