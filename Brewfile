@@ -32,6 +32,7 @@ install coreutils
 install ghc
 install git
 install elixir
+install fish
 install gnu-sed
 install go
 install heroku-toolbelt

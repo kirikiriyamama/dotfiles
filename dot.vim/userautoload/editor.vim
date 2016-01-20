@@ -1,5 +1,7 @@
 set encoding=utf-8
 
+set shell=sh
+
 set expandtab
 set tabstop=4
 set shiftwidth=2
