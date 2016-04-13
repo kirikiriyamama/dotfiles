@@ -9,6 +9,7 @@ install brew-cask
 cask install butter
 cask install cumulus
 cask install dockertoolbox
+cask install firefox
 cask install google-chrome
 cask install google-japanese-ime
 cask install iterm2
