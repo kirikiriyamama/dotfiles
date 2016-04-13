@@ -1,9 +1,7 @@
 filetype off
 
-if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim
-  call neobundle#rc(expand('~/.vim/bundle/'))
-endif
+set runtimepath^=~/.vim/bundle/neobundle.vim/
+call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundle 'Shougo/neobundle.vim'
 NeoBundle 'Shougo/neocomplete.vim'
@@ -110,8 +108,12 @@ NeoBundleLazy 'tpope/vim-endwise', {
 \   },
 \ }
 
+call neobundle#end()
+
 syntax on
 filetype indent plugin on
+
+NeoBundleCheck
 
 set runtimepath+=~/.vim/
 runtime! userautoload/*.vim
