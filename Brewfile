@@ -47,6 +47,7 @@ install jq
 install mongodb
 install mysql
 install nkf
+install nmap
 install node
 install npm
 install oniguruma
