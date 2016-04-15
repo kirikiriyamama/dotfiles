@@ -1,9 +1,8 @@
 # Make sure using latest Homebew
 update
 
-# Install homebrew-cask
-tap caskroom/homebrew-cask || true
-install brew-cask
+# Taps
+tap caskroom/cask
 
 # Applications
 cask install butter
