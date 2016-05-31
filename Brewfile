@@ -36,6 +36,7 @@ install git
 install elixir
 install fish
 install gnu-sed
+install gnupg2
 install go
 install heroku-toolbelt
 install hub
