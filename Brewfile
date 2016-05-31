@@ -51,7 +51,6 @@ install mysql
 install nkf
 install nmap
 install node
-install npm
 install oniguruma
 install phantomjs
 install potrace
