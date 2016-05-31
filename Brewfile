@@ -19,6 +19,7 @@ cask install near-lock
 cask install postgresql
 cask install rescuetime
 cask install serf
+cask install soundnode
 cask install trailer
 cask install vagrant
 cask install virtualbox
