@@ -7,7 +7,6 @@ tap caskroom/cask
 # Applications
 cask install 1password
 cask install butter
-cask install cumulus
 cask install dockertoolbox
 cask install firefox
 cask install gitter
