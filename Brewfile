@@ -45,6 +45,7 @@ install ifstat
 install imagemagick
 install ipcalc
 install jq
+install libmagic
 install mongodb
 install mysql
 install nkf
