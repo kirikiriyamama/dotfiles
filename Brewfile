@@ -7,7 +7,6 @@ tap caskroom/cask
 # Applications
 cask install 1password
 cask install butter
-cask install dockertoolbox
 cask install firefox
 cask install gitter
 cask install google-chrome
@@ -15,6 +14,7 @@ cask install google-japanese-ime
 cask install iterm2
 cask install karabiner
 cask install kindle
+cask install kitematic
 cask install near-lock
 cask install postgresql
 cask install rescuetime
