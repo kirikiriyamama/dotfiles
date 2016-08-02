@@ -49,6 +49,7 @@ install imagemagick
 install ipcalc
 install iproute2mac
 install jq
+install kubernetes-cli
 install libmagic
 install mongodb
 install mtr
