@@ -58,6 +58,7 @@ install nkf
 install nmap
 install node
 install oniguruma
+install pcre2
 install phantomjs
 install potrace
 install pstree
