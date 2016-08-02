@@ -106,6 +106,11 @@ NeoBundleLazy 'tpope/vim-endwise', {
 \     'filetypes' : ['ruby'],
 \   },
 \ }
+NeoBundleLazy 'hashivim/vim-terraform', {
+\   'autoload' : {
+\     'filetypes' : ['terraform'],
+\   },
+\ }
 
 call neobundle#end()
 

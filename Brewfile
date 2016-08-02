@@ -66,6 +66,7 @@ install reattach-to-user-namespace
 install redis
 install ruby-build
 install sl
+install terraform
 install tig
 install tcptraceroute
 install tmux
