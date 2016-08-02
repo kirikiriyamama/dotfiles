@@ -3,7 +3,6 @@
     "C-v": "peco.ToggleSelection"
   },
   "Style": {
-    "Selected": ["black", "on_cyan"],
-    "Query": ["white", "on_default"]
+    "Matched": ["white", "on_default"]
   }
 }
