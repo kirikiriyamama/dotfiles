@@ -47,9 +47,11 @@ install icu4c
 install ifstat
 install imagemagick
 install ipcalc
+install iproute2mac
 install jq
 install libmagic
 install mongodb
+install mtr
 install mysql
 install nkf
 install nmap
@@ -64,6 +66,7 @@ install redis
 install ruby-build
 install sl
 install tig
+install tcptraceroute
 install tmux
 install tmux-mem-cpu-load
 install tree
