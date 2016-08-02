@@ -26,7 +26,10 @@ cask install virtualbox
 
 # Packages
 install ag
+install amazon-ecs-cli
 install apg
+install aws-shell
+install awscli
 install cabal-install
 install cmake
 install colordiff
