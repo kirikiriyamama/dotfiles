@@ -1,4 +1,5 @@
 {
+  "InitialFilter": "SmartCase",
   "Keymap": {
     "C-v": "peco.ToggleSelection"
   },
