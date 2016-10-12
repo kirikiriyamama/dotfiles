@@ -74,7 +74,7 @@ install tcptraceroute
 install tmux
 install tmux-mem-cpu-load
 install tree
-install vim --override-system-vi --with-lua
+install vim --with-override-system-vi --with-lua
 install watch
 install wget
 install zsh
