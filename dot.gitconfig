@@ -50,7 +50,7 @@
   # misc
   s    = show --decorate=short
   st   = status -sb
-  g    = grep --line-number --heading --break
+  g    = grep --ignore-case --line-number --heading --break
   gsub = !git-gsub
   pick = cherry-pick
   rs   = reset
