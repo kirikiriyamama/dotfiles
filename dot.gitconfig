@@ -45,10 +45,6 @@
   # submodule
   sm  = submodule
   smu = submodule foreach 'git pull origin master'
-  # stash
-  sl  = stash list
-  ss  = stash show
-  ssv = stash show -v
   # miku
   miku = !git stash 1> /dev/null && echo 'もうしょうがないにゃぁ、この変更はみくが覚えておくにゃ！'
   # misc
