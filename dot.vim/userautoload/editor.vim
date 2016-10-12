@@ -18,5 +18,3 @@ set wildmode=list,full
 
 set lazyredraw
 set updatetime=1000
-
-set clipboard=unnamed,autoselect
