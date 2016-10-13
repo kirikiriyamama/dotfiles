@@ -13,3 +13,5 @@ noremap! <C-c> <Nop>
 nnoremap <C-w>c :tabnew<CR>
 nnoremap <C-w>n gt
 nnoremap <C-w>p gT
+
+nnoremap <C-]> g<C-]>

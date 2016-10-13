@@ -34,6 +34,7 @@ install cabal-install
 install cmake
 install colordiff
 install coreutils
+install ctags
 install ghc
 install git
 install elixir
