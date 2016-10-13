@@ -21,3 +21,5 @@ set sidescrolloff=5
 
 set lazyredraw
 set updatetime=1000
+
+set autoread
