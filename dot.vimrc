@@ -1,123 +1,45 @@
-filetype off
+set runtimepath+=~/.vim/
+runtime! vim-plug/plug.vim
 
-set runtimepath^=~/.vim/bundle/neobundle.vim/
-call neobundle#begin(expand('~/.vim/bundle/'))
+call plug#begin('~/.vim/plugged')
 
-NeoBundle 'Shougo/neobundle.vim'
-NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'altercation/vim-colors-solarized'
-NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'Xuyuanp/nerdtree-git-plugin'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'airblade/vim-gitgutter'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'junegunn/vim-easy-align'
-NeoBundle 'wakatime/vim-wakatime'
-NeoBundle 'osyo-manga/shabadou.vim'
-NeoBundle 'osyo-manga/vim-watchdogs'
-NeoBundle 'KazuakiM/vim-qfstatusline'
-NeoBundle 'jceb/vim-hier'
-NeoBundle 'dannyob/quickfixstatus'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'Shougo/vimproc', {
-\   'build' : {
-\     'windows' : 'make -f make_mingw32.mak',
-\     'cygwin' : 'make -f make_cygwin.mak',
-\     'mac' : 'make -f make_mac.mak',
-\     'unix' : 'make -f make_unix.mak',
-\   },
-\ }
+Plug 'altercation/vim-colors-solarized'
+Plug 'itchyny/lightline.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-surround'
+Plug 'junegunn/vim-easy-align'
+Plug 'wakatime/vim-wakatime'
+Plug 'osyo-manga/shabadou.vim'
+Plug 'osyo-manga/vim-watchdogs'
+Plug 'KazuakiM/vim-qfstatusline'
+Plug 'jceb/vim-hier'
+Plug 'dannyob/quickfixstatus'
+Plug 'Shougo/vimproc', { 'dir': '~/.vim/plugged/vimproc.vim', 'do': 'make' }
+Plug 'thinca/vim-quickrun'
+Plug 'Shougo/neocomplete'
+Plug 'tpope/vim-rails'
 
-NeoBundleLazy 'Shougo/vimshell', {
-\   'autoload' : {
-\     'commands' : ['VimShell'],
-\   },
-\ }
-NeoBundleLazy 'rking/ag.vim', {
-\   'autoload' : {
-\     'commands' : ['Ag'],
-\   },
-\ }
-NeoBundleLazy 'thinca/vim-quickrun', {
-\   'autoload' : {
-\     'commands' : ['QuickRun'],
-\   },
-\ }
+Plug 'tpope/vim-markdown', { 'for': 'markdown' }
+Plug 'slim-template/vim-slim', { 'for': 'slim' }
+Plug 'puppetlabs/puppet-syntax-vim', { 'for': 'puppet' }
+Plug 'vim-scripts/nginx.vim', { 'for': 'nginx' }
+Plug 'jnwhiteh/vim-golang', { 'for': 'go' }
+Plug 'othree/yajs.vim', { 'for': 'javascript' }
+Plug 'elzr/vim-json', { 'for': 'json' }
+Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+Plug 'tpope/vim-haml', { 'for': 'haml' }
+Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
+Plug 'vim-scripts/ruby-matchit', { 'for': 'ruby' }
+Plug 'tpope/vim-endwise', { 'for': 'ruby' }
+Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
 
-NeoBundleLazy 'tpope/vim-markdown', {
-\   'autoload' : {
-\     'filetypes' : ['markdown'],
-\   },
-\ }
-NeoBundleLazy 'slim-template/vim-slim', {
-\   'autoload' : {
-\     'filetypes' : ['slim'],
-\   },
-\ }
-NeoBundleLazy 'puppetlabs/puppet-syntax-vim', {
-\   'autoload' : {
-\     'filetypes' : ['puppet'],
-\   },
-\ }
-NeoBundleLazy 'vim-scripts/nginx.vim', {
-\   'autoload' : {
-\     'filetypes' : ['nginx'],
-\   },
-\ }
-NeoBundleLazy 'jnwhiteh/vim-golang', {
-\   'autoload' : {
-\     'filetypes' : ['go'],
-\   },
-\ }
-NeoBundleLazy 'othree/yajs.vim', {
-\   'autoload' : {
-\     'filetypes' : ['javascript'],
-\   },
-\ }
-NeoBundleLazy 'elzr/vim-json', {
-\   'autoload' : {
-\     'filetypes' : ['json'],
-\   },
-\ }
-NeoBundleLazy 'kchmck/vim-coffee-script', {
-\   'autoload' : {
-\     'filetypes' : ['coffee'],
-\   },
-\ }
-NeoBundleLazy 'tpope/vim-haml', {
-\   'autoload' : {
-\     'filetypes' : ['haml'],
-\   },
-\ }
-NeoBundleLazy 'elixir-lang/vim-elixir', {
-\   'autoload' : {
-\     'filetypes' : ['elixir'],
-\   },
-\ }
-NeoBundleLazy 'vim-scripts/ruby-matchit', {
-\   'autoload' : {
-\     'filetypes' : ['ruby'],
-\   },
-\ }
-NeoBundleLazy 'tpope/vim-endwise', {
-\   'autoload' : {
-\     'filetypes' : ['ruby'],
-\   },
-\ }
-NeoBundleLazy 'hashivim/vim-terraform', {
-\   'autoload' : {
-\     'filetypes' : ['terraform'],
-\   },
-\ }
-
-call neobundle#end()
+call plug#end()
 
 syntax on
 filetype indent plugin on
 
-NeoBundleCheck
-
-set runtimepath+=~/.vim/
 runtime! userautoload/*.vim

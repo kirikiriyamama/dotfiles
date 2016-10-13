@@ -5,7 +5,7 @@
 $ git clone https://github.com/kirikiriyamama/dotfiles.git
 $ cd dotfiles && ./install.sh
 
-$ vim +NeoBundleInstall +q
+$ vim +PlugInstall +qa
 ```
 
 ## Requirements

@@ -1,6 +1,3 @@
-[submodule "dot.vim/bundle/neobundle.vim"]
-	path = dot.vim/bundle/neobundle.vim
-	url = git@github.com:Shougo/neobundle.vim.git
 [submodule "dot.zsh.d/antigen"]
 	path = dot.zsh.d/antigen
 	url = git@github.com:zsh-users/antigen.git
@@ -10,3 +7,6 @@
 [submodule "dot.tmux/plugins/tpm"]
 	path = dot.tmux/plugins/tpm
 	url = git@github.com:tmux-plugins/tpm.git
+[submodule "dot.vim/vim-plug"]
+	path = dot.vim/vim-plug
+	url = git@github.com:junegunn/vim-plug.git
