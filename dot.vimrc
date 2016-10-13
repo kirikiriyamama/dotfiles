@@ -37,6 +37,7 @@ Plug 'vim-scripts/ruby-matchit', { 'for': 'ruby' }
 Plug 'tpope/vim-endwise', { 'for': 'ruby' }
 Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
 Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
+Plug 'othree/html5.vim', { 'for': 'html' }
 
 call plug#end()
 
