@@ -38,6 +38,7 @@ Plug 'tpope/vim-endwise', { 'for': 'ruby' }
 Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
 Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
 Plug 'othree/html5.vim', { 'for': 'html' }
+Plug 'mrk21/yaml-vim', { 'for': 'yaml' }
 
 call plug#end()
 
