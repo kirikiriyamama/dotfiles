@@ -14,8 +14,6 @@ cask install google-japanese-ime
 cask install iterm2
 cask install karabiner
 cask install kindle
-cask install kitematic
-cask install near-lock
 cask install postgresql
 cask install rescuetime
 cask install serf
