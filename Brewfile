@@ -21,6 +21,7 @@ cask install soundnode
 cask install trailer
 cask install vagrant
 cask install virtualbox
+cask install wireshark
 
 # Packages
 install ag
