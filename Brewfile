@@ -1,4 +1,4 @@
-# Make sure using latest Homebew
+# Make sure using latest Homebrew
 update
 
 # Taps
