@@ -3,6 +3,7 @@ update
 
 # Taps
 tap caskroom/cask
+tap homebrew/versions
 
 # Applications
 cask install 1password
@@ -14,7 +15,6 @@ cask install google-japanese-ime
 cask install iterm2
 cask install karabiner
 cask install kindle
-cask install postgresql
 cask install rescuetime
 cask install serf
 cask install soundnode
@@ -61,6 +61,7 @@ install oniguruma
 install pcre2
 install peco
 install phantomjs
+install homebrew/versions/postgresql94
 install potrace
 install pstree
 install rbenv
