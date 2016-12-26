@@ -16,7 +16,6 @@ cask install iterm2
 cask install karabiner
 cask install kindle
 cask install rescuetime
-cask install serf
 cask install soundnode
 cask install trailer
 cask install vagrant
@@ -68,6 +67,7 @@ install rbenv
 install reattach-to-user-namespace
 install redis
 install ruby-build
+install serf
 install sl
 install terraform
 install tig
