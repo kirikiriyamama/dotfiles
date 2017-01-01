@@ -15,3 +15,11 @@ nnoremap <C-w>n gt
 nnoremap <C-w>p gT
 
 nnoremap <C-]> g<C-]>
+
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+cnoremap <C-b> <Left>
+cnoremap <C-f> <Right>
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+cnoremap <C-d> <Del>
