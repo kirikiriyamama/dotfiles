@@ -33,6 +33,7 @@ install cmake
 install colordiff
 install coreutils
 install ctags
+install fswatch
 install ghc
 install git
 install elixir
@@ -76,6 +77,7 @@ install tcptraceroute
 install tmux
 install tmux-mem-cpu-load
 install tree
+install unison
 install vim --with-override-system-vi --with-lua
 install watch
 install wget
