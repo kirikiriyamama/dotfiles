@@ -41,6 +41,7 @@ install fish
 install gnu-sed
 install gnupg2
 install go
+install graphviz
 install heroku-toolbelt
 install hub
 install icu4c
