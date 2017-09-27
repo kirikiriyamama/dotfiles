@@ -53,5 +53,6 @@
   gsub = !git-gsub
   pick = cherry-pick
   rs   = reset
+  clean-branchs = !git branch | grep -v -e $(git rev-parse --abbrev-ref HEAD) -e master | xargs git branch -d 2>/dev/null
 [hub]
   protocol = ssh
