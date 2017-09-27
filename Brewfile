@@ -8,12 +8,16 @@ tap homebrew/versions
 # Applications
 cask install 1password
 cask install butter
+cask install docker
 cask install firefox
+cask install gitify
 cask install gitter
 cask install google-chrome
+cask install google-cloud-sdk
 cask install google-japanese-ime
 cask install iterm2
 cask install karabiner
+cask install keybase
 cask install kindle
 cask install rescuetime
 cask install soundnode
@@ -36,8 +40,10 @@ install ctags
 install fswatch
 install ghc
 install git
+install gnuplot
 install elixir
 install fish
+install gawk
 install gnu-sed
 install gnupg2
 install go
@@ -78,6 +84,7 @@ install tcptraceroute
 install tmux
 install tmux-mem-cpu-load
 install tree
+install unasuke/maekawa/maekawa
 install unison
 install vim --with-override-system-vi --with-lua
 install watch
