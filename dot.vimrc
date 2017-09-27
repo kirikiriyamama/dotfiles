@@ -49,3 +49,5 @@ syntax on
 filetype indent plugin on
 
 runtime! userautoload/*.vim
+
+set hidden
