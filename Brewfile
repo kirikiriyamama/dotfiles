@@ -68,7 +68,7 @@ install oniguruma
 install pcre2
 install peco
 install phantomjs
-install homebrew/versions/postgresql94
+install postgresql@94
 install potrace
 install pstree
 install rbenv
