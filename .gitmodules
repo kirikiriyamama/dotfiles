@@ -1,6 +1,3 @@
-[submodule "dot.zsh.d/antigen"]
-	path = dot.zsh.d/antigen
-	url = git@github.com:zsh-users/antigen.git
 [submodule "solarized"]
 	path = solarized
 	url = git@github.com:altercation/solarized.git
@@ -10,3 +7,12 @@
 [submodule "dot.vim/vim-plug"]
 	path = dot.vim/vim-plug
 	url = git@github.com:junegunn/vim-plug.git
+[submodule "dot.zsh.d/plugin/oh-my-zsh"]
+	path = dot.zsh.d/plugin/oh-my-zsh
+	url = git@github.com:robbyrussell/oh-my-zsh.git
+[submodule "dot.zsh.d/plugin/tmux-xpanes"]
+	path = dot.zsh.d/plugin/tmux-xpanes
+	url = git@github.com:greymd/tmux-xpanes.git
+[submodule "dot.zsh.d/plugin/zsh-syntax-highlighting"]
+	path = dot.zsh.d/plugin/zsh-syntax-highlighting
+	url = git@github.com:zsh-users/zsh-syntax-highlighting.git

@@ -1,0 +1,4 @@
+#!/usr/local/bin/zsh
+
+local repo=$(ghq list | peco)
+[[ -n ${repo} ]] && cd "${HOME}/.ghq/${repo}"

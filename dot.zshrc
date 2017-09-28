@@ -1,38 +1,35 @@
-# initialize
-. ${HOME}/.zsh.d/antigen/antigen.zsh
+OH_MY_ZSH=${HOME}/.zsh.d/plugin/oh-my-zsh
 
-# environments
-ZSH_CUSTOM=${HOME}/.zsh.d
+. ${HOME}/.zsh.d/alias.zsh
+. ${HOME}/.zsh.d/appearance.zsh
+. ${HOME}/.zsh.d/completion.zsh
+. ${HOME}/.zsh.d/history.zsh
+. ${HOME}/.zsh.d/key-binding.zsh
+. ${HOME}/.zsh.d/misc.zsh
 
-case ${OSTYPE} in
-  linux*) PLATFORM="linux" ;;
-  darwin*) PLATFORM="osx" ;;
-  *) PLATFORM="unknown" ;;
-esac
 
-# completions
-fpath=(${ZSH_CUSTOM}/completions ${fpath})
+# function
+fpath=(${HOME}/.zsh.d/function ${fpath})
 
-# plugins
-antigen bundle colored-man
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-completions src
+autoload -Uz ec2-hosts
+autoload -Uz peco-src
+autoload -Uz peco-ec2ssh
+autoload -Uz peco-history
+autoload -Uz xpanes-ec2ssh
 
-# configurations
-for file (${ZSH_CUSTOM}/*.zsh(N)); do
-  . ${file}
-done
-unset file
+alias e='peco-src'
+alias s='ec2ssh update >/dev/null && peco-ec2ssh'
+zle -N peco-history
+bindkey '^r' peco-history
 
-# functions
-for file ($ZSH_CUSTOM/functions/*.zsh(N)); do
-  . ${file}
-done
-unset file
 
-# local configuration
-[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+# plugin
+. ${OH_MY_ZSH}/plugins/colored-man-pages/colored-man-pages.plugin.zsh
+. ${HOME}/.zsh.d/plugin/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+. ${HOME}/.zsh.d/zsh-syntax-highlighting.zsh
+. ${HOME}/.zsh.d/plugin/tmux-xpanes/tmux-xpanes.plugin.zsh
 
-# finalize
-antigen apply
+
+[[ -f ~/.zshrc.local ]] && . ~/.zshrc.local
+
 typeset -U path

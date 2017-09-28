@@ -1,0 +1,5 @@
+#!/usr/local/bin/zsh
+
+ec2-hosts \
+| peco \
+| xargs -o -n1 ssh

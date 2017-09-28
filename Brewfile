@@ -43,7 +43,6 @@ install ghc
 install git
 install gnuplot
 install elixir
-install fish
 install gawk
 install gnu-sed
 install gnupg2
