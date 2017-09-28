@@ -3,7 +3,6 @@ update
 
 # Taps
 tap caskroom/cask
-tap homebrew/versions
 
 # Applications
 cask install 1password
@@ -68,7 +67,6 @@ install oniguruma
 install pcre2
 install peco
 install phantomjs
-install postgresql@94
 install potrace
 install pstree
 install rbenv
