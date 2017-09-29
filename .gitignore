@@ -1,3 +1,4 @@
-/dot.vim/plugged/*
-/dot.tmux/plugins/*
-/dot.bundle/cache
+/home/.vim/plugged/*
+/home/.tmux/plugins/*
+!/home/.tmux/plugins/tpm
+/home/.bundle/cache
