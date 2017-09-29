@@ -37,6 +37,7 @@ install cmake
 install colordiff
 install coreutils
 install ctags
+install findutils
 install fswatch
 install ghc
 install git
