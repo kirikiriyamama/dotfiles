@@ -14,7 +14,7 @@ cask install google-chrome
 cask install google-cloud-sdk
 cask install google-japanese-ime
 cask install iterm2
-cask install karabiner
+cask install karabiner-elements
 cask install keybase
 cask install kindle
 cask install rescuetime
