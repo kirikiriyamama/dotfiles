@@ -1,2 +1,2 @@
-let g:gitgutter_sign_column_always = 1
+set signcolumn=yes
 let g:gitgutter_map_keys = 0
