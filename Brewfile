@@ -35,6 +35,7 @@ install ctags
 install findutils
 install fswatch
 install ghc
+install ghq
 install git
 install gnuplot
 install elixir
