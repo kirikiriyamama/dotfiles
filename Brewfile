@@ -6,7 +6,6 @@ tap caskroom/cask
 
 # Applications
 cask install 1password
-cask install butter
 cask install docker
 cask install firefox
 cask install gitify
@@ -19,8 +18,6 @@ cask install karabiner
 cask install keybase
 cask install kindle
 cask install rescuetime
-cask install soundnode
-cask install trailer
 cask install vagrant
 cask install virtualbox
 cask install wireshark
@@ -28,7 +25,6 @@ cask install wireshark
 # Packages
 install ag
 install amazon-ecs-cli
-install apg
 install aws-shell
 install awscli
 install cabal-install
