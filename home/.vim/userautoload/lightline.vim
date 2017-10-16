@@ -1,7 +1,7 @@
 let g:lightline = {
 \   'colorscheme': 'solarized',
 \   'active': {
-\     'left': [['mode', 'paste'], ['fugitive', 'filename', 'watchdogs']],
+\     'left': [['mode', 'paste'], ['fugitive', 'readonly', 'filename', 'modified', 'watchdogs']],
 \   },
 \   'component_function': {
 \     'modified':     'LightLineModified',
@@ -22,31 +22,23 @@ let g:lightline = {
 \ }
 
 function! LightLineModified()
-  return &ft =~ 'help\|nerdtree\|undotree\|diff\|qf' ? '' : @% == '[YankRing]' ? '' : &modified ? '+' : &modifiable ? '' : '-'
+  return &ft =~ 'help\|nerdtree\|qf' ? '' : &modified ? '+' : &modifiable ? '' : '-'
 endfunction
 
 function! LightLineReadonly()
-  return &ft !~? 'help\|nerdtree\|undotree\|diff' && &readonly ? '' : ''
+  return &ft != 'help' && &readonly ? 'RO' : ''
 endfunction
 
 function! LightLineFilename()
-  return &ft == 'nerdtree' ? 'NERDTree' :
-       \ &ft == 'undotree' ? 'undotree' :
-       \ &ft == 'diff' ? 'diffpanel' :
-       \ &ft == 'qf' ? 'Quickfix' :
-       \ &ft == 'vimshell' ? vimshell#get_status_string() :
-       \ @% == '[YankRing]' ? 'YankRing' :
-       \ ('' != LightLineReadonly() ? LightLineReadonly() . ' ' : '') .
-       \ ('' != @% ? @% : '[No Name]') .
-       \ ('' != LightLineModified() ? ' ' . LightLineModified() : '')
+  return &ft == 'nerdtree' ? 'NERDTree' : &ft == 'qf' ? 'Quickfix' : ('' != @% ? @% : '[No Name]')
 endfunction
 
 function! LightLineFugitive()
-  if &ft !~? 'help\|nerdtree\|undotree\|quickrun\|qf' && @% != '[YankRing]' && exists("*fugitive#head")
-    let _ = fugitive#head()
-    return strlen(_) ? '  '._ : ''
+  if &ft !~? 'help\|nerdtree\|qf' && exists("*fugitive#head")
+    return fugitive#head()
+  else
+    return ''
   endif
-  return ''
 endfunction
 
 function! LightLineFileformat()
@@ -62,10 +54,7 @@ function! LightLineFileencoding()
 endfunction
 
 function! LightLineMode()
-  return &ft == 'qf' ? '' :
-       \ @% == '[YankRing]' ? '' :
-       \ winwidth(0) > 60 ? lightline#mode() : ''
+  return &modifiable && winwidth(0) > 60 ? lightline#mode() : ''
 endfunction
 
-let g:vimshell_force_overwrite_statusline = 0
 autocmd CursorMoved ControlP let w:lightline = 0
