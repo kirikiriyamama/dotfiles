@@ -7,7 +7,6 @@ let g:quickrun_config = {
 \ }
 call watchdogs#setup(g:quickrun_config)
 
-let g:Qfstatusline#Text = 0
 let g:Qfstatusline#UpdateCmd = function('lightline#update')
 
 let g:watchdogs_check_BufWritePost_enable = 1

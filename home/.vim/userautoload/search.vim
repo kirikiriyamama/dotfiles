@@ -4,7 +4,7 @@ set smartcase
 set incsearch
 
 set hlsearch
-nnoremap <ESC><ESC> :nohlsearch<CR>:HierClear<CR><ESC>
+nnoremap <ESC><ESC> :nohlsearch<CR>
 
 nnoremap n nzz
 nnoremap N Nzz

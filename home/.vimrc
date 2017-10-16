@@ -17,8 +17,6 @@ Plug 'wakatime/vim-wakatime'
 Plug 'osyo-manga/shabadou.vim'
 Plug 'osyo-manga/vim-watchdogs'
 Plug 'KazuakiM/vim-qfstatusline'
-Plug 'jceb/vim-hier'
-Plug 'dannyob/quickfixstatus'
 Plug 'Shougo/vimproc', { 'dir': '~/.vim/plugged/vimproc.vim', 'do': 'make' }
 Plug 'thinca/vim-quickrun'
 Plug 'Shougo/neocomplete'
