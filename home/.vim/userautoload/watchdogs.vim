@@ -1,9 +1,9 @@
 let g:quickrun_config = {
 \   'watchdogs_checker/_' : {
 \     'outputter/quickfix/open_cmd': '',
-\     'hook/qfstatusline_update/enable_exit':   1,
-\     'hook/qfstatusline_update/priority_exit': 4,
-\   },
+\     'hook/qfstatusline_update/enable_exit': 1,
+\     'hook/qfstatusline_update/priority_exit': 4
+\   }
 \ }
 call watchdogs#setup(g:quickrun_config)
 
