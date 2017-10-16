@@ -1,8 +1,4 @@
 let g:quickrun_config = {
-\   '_': {
-\     'runner': 'vimproc',
-\     'runner/vimproc/updatetime': 100,
-\   },
 \   'watchdogs_checker/_' : {
 \     'outputter/quickfix/open_cmd': '',
 \     'hook/qfstatusline_update/enable_exit':   1,
