@@ -6,6 +6,7 @@ tap caskroom/cask
 
 # Applications
 cask install 1password
+cask install dash
 cask install docker
 cask install firefox
 cask install gitify
@@ -17,6 +18,7 @@ cask install iterm2
 cask install karabiner-elements
 cask install keybase
 cask install kindle
+cask install minikube
 cask install rescuetime
 cask install vagrant
 cask install virtualbox
@@ -37,6 +39,7 @@ install fswatch
 install ghc
 install ghq
 install git
+install glide
 install gnuplot
 install elixir
 install gawk
