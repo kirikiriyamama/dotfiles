@@ -34,6 +34,7 @@ install cmake
 install colordiff
 install coreutils
 install ctags
+install elixir
 install findutils
 install fswatch
 install ghc
@@ -41,7 +42,6 @@ install ghq
 install git
 install glide
 install gnuplot
-install elixir
 install gawk
 install gnu-sed
 install gnupg2
