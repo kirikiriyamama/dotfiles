@@ -49,6 +49,7 @@ install go
 install graphviz
 install heroku-toolbelt
 install hub
+install hyper
 install icu4c
 install ifstat
 install imagemagick
