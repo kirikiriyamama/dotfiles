@@ -1,6 +1,7 @@
 # dotfiles
 
 ## Installation
+
 ```
 $ git clone https://github.com/kirikiriyamama/dotfiles.git
 $ cd dotfiles && ./install.sh
