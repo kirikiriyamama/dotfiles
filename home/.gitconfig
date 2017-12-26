@@ -8,8 +8,8 @@
   ui = true
 [alias]
   # push
-  p  = push
-  pn = push -n
+  p  = push --tags
+  pn = push --tags -n
   # pull/fetch/merge
   pl = pull --prune
   f  = fetch --prune
