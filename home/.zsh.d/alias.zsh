@@ -18,6 +18,7 @@ alias dcr='docker-compose run'
 alias dcl='docker-compose logs'
 alias dclf='docker-compose logs -f'
 alias v='vim'
+alias k='kubectl'
 
 if type colordiff &>/dev/null; then
   alias diff='colordiff -u'
