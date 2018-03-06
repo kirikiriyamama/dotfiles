@@ -35,6 +35,7 @@ install cmake
 install colordiff
 install coreutils
 install ctags
+install dep
 install elixir
 install findutils
 install fswatch

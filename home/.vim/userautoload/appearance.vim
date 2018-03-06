@@ -16,9 +16,6 @@ let g:solarized_contrast="high"
 
 set laststatus=2
 
-set list
-set listchars=tab:>-
-
 set number
 set colorcolumn=100
 
