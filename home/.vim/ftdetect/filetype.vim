@@ -3,6 +3,7 @@ augroup filetypedetect
   autocmd BufNewFile,BufRead *.cap        setfiletype ruby
   autocmd BufNewFile,BufRead Guardfile    setfiletype ruby
   autocmd BufNewFile,BufRead *.thor       setfiletype ruby
+  autocmd BufNewFile,BufRead Schemafile   setfiletype ruby
 
   autocmd BufNewFile,BufRead *.es6        setfiletype javascript
   autocmd BufNewFile,BufRead *.template   setfiletype json
