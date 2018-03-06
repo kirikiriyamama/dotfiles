@@ -19,6 +19,7 @@ cask install karabiner-elements
 cask install keybase
 cask install kindle
 cask install minikube
+cask install ngrok
 cask install rescuetime
 cask install vagrant
 cask install virtualbox
