@@ -77,6 +77,7 @@ install reattach-to-user-namespace
 install redis
 install rpm2cpio
 install ruby-build
+install rustup-init
 install serf
 install sl
 install terraform

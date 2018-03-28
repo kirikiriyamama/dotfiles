@@ -22,3 +22,5 @@ export PATH="${HOME}/bin:${PATH}"
 
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export MANPATH="/usr/local/opt/findutils/libexec/gnuman:$MANPATH"
+
+source "${HOME}/.cargo/env"
