@@ -26,7 +26,6 @@ cask install virtualbox
 cask install wireshark
 
 # Packages
-install ag
 install amazon-ecs-cli
 install aws-shell
 install awscli
@@ -46,10 +45,10 @@ install glide
 install gnuplot
 install gawk
 install gnu-sed
-install gnupg2
+install gnupg
 install go
 install graphviz
-install heroku-toolbelt
+install heroku
 install hub
 install hyper
 install icu4c
@@ -83,6 +82,7 @@ install sl
 install terraform
 install tig
 install tcptraceroute
+install the_silver_searcher
 install tmux
 install tmux-mem-cpu-load
 install tree
