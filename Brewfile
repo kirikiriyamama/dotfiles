@@ -60,6 +60,7 @@ install iproute2mac
 install jq
 install kubernetes-cli
 install libmagic
+install unasuke/maekawa/maekawa
 install mongodb
 install mtr
 install mysql
@@ -85,7 +86,6 @@ install tcptraceroute
 install tmux
 install tmux-mem-cpu-load
 install tree
-install unasuke/maekawa/maekawa
 install unison
 install vim --with-override-system-vi --with-lua
 install watch
