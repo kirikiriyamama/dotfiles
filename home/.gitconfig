@@ -14,11 +14,9 @@
   pl = pull --prune
   f  = fetch --prune
   m  = merge
-  mn = merge --no-ff
   ma = merge --abort
   # rebase
   rb  = rebase
-  rbi = rebase -i
   rbc = rebase --continue
   rba = rebase --abort
   # add/commit/checkout
@@ -31,13 +29,10 @@
   undo = checkout --
   # branch
   br  = branch
-  bra = branch -a
   # diff
   d   = diff
-  dc  = diff --check
   dw  = diff --color-words
   ds  = diff --staged
-  dsc = diff --staged --check
   dsw = diff --staged --color-words
   # log
   l  = log --graph --date-order --date=short --all --pretty=format:\"%C(yellow)%h%Creset %C(blue)%ad%Creset [%an] %s%C(cyan)%d%Creset\"
