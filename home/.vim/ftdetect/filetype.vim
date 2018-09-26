@@ -6,6 +6,7 @@ augroup filetypedetect
   autocmd BufNewFile,BufRead Schemafile   setfiletype ruby
 
   autocmd BufNewFile,BufRead *.es6        setfiletype javascript
+  " CloudFormation
   autocmd BufNewFile,BufRead *.template   setfiletype json
   autocmd BufNewFile,BufRead *.coffee     setfiletype coffee
 
@@ -14,6 +15,7 @@ augroup filetypedetect
 
   autocmd BufNewFile,BufRead Dockerfile.* setfiletype dockerfile
 
+  " Digdag
   autocmd BufNewFile,BufRead *.dig        setfiletype yaml
 
   autocmd BufNewFile,BufRead *.c          setlocal shiftwidth=4 softtabstop=4
