@@ -1,0 +1,15 @@
+#!/bin/bash
+
+airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
+info=($(eval "${airport} --getinfo" | grep -E '^\s*(agrCtlRSSI|agrCtlNoise|state|SSID)' | awk '$0 = $2'))
+
+rssi=${info[0]}
+noise=${info[1]}
+state=${info[2]}
+ssid=${info[3]}
+
+case "${state}" in
+  "init" ) echo '...' ;;
+  "running" ) echo "${ssid} (${rssi} dB/${noise} dB)" ;;
+  * ) echo '✘' ;;
+esac

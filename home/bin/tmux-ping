@@ -1,0 +1,4 @@
+#!/bin/bash
+
+ping=$(ping -c 1 -t 1 www.google.com | grep time= | cut -d= -f4)
+echo ${ping:-✘}
