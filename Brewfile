@@ -6,6 +6,7 @@ tap caskroom/cask
 
 # Applications
 cask install 1password
+cask install android-platform-tools
 cask install dash
 cask install docker
 cask install firefox
