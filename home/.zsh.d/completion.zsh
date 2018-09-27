@@ -13,6 +13,4 @@ setopt no_nomatch
 setopt magic_equal_subst
 
 zstyle ':completion:*:default' menu select=2
-bindkey "\e[Z" reverse-menu-complete
-
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'l:|=* r:|=*'
