@@ -7,7 +7,7 @@ export GREP_COLOR='1;32'
 export EDITOR='vim'
 export PAGER='less'
 
-export WORDCHARS="${WORDCHARS//[\/=.]/}"
+export WORDCHARS="${WORDCHARS//[\/=.-]/}"
 
 setopt no_global_rcs
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:${PATH}"
