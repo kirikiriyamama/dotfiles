@@ -18,5 +18,6 @@ set scrolloff=1
 set sidescrolloff=5
 
 set lazyredraw
+set ttyfast
 
 set autoread
