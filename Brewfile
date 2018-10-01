@@ -22,8 +22,6 @@ cask install kindle
 cask install minikube
 cask install ngrok
 cask install rescuetime
-cask install vagrant
-cask install virtualbox
 cask install wireshark
 
 # Packages
