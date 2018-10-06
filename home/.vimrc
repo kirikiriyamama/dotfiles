@@ -40,6 +40,7 @@ Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
 Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
 Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'mrk21/yaml-vim', { 'for': 'yaml' }
+Plug 'google/vim-jsonnet', { 'for': ['jsonnet', 'libsonnet'] }
 
 call plug#end()
 
