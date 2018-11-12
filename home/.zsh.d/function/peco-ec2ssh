@@ -2,4 +2,5 @@
 
 ec2-hosts \
 | peco \
-| xargs -o -n1 ssh
+| head -n 1 \
+| xargs -o ssh
