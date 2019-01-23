@@ -84,7 +84,6 @@ install tig
 install tcptraceroute
 install the_silver_searcher
 install tmux
-install tmux-mem-cpu-load
 install tree
 install unison
 install vim --with-override-system-vi --with-lua
