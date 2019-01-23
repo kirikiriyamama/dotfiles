@@ -1,4 +1,9 @@
 #!/bin/bash
 
-ping=$(ping -c 1 -t 1 www.google.com | grep time= | cut -d= -f4)
+case "${OSTYPE}" in
+  darwin* ) timeout='-t 1' ;;
+  * ) timeout='-W 1' ;;
+esac
+
+ping=$(ping -c 1 ${timeout} www.google.com | grep time= | cut -d= -f4)
 echo ${ping:-✘}
