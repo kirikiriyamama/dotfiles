@@ -14,6 +14,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:${PATH
 export GOPATH="${HOME}/.go"
 
 export PATH="${GOPATH}/bin:${PATH}"
+export PATH="${HOME}/.local/bin:${PATH}"
 source "${HOME}/.cargo/env"
 export PATH="${HOME}/bin:${PATH}"
 export PATH="${HOME}/.tfenv/bin:${PATH}"
