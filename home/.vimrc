@@ -20,7 +20,7 @@ Plug 'Shougo/vimproc', { 'dir': '~/.vim/plugged/vimproc.vim', 'do': 'make' }
 Plug 'thinca/vim-quickrun'
 Plug 'Shougo/neocomplete'
 Plug 'tpope/vim-rails'
-Plug 'soramugi/auto-ctags.vim'
+Plug 'ludovicchabant/vim-gutentags'
 
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'slim-template/vim-slim', { 'for': 'slim' }
