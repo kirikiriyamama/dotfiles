@@ -7,6 +7,7 @@ alias sqlite='sqlite3'
 alias sudo='sudo -E'
 alias tmux='tmux -2 -u'
 alias rpm2cpio='rpm2cpio.pl'
+alias grep='grep --color=auto --ignore-case'
 
 alias g='git'
 alias be='bundle exec'
