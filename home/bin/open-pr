@@ -11,7 +11,11 @@ if [[ ! ${OSTYPE} =~ darwin ]]; then
   }
 fi
 
-pr=$(git log ${1}..origin/master --merges --ancestry-path --reverse --oneline | head -n1 | awk '$0 = substr($5, 2)')
+pr=$(
+  git log ${1}..origin/master --merges --ancestry-path --reverse --oneline \
+    | head -n1 \
+    | awk '$0 = substr($5, 2)'
+)
 if [[ -z ${pr} ]]; then
   exit 1
 fi
