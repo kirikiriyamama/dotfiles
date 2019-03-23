@@ -6,8 +6,8 @@
 $ git clone https://github.com/kirikiriyamama/dotfiles.git
 $ cd dotfiles && ./install.sh
 
-# echo '/usr/local/bin/zsh' | sudo tee -a /etc/shells
-$ chsh -s /usr/local/bin/zsh
+# echo $(type zsh) | sudo tee -a /etc/shells
+$ chsh -s $(tail -1 /etc/shells)
 ```
 
 ## Requirements
