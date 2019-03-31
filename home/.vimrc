@@ -21,6 +21,7 @@ Plug 'thinca/vim-quickrun'
 Plug 'Shougo/neocomplete'
 Plug 'tpope/vim-rails'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'leafgarland/typescript-vim'
 
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'slim-template/vim-slim', { 'for': 'slim' }
