@@ -5,5 +5,7 @@ case "${OSTYPE}" in
   * ) timeout='-W 1' ;;
 esac
 
-ping=$(ping -c 1 ${timeout} www.google.com | grep time= | cut -d= -f4)
-echo ${ping:-✘}
+gw=$(ping -c1 ${timeout} $(ip route list exact default | sort -n -k9 | head -1 | cut -d\  -f3) | grep time= | cut -d= -f4)
+inet=$(ping -c1 ${timeout} icmp.canireachthe.net | grep time= | cut -d= -f4)
+
+echo "GW: ${gw:-✘} INET: ${inet:-✘}"
