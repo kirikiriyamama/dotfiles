@@ -45,7 +45,6 @@
   s    = show --decorate=short
   st   = status -sb
   g    = grep --ignore-case --line-number --heading --break
-  gsub = !git-gsub
   pick = cherry-pick
   rs   = reset
   delete-merged-branches = !git branch --merged | grep -v -e '*' -e 'master' | xargs git branch -d 2>/dev/null
