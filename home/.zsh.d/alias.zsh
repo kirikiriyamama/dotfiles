@@ -19,6 +19,8 @@ alias dclf='docker-compose logs -f'
 alias v='vim'
 alias k='kubectl'
 
+alias grt='cd $(git rev-parse --show-toplevel)'
+
 if type colordiff &>/dev/null; then
   alias diff='colordiff -u'
 else
