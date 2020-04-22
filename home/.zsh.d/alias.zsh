@@ -15,6 +15,9 @@ alias dc='docker-compose'
 alias dce='docker-compose exec'
 alias dcr='docker-compose run'
 alias dcl='docker-compose logs'
+dca() {
+  docker attach "${PWD##*/}_${1}_1"
+}
 alias v='vim'
 alias k='kubectl'
 
