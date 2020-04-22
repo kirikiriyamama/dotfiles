@@ -15,7 +15,6 @@ alias dc='docker-compose'
 alias dce='docker-compose exec'
 alias dcr='docker-compose run'
 alias dcl='docker-compose logs'
-alias dclf='docker-compose logs -f'
 alias v='vim'
 alias k='kubectl'
 
