@@ -12,9 +12,9 @@ alias be='bundle exec'
 alias tailf='tail -f'
 alias d='docker'
 alias dc='docker-compose'
-alias dce='docker-compose exec'
-alias dcr='docker-compose run'
-alias dcl='docker-compose logs'
+alias dce='dc exec'
+alias dcr='dc run'
+alias dcl='dc logs'
 dca() {
   docker attach "${PWD##*/}_${1}_1"
 }
