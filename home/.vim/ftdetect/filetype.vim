@@ -4,6 +4,7 @@ augroup filetypedetect
   autocmd BufNewFile,BufRead Guardfile    setfiletype ruby
   autocmd BufNewFile,BufRead *.thor       setfiletype ruby
   autocmd BufNewFile,BufRead Schemafile   setfiletype ruby
+  autocmd BufNewFile,BufRead *.rabl       setfiletype ruby
 
   autocmd BufNewFile,BufRead *.es6        setfiletype javascript
   " CloudFormation
