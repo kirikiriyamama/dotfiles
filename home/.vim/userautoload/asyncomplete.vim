@@ -1,3 +1,8 @@
+function! s:avoid_conflict_with_endwise()
+  return pumvisible() ? "\<C-y>\<CR>" : "\<CR>"
+endfunction
+inoremap <silent> <CR> <C-r>=<SID>avoid_conflict_with_endwise()<CR>
+
 au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options({
   \ 'name': 'buffer',
   \ 'whitelist': ['*'],
