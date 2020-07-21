@@ -1,0 +1,80 @@
+# vi: set ft=python :
+
+import re
+from xkeysnail.transform import *
+
+define_modmap({ Key.CAPSLOCK: Key.LEFT_CTRL,
+    Key.LEFT_ALT: Key.LEFT_META,
+    Key.LEFT_META: Key.LEFT_ALT,
+    Key.F1: Key.MUTE,
+    Key.F2: Key.VOLUMEDOWN,
+    Key.F3: Key.VOLUMEUP
+})
+
+define_multipurpose_modmap({
+    Key.LEFT_META: [Key.MUHENKAN, Key.LEFT_META],
+    Key.RIGHT_ALT: [Key.HENKAN, Key.RIGHT_ALT]
+})
+
+define_keymap(None, {
+    K('LSuper-Shift-Key_5'): K('Shift-Print')
+}, 'screenshot')
+
+define_keymap(lambda wm_class: wm_class not in ('Alacritty'), {
+    K('Ctrl-b'): K('Left'),
+    K('Ctrl-f'): K('Right'),
+    K('Ctrl-p'): K('Up'),
+    K('Ctrl-n'): K('Down'),
+
+    K('Ctrl-a'): K('Home'),
+    K('Ctrl-e'): K('End'),
+
+    K('Ctrl-h'): K('Backspace'),
+    K('Ctrl-d'): K('Delete'),
+
+    K('Ctrl-k'): [K('Shift-End'), K('Backspace')]
+}, 'readline')
+
+define_keymap(lambda wm_class: wm_class not in ('Alacritty'), {
+    K('LSuper-Key_0'): K('Ctrl-Key_0'),
+    K('LSuper-Key_1'): K('Ctrl-Key_1'),
+    K('LSuper-Key_2'): K('Ctrl-Key_2'),
+    K('LSuper-Key_3'): K('Ctrl-Key_3'),
+    K('LSuper-Key_4'): K('Ctrl-Key_4'),
+    K('LSuper-Key_5'): K('Ctrl-Key_5'),
+    K('LSuper-Key_6'): K('Ctrl-Key_6'),
+    K('LSuper-Key_7'): K('Ctrl-Key_7'),
+    K('LSuper-Key_8'): K('Ctrl-Key_8'),
+    K('LSuper-Key_9'): K('Ctrl-Key_9'),
+
+    K('LSuper-minus'): K('Ctrl-minus'),
+    K('LSuper-equal'): K('Ctrl-equal'),
+
+    K('LSuper-a'): K('Ctrl-a'),
+    K('LSuper-c'): K('Ctrl-c'),
+    K('LSuper-f'): K('Ctrl-f'),
+    K('LSuper-k'): K('Ctrl-k'),
+    K('LSuper-l'): K('Ctrl-l'),
+    K('LSuper-n'): K('Ctrl-n'),
+    K('LSuper-r'): K('Ctrl-r'),
+    K('LSuper-s'): K('Ctrl-s'),
+    K('LSuper-t'): K('Ctrl-t'),
+    K('LSuper-v'): K('Ctrl-v'),
+    K('LSuper-w'): K('Ctrl-w'),
+    K('LSuper-x'): K('Ctrl-x'),
+    K('LSuper-z'): K('Ctrl-z'),
+
+    K('LSuper-Shift-Up'): K('Alt-Shift-Up'),
+    K('LSuper-Shift-Down'): K('Alt-Shift-Down'),
+
+    K('LSuper-Shift-b'): K('Ctrl-Shift-b'),
+    K('LSuper-Shift-n'): K('Ctrl-Shift-n'),
+    K('LSuper-Shift-r'): K('Ctrl-Shift-r'),
+    K('LSuper-Shift-t'): K('Ctrl-Shift-t'),
+    K('LSuper-Shift-v'): K('Ctrl-Shift-v'),
+    K('LSuper-Shift-w'): K('Ctrl-Shift-w'),
+    K('LSuper-Shift-z'): K('Ctrl-Shift-z'),
+
+    K('LSuper-LAlt-right'): K('Ctrl-Tab'),
+    K('LSuper-LAlt-left'): K('Ctrl-Shift-Tab')
+}, 'alt2ctrl')
