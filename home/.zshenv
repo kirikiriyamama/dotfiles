@@ -3,7 +3,7 @@ export LC_CTYPE="${LANG}"
 
 export GREP_COLOR='1;32'
 
-export EDITOR='vim'
+export EDITOR='nvim'
 export PAGER='less'
 
 export WORDCHARS="${WORDCHARS//[\/=.-]/}"

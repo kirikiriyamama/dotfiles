@@ -1,4 +1,4 @@
-set runtimepath+=~/.vim/
+set runtimepath+=~/.config/nvim/
 runtime! vim-plug/plug.vim
 
 call plug#begin('~/.vim/plugged')

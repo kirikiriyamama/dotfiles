@@ -18,7 +18,7 @@ alias dcl='dc logs'
 dca() {
   docker attach "${PWD##*/}_${1}_1"
 }
-alias v='vim'
+alias v='nvim'
 alias k='kubectl'
 
 alias grt='cd $(git rev-parse --show-toplevel)'
