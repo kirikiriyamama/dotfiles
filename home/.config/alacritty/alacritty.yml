@@ -543,15 +543,15 @@ key_bindings:
   #- { key: Key5,   mods: Shift,         mode: Vi, action: Bracket                 }
 
   # (Windows, Linux, and BSD only)
-  - { key: V,        mods: Super,           action: Paste            }
-  - { key: C,        mods: Super,           action: Copy             }
-  #- { key: C,        mods: Control|Shift, mode: Vi, action: ClearSelection   }
-  #- { key: Insert,   mods: Shift,                   action: PasteSelection   }
-  - { key: Key0,     mods: Super,                 action: ResetFontSize    }
-  - { key: Equals,   mods: Super,                 action: IncreaseFontSize }
-  - { key: Add,      mods: Super,                 action: IncreaseFontSize }
-  - { key: Subtract, mods: Super,                 action: DecreaseFontSize }
-  - { key: Minus,    mods: Super,                 action: DecreaseFontSize }
+  - { key: V,              mods: Super,           action: Paste            }
+  - { key: C,              mods: Super,           action: Copy             }
+  #- { key: C,              mods: Control|Shift, mode: Vi, action: ClearSelection   }
+  #- { key: Insert,         mods: Shift,                   action: PasteSelection   }
+  - { key: Key0,           mods: Super,                 action: ResetFontSize    }
+  - { key: Equals,         mods: Super,                 action: IncreaseFontSize }
+  - { key: NumpadAdd,      mods: Super,                 action: IncreaseFontSize }
+  - { key: NumpadSubtract, mods: Super,                 action: DecreaseFontSize }
+  - { key: Minus,          mods: Super,                 action: DecreaseFontSize }
 
   # (Windows only)
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
