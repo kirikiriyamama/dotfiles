@@ -7,7 +7,7 @@ let g:NERDTreeQuitOnOpen=1
 let g:NERDTreeShowHidden=1
 
 " nerdtree-git-plugin
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
 \    'Modified'  : 'M',
 \    'Staged'    : '✚',
 \    'Untracked' : '?',
