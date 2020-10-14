@@ -1,2 +1,2 @@
 local repo=$(ghq list | peco)
-[[ -n ${repo} ]] && cd "${HOME}/.ghq/${repo}"
+[[ -n ${repo} ]] && cd "${HOME}/ghq/${repo}"
