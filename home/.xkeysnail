@@ -32,7 +32,7 @@ define_keymap(lambda wm_class: wm_class not in ('Alacritty'), {
     K('Ctrl-h'): K('Backspace'),
     K('Ctrl-d'): K('Delete'),
 
-    K('Ctrl-k'): [K('Shift-End'), K('Ctrl-x')]
+    K('Ctrl-k'): [K('Shift-End'), K('Ctrl-c'), K('Delete')]
 }, 'readline')
 
 define_keymap(lambda wm_class: wm_class not in ('Alacritty'), {
