@@ -25,4 +25,5 @@ bindkey '^r' peco-history
 # Load local settings
 [[ -f ~/.zshrc.local ]] && . ~/.zshrc.local
 
-typeset -U path
+# Remove duplicated entries from $PATH
+typeset -U PATH path
