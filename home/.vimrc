@@ -27,7 +27,6 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-goimports'
 Plug 'tpope/vim-rails'
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'leafgarland/typescript-vim'
 
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'slim-template/vim-slim', { 'for': 'slim' }
@@ -46,6 +45,7 @@ Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
 Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'mrk21/yaml-vim', { 'for': 'yaml' }
 Plug 'google/vim-jsonnet', { 'for': ['jsonnet', 'libsonnet'] }
+Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
 
 call plug#end()
 
