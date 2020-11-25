@@ -1,0 +1,3 @@
+package 'colordiff'
+
+dotfile '.colordiffrc'
