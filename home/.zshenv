@@ -15,7 +15,6 @@ export GOPATH="${HOME}/.go"
 
 export PATH="${GOPATH}/bin:${PATH}"
 export PATH="${HOME}/.local/bin:${PATH}"
-source "${HOME}/.cargo/env"
 export PATH="${HOME}/bin.local:${HOME}/bin:${PATH}"
 export PATH="${HOME}/.tfenv/bin:${PATH}"
 
@@ -26,4 +25,6 @@ if [[ ${OSTYPE} =~ darwin* ]]; then
 
   export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}"
   export MANPATH="/usr/local/opt/findutils/libexec/gnuman:${MANPATH}"
+
+  source "${HOME}/.cargo/env"
 fi
