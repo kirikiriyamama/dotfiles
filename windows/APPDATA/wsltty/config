@@ -1,0 +1,17 @@
+ThemeFile=solarized-dark.minttyrc
+CursorType=block
+CursorBlinks=no
+Font=源ノ角ゴシック Code JP N
+FontHeight=12
+RowSpacing=3
+ColSpacing=-1
+SuppressSGR=1
+BoldAsFont=yes
+BoldAsColour=no
+WindowShortcuts=no
+SwitchShortcuts=no
+AltFnShortcuts=no
+MiddleClickAction=void
+CopyOnSelect=no
+CopyAsRTF=no
+Term=xterm-256color
