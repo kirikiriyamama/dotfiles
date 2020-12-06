@@ -16,7 +16,6 @@ export GOPATH="${HOME}/.go"
 export PATH="${GOPATH}/bin:${PATH}"
 export PATH="${HOME}/.local/bin:${PATH}"
 export PATH="${HOME}/bin.local:${HOME}/bin:${PATH}"
-export PATH="${HOME}/.tfenv/bin:${PATH}"
 
 if [[ ${OSTYPE} =~ darwin* ]]; then
   export PATH="/usr/local/opt/coreutils/libexec/gnubin:${PATH}"
