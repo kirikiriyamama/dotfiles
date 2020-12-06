@@ -4,3 +4,7 @@ git "#{node[:home]}/.asdf" do
 end
 
 dotfile '.asdfrc'
+
+# For Ruby
+package 'libreadline-dev'
+package 'zlib1g-dev'
