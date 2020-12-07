@@ -1,0 +1,12 @@
+#!/bin/bash
+set -o errexit -o pipefail
+
+if type win32yank.exe &>/dev/null; then
+  win32yank.exe -o
+elif type xclip &>/dev/null; then
+  xclip -out -selection clipboard
+elif type pbpaste &>/dev/null && type reattach-to-user-namespace &>/dev/null; then
+  reattach-to-user-namespace pbpaste
+else
+  exit 1
+fi

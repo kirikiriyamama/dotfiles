@@ -7,4 +7,4 @@ bind log  o !hub browse -- commit/%(commit)
 
 bind main R !git rebase -i %(commit) --autostash
 
-bind generic c !@bash -c 'test "${OSTYPE}" =~ darwin* && (echo -n %(commit) | reattach-to-user-namespace pbcopy) || (echo -n %(commit) | xclip -in -selection clipboard)'
+bind generic c !@bash -c 'echo -n %(commit) | clip-in'
