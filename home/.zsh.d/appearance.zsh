@@ -1,6 +1,6 @@
 autoload -Uz colors && colors
 
-eval $(dircolors --bourne-shell)
+eval $(dircolors -b "${HOME}/.dircolors")
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 # theme
