@@ -3,13 +3,11 @@ alias ll='ls -l'
 alias la='ls -lA'
 
 alias less='less -R'
-alias sqlite='sqlite3'
 alias tmux='tmux -2 -u'
 alias grep='grep --color=auto --ignore-case'
 
 alias g='git'
 alias be='bundle exec'
-alias tailf='tail -f'
 alias d='docker'
 alias dc='docker-compose'
 alias dce='dc exec'
