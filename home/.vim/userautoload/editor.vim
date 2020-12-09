@@ -12,7 +12,7 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 set nowrap
 
-set wildmode=list,full
+set wildmode=list:longest
 
 set scrolloff=1
 set sidescrolloff=5
