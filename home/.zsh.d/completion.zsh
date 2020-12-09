@@ -1,5 +1,10 @@
 autoload -Uz compinit && compinit
 
+# Load completion functions
+for f in ${HOME}/.zsh.d/completion/*.zsh; do
+  . ${f}
+done
+
 setopt auto_menu
 setopt menu_complete
 
