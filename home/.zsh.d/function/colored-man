@@ -1,0 +1,10 @@
+# vi: set ft=zsh :
+
+LESS_TERMCAP_mb="${fg[red]}" \
+LESS_TERMCAP_md="${fg[red]}" \
+LESS_TERMCAP_me="${reset_color}" \
+LESS_TERMCAP_so="${fg[white]}${bg[blue]}" \
+LESS_TERMCAP_se="${reset_color}" \
+LESS_TERMCAP_us="${fg[green]}" \
+LESS_TERMCAP_ue="${reset_color}" \
+command man "${@}"

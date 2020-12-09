@@ -7,7 +7,6 @@ for f in ${HOME}/.zsh.d/*.zsh; do
   . ${f}
 done
 
-. ${OH_MY_ZSH}/plugins/colored-man-pages/colored-man-pages.plugin.zsh
 . ${HOME}/.zsh.d/plugin/tmux-xpanes/tmux-xpanes.plugin.zsh
 
 # Load functions

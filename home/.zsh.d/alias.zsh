@@ -28,3 +28,6 @@ if type colordiff &>/dev/null; then
 else
   alias diff='diff -u'
 fi
+
+# completion isn't working if using alias
+man() { colored-man ${@} }
