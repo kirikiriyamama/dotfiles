@@ -17,11 +17,6 @@ for f in ${HOME}/.zsh.d/function/*; do
   autoload -Uz ${f}
 done
 
-alias e='peco-src'
-alias s='ec2ssh update >/dev/null && peco-ec2ssh'
-zle -N peco-history
-bindkey '^r' peco-history
-
 # Load local settings
 [[ -f ~/.zshrc.local ]] && . ~/.zshrc.local
 

@@ -18,8 +18,10 @@ dca() {
 }
 alias v='nvim'
 alias k='kubectl'
+alias e='peco-src'
 
 alias grt='cd $(git rev-parse --show-toplevel)'
+alias s='ec2ssh update >/dev/null && peco-ec2ssh'
 
 if type colordiff &>/dev/null; then
   alias diff='colordiff -u'
