@@ -1,10 +1,10 @@
 bind generic g move-first-line
 bind generic G move-last-line
 
-bind main o !hub browse -- commit/%(commit)
-bind diff o !hub browse -- commit/%(commit)
-bind log  o !hub browse -- commit/%(commit)
+bind main o @hub browse -- commit/%(commit)
+bind diff o @hub browse -- commit/%(commit)
+bind log  o @hub browse -- commit/%(commit)
 
 bind main R !git rebase -i %(commit) --autostash
 
-bind generic c !@bash -c 'echo -n %(commit) | clip-in'
+bind generic c @bash -c 'echo -n %(commit) | clip-in'
