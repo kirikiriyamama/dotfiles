@@ -31,7 +31,9 @@ include_cookbook 'zsh'
 
 include_cookbook 'packages'
 
-unless wsl?
+if wsl?
+  include_cookbook 'win32yank'
+else
   node.reverse_merge!(display: ':1')
 
   include_cookbook 'apt-key'
