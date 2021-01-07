@@ -18,6 +18,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 let g:NERDTreeQuitOnOpen=1
 let g:NERDTreeShowHidden=1
 
+let g:NERDTreeMapOpenSplit="s"
+let g:NERDTreeMapPreviewSplit="gs"
+let g:NERDTreeMapOpenVSplit="v"
+let g:NERDTreeMapPreviewVSplit="gv"
+
 " nerdtree-git-plugin
 let g:NERDTreeGitStatusIndicatorMapCustom = {
 \    'Modified'  : 'M',
