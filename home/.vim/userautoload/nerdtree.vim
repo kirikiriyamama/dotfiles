@@ -26,7 +26,7 @@ let g:NERDTreeMapPreviewVSplit="gv"
 " nerdtree-git-plugin
 let g:NERDTreeGitStatusIndicatorMapCustom = {
 \    'Modified'  : 'M',
-\    'Staged'    : '✚',
+\    'Staged'    : 'A',
 \    'Untracked' : '?',
 \    'Renamed'   : 'R',
 \    'Unmerged'  : 'U',
