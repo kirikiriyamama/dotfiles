@@ -32,6 +32,5 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
 \    'Unmerged'  : 'U',
 \    'Deleted'   : 'D',
 \    'Dirty'     : '✗',
-\    "Clean"     : '✔︎',
 \    'Unknown'   : ''
 \  }
