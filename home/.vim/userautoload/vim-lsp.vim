@@ -9,8 +9,6 @@ augroup END
 
 
 function! s:on_lsp_buffer_enabled() abort
-  setlocal omnifunc=lsp#complete
-
   nmap <buffer> gd <plug>(lsp-definition)
   nmap <buffer> gr <plug>(lsp-references)
   nmap <buffer> gi <plug>(lsp-implementation)
