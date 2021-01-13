@@ -26,6 +26,7 @@
   ma = merge --abort
   miku = !git stash 1> /dev/null && echo 'もうしょうがないにゃぁ、この変更はみくが覚えておくにゃ！'
   p = push --tags
+  pforce = push --tags --force-with-lease
   pick = cherry-pick
   pl = pull
   pn = push --tags -n
