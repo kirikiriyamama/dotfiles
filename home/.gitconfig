@@ -7,37 +7,37 @@
 [color]
   ui = true
 [alias]
-  p = push --tags
-  pn = push --tags -n
-  pl = pull
-  f = fetch
-  m = merge
-  ma = merge --abort
-  rb = rebase
-  rbc = rebase --continue
-  rba = rebase --abort
   ad = add
   adp = add -p
+  br = branch
   ci = commit
   cia = commit --amend
   co = checkout
   cob = checkout -b
-  undo = checkout --
-  br = branch
   d = diff
-  dw = diff --color-words
+  delete-merged-branches = !git branch --merged | grep -v -e '*' -e 'master' | xargs git branch -d 2>/dev/null
   ds = diff --staged
   dsw = diff --staged --color-words
+  dw = diff --color-words
+  f = fetch
+  g = grep --ignore-case --line-number --heading --break
   l = log --graph --date-order --date=short --all --pretty=format:\"%C(yellow)%h%Creset %C(blue)%ad%Creset [%an] %s%C(cyan)%d%Creset\"
+  m = merge
+  ma = merge --abort
+  miku = !git stash 1> /dev/null && echo 'もうしょうがないにゃぁ、この変更はみくが覚えておくにゃ！'
+  p = push --tags
+  pick = cherry-pick
+  pl = pull
+  pn = push --tags -n
+  rb = rebase
+  rba = rebase --abort
+  rbc = rebase --continue
+  rs = reset
+  s = show --decorate=short
   sm = submodule
   smu = submodule foreach 'git pull origin master'
-  miku = !git stash 1> /dev/null && echo 'もうしょうがないにゃぁ、この変更はみくが覚えておくにゃ！'
-  s = show --decorate=short
   st = status -sb
-  g = grep --ignore-case --line-number --heading --break
-  pick = cherry-pick
-  rs = reset
-  delete-merged-branches = !git branch --merged | grep -v -e '*' -e 'master' | xargs git branch -d 2>/dev/null
+  undo = checkout --
 [commit]
   verbose = true
 [fetch]
