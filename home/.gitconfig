@@ -22,8 +22,8 @@
   # add/commit/checkout
   ad   = add
   adp  = add -p
-  ci   = commit --verbose
-  cia  = commit --verbose --amend
+  ci   = commit
+  cia  = commit --amend
   co   = checkout
   cob  = checkout -b
   undo = checkout --
@@ -48,6 +48,8 @@
   pick = cherry-pick
   rs   = reset
   delete-merged-branches = !git branch --merged | grep -v -e '*' -e 'master' | xargs git branch -d 2>/dev/null
+[commit]
+  verbose = true
 [fetch]
   prune = true
 [hub]
