@@ -11,8 +11,8 @@
   p  = push --tags
   pn = push --tags -n
   # pull/fetch/merge
-  pl = pull --prune
-  f  = fetch --prune
+  pl = pull
+  f  = fetch
   m  = merge
   ma = merge --abort
   # rebase
@@ -48,5 +48,7 @@
   pick = cherry-pick
   rs   = reset
   delete-merged-branches = !git branch --merged | grep -v -e '*' -e 'master' | xargs git branch -d 2>/dev/null
+[fetch]
+  prune = true
 [hub]
   protocol = ssh
