@@ -1,52 +1,42 @@
 [user]
-  name  = kirikiriyamama
+  name = kirikiriyamama
   email = kirikiriyamama@gmail.com
 [core]
-  quotepath    = false
+  quotepath = false
   excludesfile = ~/.gitignore
 [color]
   ui = true
 [alias]
-  # push
-  p  = push --tags
+  p = push --tags
   pn = push --tags -n
-  # pull/fetch/merge
   pl = pull
-  f  = fetch
-  m  = merge
+  f = fetch
+  m = merge
   ma = merge --abort
-  # rebase
-  rb  = rebase
+  rb = rebase
   rbc = rebase --continue
   rba = rebase --abort
-  # add/commit/checkout
-  ad   = add
-  adp  = add -p
-  ci   = commit
-  cia  = commit --amend
-  co   = checkout
-  cob  = checkout -b
+  ad = add
+  adp = add -p
+  ci = commit
+  cia = commit --amend
+  co = checkout
+  cob = checkout -b
   undo = checkout --
-  # branch
-  br  = branch
-  # diff
-  d   = diff
-  dw  = diff --color-words
-  ds  = diff --staged
+  br = branch
+  d = diff
+  dw = diff --color-words
+  ds = diff --staged
   dsw = diff --staged --color-words
-  # log
-  l  = log --graph --date-order --date=short --all --pretty=format:\"%C(yellow)%h%Creset %C(blue)%ad%Creset [%an] %s%C(cyan)%d%Creset\"
-  # submodule
-  sm  = submodule
+  l = log --graph --date-order --date=short --all --pretty=format:\"%C(yellow)%h%Creset %C(blue)%ad%Creset [%an] %s%C(cyan)%d%Creset\"
+  sm = submodule
   smu = submodule foreach 'git pull origin master'
-  # miku
   miku = !git stash 1> /dev/null && echo 'もうしょうがないにゃぁ、この変更はみくが覚えておくにゃ！'
-  # misc
-  s    = show --decorate=short
-  st   = status -sb
-  g    = grep --ignore-case --line-number --heading --break
+  s = show --decorate=short
+  st = status -sb
+  g = grep --ignore-case --line-number --heading --break
   pick = cherry-pick
-  rs   = reset
+  rs = reset
   delete-merged-branches = !git branch --merged | grep -v -e '*' -e 'master' | xargs git branch -d 2>/dev/null
 [commit]
   verbose = true
