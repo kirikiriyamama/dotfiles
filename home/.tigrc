@@ -8,3 +8,5 @@ bind log  o @hub browse -- commit/%(commit)
 bind main R !git rebase -i %(commit) --autostash
 
 bind generic c @bash -c 'echo -n %(commit) | clip-in'
+bind main C @bash -c 'git rev-parse --short %(commit) | xargs echo -n | clip-in'
+bind generic C @bash -c 'git rev-parse --short %(commit) | xargs echo -n | clip-in'
