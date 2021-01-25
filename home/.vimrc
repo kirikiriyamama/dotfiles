@@ -21,6 +21,7 @@ Plug 'prabirshrestha/asyncomplete-file.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/asyncomplete-tags.vim'
 Plug 'prabirshrestha/vim-lsp'
+Plug 'ryanolsonx/vim-lsp-typescript'
 Plug 'mattn/vim-goimports'
 Plug 'ludovicchabant/vim-gutentags'
 
@@ -41,7 +42,9 @@ Plug 'tmux-plugins/vim-tmux', { 'for': 'tmux' }
 Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'mrk21/yaml-vim', { 'for': 'yaml' }
 Plug 'google/vim-jsonnet', { 'for': ['jsonnet', 'libsonnet'] }
-Plug 'leafgarland/typescript-vim', { 'for': 'typescript' }
+Plug 'leafgarland/typescript-vim'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'peitalin/vim-jsx-typescript'
 
 call plug#end()
 
