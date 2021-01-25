@@ -10,9 +10,12 @@ nnoremap ; :
 noremap  <C-c> <Nop>
 inoremap <C-c> <Nop>
 
-nnoremap <C-w>c :tabnew<CR>
+nnoremap <C-w>c :tabnew %
+nnoremap <C-w>s :split %
+nnoremap <C-w>v :vsplit %
 nnoremap <C-w>n gt
 nnoremap <C-w>p gT
+nnoremap <C-w>z <C-w>_<C-w>\|
 
 nnoremap <C-]> g<C-]>
 

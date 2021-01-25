@@ -22,6 +22,7 @@ let g:NERDTreeMapOpenSplit="s"
 let g:NERDTreeMapPreviewSplit="gs"
 let g:NERDTreeMapOpenVSplit="v"
 let g:NERDTreeMapPreviewVSplit="gv"
+let g:NERDTreeMapToggleZoom="z"
 
 " nerdtree-git-plugin
 let g:NERDTreeGitStatusIndicatorMapCustom = {
