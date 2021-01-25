@@ -45,6 +45,7 @@ Plug 'google/vim-jsonnet', { 'for': ['jsonnet', 'libsonnet'] }
 Plug 'leafgarland/typescript-vim'
 Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'peitalin/vim-jsx-typescript'
+Plug 'jparise/vim-graphql', { 'for': 'graphql' }
 
 call plug#end()
 
