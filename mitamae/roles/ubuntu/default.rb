@@ -8,7 +8,6 @@ node.reverse_merge!(
 
 
 include_cookbook 'apt-key'
-include_cookbook 'dconf'
 include_cookbook 'deb'
 include_cookbook 'dotfile'
 include_cookbook 'github_binary'
@@ -38,7 +37,6 @@ if wsl?
 else
   node.reverse_merge!(display: ':1')
 
-  include_cookbook 'apt-key'
   include_cookbook 'dconf'
 
   include_cookbook 'python3'
