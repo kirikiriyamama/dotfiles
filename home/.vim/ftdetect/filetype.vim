@@ -25,3 +25,5 @@ autocmd BufNewFile,BufRead *.h          setlocal shiftwidth=4 softtabstop=4
 autocmd BufNewFile,BufRead *.hs         setlocal shiftwidth=4 softtabstop=4
 
 autocmd BufNewFile,BufRead *.go         setlocal noexpandtab shiftwidth=4 softtabstop=4
+
+autocmd BufNewFile,BufRead *.make       setfiletype make
