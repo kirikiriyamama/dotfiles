@@ -48,4 +48,5 @@ package 'whois'
 
 if wsl?
   include_cookbook 'win32yank'
+  include_cookbook 'wslu'
 end
