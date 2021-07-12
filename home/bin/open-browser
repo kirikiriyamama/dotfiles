@@ -1,12 +1,12 @@
 #!/bin/bash
 set -o errexit -o pipefail
 
-if type wslview &>/dev/null; then
-  wslview ${@}
-elif type xdg-open &>/dev/null; then
-  xdg-open ${@}
-elif type -p open &>/dev/null; then
-  open ${@}
+if command -pv wslview &>/dev/null; then
+  command -p wslview ${@}
+elif command -pv xdg-open &>/dev/null; then
+  command -p xdg-open ${@}
+elif command -pv open &>/dev/null; then
+  command -p open ${@}
 else
   exit 1
 fi
