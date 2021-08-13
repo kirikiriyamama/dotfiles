@@ -40,6 +40,7 @@ include_cookbook 'zsh'
 package 'bind' # dnsutils
 package 'ipcalc'
 package 'jq'
+package 'mariadb-clients'
 package 'mtr'
 aur 'nkf'
 package 'openssh'
