@@ -4,9 +4,8 @@ git '/tmp/paru' do
   not_if 'type paru'
 end
 
-execute 'makepkg -si --noconfirm' do
+execute 'cd /tmp/paru && makepkg -si --noconfirm' do
   user node[:user]
-  cwd '/tmp/paru'
   not_if 'type paru'
 end
 
