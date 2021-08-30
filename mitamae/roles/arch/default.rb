@@ -45,6 +45,7 @@ package 'mtr'
 aur 'nkf'
 package 'openssh'
 package 'pacman-contrib'
+package 'parallel'
 package 'strace'
 package 'uucp' # cu(1)
 package 'whois'
