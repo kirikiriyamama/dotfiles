@@ -17,7 +17,7 @@ dca() {
   docker attach "${PWD##*/}_${1}_1"
 }
 alias v='nvim'
-alias k='kubectl'
+alias k='kubecolor'
 alias e='peco-src'
 
 alias grt='cd $(git rev-parse --show-toplevel)'
