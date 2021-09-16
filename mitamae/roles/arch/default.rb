@@ -37,6 +37,7 @@ include_cookbook 'tmux'
 include_cookbook 'nvim'
 include_cookbook 'zsh'
 
+aur 'apg'
 package 'bind' # dnsutils
 package 'ipcalc'
 package 'jq'
