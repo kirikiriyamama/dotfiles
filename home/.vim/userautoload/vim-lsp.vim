@@ -2,7 +2,7 @@ augroup lsp_go
   au!
   autocmd User lsp_setup call lsp#register_server({
     \ 'name': 'go-lang',
-    \ 'cmd': { server_info -> ['gopls', '-remote=auto', '-remote.listen.timeout=0'] },
+    \ 'cmd': { server_info -> ['gopls'] },
     \ 'allowlist': ['go'],
     \ })
 augroup END
