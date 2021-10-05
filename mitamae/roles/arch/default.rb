@@ -38,6 +38,7 @@ include_cookbook 'nvim'
 include_cookbook 'zsh'
 
 aur 'apg'
+package 'bat'
 package 'bind' # dnsutils
 package 'ipcalc'
 package 'jq'
