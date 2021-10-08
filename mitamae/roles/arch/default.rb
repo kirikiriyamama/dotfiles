@@ -40,6 +40,7 @@ include_cookbook 'zsh'
 aur 'apg'
 package 'bat'
 package 'bind' # dnsutils
+aur 'google-cloud-sdk'
 package 'ipcalc'
 package 'jq'
 package 'mariadb-clients'
