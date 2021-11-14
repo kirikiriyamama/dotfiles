@@ -1,10 +1,8 @@
 case node[:platform]
 when 'arch'
-  aur 'peco'
+  aur 'unzip-iconv'
 when 'ubuntu'
-  package 'peco'
+  package 'unzip'
 else
   raise NotImplementedError
 end
-
-dotfile '.peco'

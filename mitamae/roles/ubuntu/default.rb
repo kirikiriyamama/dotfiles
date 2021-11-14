@@ -14,6 +14,7 @@ include_cookbook 'github_binary'
 
 include_cookbook 'base'
 include_cookbook 'git'
+include_cookbook 'unzip'
 
 include_cookbook 'asdf'
 include_cookbook 'awscli'

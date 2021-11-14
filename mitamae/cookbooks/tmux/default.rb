@@ -1,3 +1,4 @@
+package 'cmake' if node[:platform] == 'arch'
 package 'tmux'
 
 dotfile '.tmux'
