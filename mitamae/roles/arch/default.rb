@@ -19,6 +19,7 @@ include_cookbook 'unzip'
 
 include_cookbook 'github_binary'
 
+include_cookbook 'amazon-ecr-credential-helper'
 include_cookbook 'asdf'
 include_cookbook 'awscli'
 include_cookbook 'colordiff'

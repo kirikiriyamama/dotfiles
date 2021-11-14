@@ -16,6 +16,7 @@ include_cookbook 'base'
 include_cookbook 'git'
 include_cookbook 'unzip'
 
+include_cookbook 'amazon-ecr-credential-helper'
 include_cookbook 'asdf'
 include_cookbook 'awscli'
 include_cookbook 'bin'
