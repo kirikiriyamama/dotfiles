@@ -1,6 +1,0 @@
-package 'cu'
-package 'ipcalc'
-package 'jq'
-package 'nkf'
-package 'tree'
-package 'whois'

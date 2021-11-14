@@ -32,7 +32,12 @@ include_cookbook 'tig'
 include_cookbook 'tmux'
 include_cookbook 'zsh'
 
-include_cookbook 'packages'
+package 'cu'
+package 'ipcalc'
+package 'jq'
+package 'nkf'
+package 'tree'
+package 'whois'
 
 if wsl?
   include_cookbook 'win32yank'
