@@ -7,4 +7,4 @@ else
   raise NotImplementedError
 end
 
-dotfile '.ctags'
+dotfile '.config/ctags'
