@@ -32,7 +32,6 @@
   s = show --decorate=short
   sm = submodule
   st = status -sb
-  undo = checkout --
 [commit]
   verbose = true
 [fetch]
