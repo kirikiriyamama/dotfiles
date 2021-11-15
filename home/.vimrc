@@ -21,7 +21,6 @@ Plug 'prabirshrestha/asyncomplete-file.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'prabirshrestha/asyncomplete-tags.vim'
 Plug 'prabirshrestha/vim-lsp'
-Plug 'ryanolsonx/vim-lsp-typescript'
 Plug 'mattn/vim-goimports'
 Plug 'ludovicchabant/vim-gutentags'
 
