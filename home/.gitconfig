@@ -20,7 +20,7 @@
   dsw = diff --staged --color-words
   dw = diff --color-words
   f = fetch
-  g = grep --ignore-case --line-number --heading --break
+  g = grep --ignore-case --line-number
   miku = !git stash 1> /dev/null && echo 'もうしょうがないにゃぁ、この変更はみくが覚えておくにゃ！'
   p = push --tags
   pforce = push --tags --force-with-lease
