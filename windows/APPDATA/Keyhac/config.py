@@ -19,9 +19,6 @@ def configure(keymap):
     keymap_global["F11"] = "(174)" # VK_VOLUME_DOWN
     keymap_global["F12"] = "(175)" # VK_VOLUME_UP
 
-    # Monosnap
-    keymap_global["LAlt-User0-5"] = "Ctrl-Alt-5"
-
 
     keymap_mintty = keymap.defineWindowKeymap(exe_name="mintty.exe")
 
