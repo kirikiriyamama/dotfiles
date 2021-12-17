@@ -9,7 +9,8 @@ def configure(keymap):
 
     keymap_global = keymap.defineWindowKeymap()
 
-    keymap_global["O-(124)"] = "LWin"
+    keymap_global["User0-Space"] = "LWin"
+    keymap_global["User0-v"] = "Win-v"
 
     keymap_global["F7"] = "(177)" # VK_MEDIA_PREV_TRACK
     keymap_global["F8"] = "(179)" # VK_MEDIA_PLAY_PAUSE
@@ -17,8 +18,6 @@ def configure(keymap):
     keymap_global["F10"] = "(173)" # VK_VOLUME_MUTE
     keymap_global["F11"] = "(174)" # VK_VOLUME_DOWN
     keymap_global["F12"] = "(175)" # VK_VOLUME_UP
-
-    keymap_global["LShift-LAlt-v"] = keymap.command_ClipboardList
 
     # Monosnap
     keymap_global["LAlt-User0-5"] = "Ctrl-Alt-5"
