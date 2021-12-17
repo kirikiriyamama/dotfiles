@@ -23,6 +23,7 @@ Plug 'prabirshrestha/asyncomplete-tags.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-goimports'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 Plug 'tpope/vim-markdown', { 'for': 'markdown' }
 Plug 'slim-template/vim-slim', { 'for': 'slim' }
