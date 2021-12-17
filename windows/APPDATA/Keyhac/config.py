@@ -22,8 +22,8 @@ def configure(keymap):
 
     keymap_mintty = keymap.defineWindowKeymap(exe_name="mintty.exe")
 
-    keymap_mintty["LAlt-c"] = "Ctrl-Insert"
-    keymap_mintty["LAlt-v"] = "Shift-Insert"
+    keymap_mintty["LAlt-c"] = "Ctrl-Insert" # Copy
+    keymap_mintty["LAlt-v"] = "Shift-Insert" # Paste
     keymap_mintty["LAlt-Minus"] = "Ctrl-Minus"
     keymap_mintty["LAlt-Plus"] = "Ctrl-Plus"
 
