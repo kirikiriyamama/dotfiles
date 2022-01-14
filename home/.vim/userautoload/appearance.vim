@@ -12,7 +12,7 @@ set laststatus=2
 set number
 set colorcolumn=120
 
-set synmaxcol=192
+set synmaxcol=256
 
 augroup AdditionalHighlights
   autocmd!
