@@ -10,7 +10,7 @@ let g:solarized_contrast="high"
 set laststatus=2
 
 set number
-set colorcolumn=100
+set colorcolumn=120
 
 set synmaxcol=192
 
