@@ -6,3 +6,5 @@ execute 'nvim +PlugInstall +qa' do
   user node[:user]
   not_if "test -d #{node[:home]}/.config/nvim/plugged"
 end
+
+include_cookbook 'ctags'
