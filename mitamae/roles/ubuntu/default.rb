@@ -13,7 +13,6 @@ include_cookbook 'dotfile'
 include_cookbook 'github_binary'
 
 package 'build-essential'
-package 'cmake'
 package 'curl'
 package 'libssl-dev'
 
