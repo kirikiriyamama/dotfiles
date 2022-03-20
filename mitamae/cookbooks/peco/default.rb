@@ -1,7 +1,7 @@
 case node[:platform]
 when 'arch'
   aur 'peco'
-when 'ubuntu'
+when 'ubuntu', 'darwin'
   package 'peco'
 else
   raise NotImplementedError

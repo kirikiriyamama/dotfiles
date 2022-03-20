@@ -17,3 +17,7 @@ execute 'build tmux-mem-cpu-load' do
   command 'cmake . && make'
   not_if "test -f #{plugins}/tmux-mem-cpu-load/tmux-mem-cpu-load"
 end
+
+if node[:platform] == 'darwin'
+  package 'reattach-to-user-namespace'
+end

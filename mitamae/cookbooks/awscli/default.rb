@@ -2,6 +2,8 @@ case node[:platform]
 when 'arch'
   package 'aws-cli'
   aur 'aws-session-manager-plugin'
+when 'darwin'
+  package 'awscli'
 when 'ubuntu'
   workdir = '/tmp'
 

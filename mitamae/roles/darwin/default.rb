@@ -1,0 +1,35 @@
+node.reverse_merge!(home: '/Users/kirikiriyamama')
+
+include_cookbook 'cask'
+include_cookbook 'dotfile'
+include_cookbook 'git'
+
+include_cookbook 'alacritty'
+include_cookbook 'asdf'
+include_cookbook 'awscli'
+include_cookbook 'bin'
+include_cookbook 'colordiff'
+include_cookbook 'docker'
+include_cookbook 'ghq'
+include_cookbook 'nvim'
+include_cookbook 'ruby'
+include_cookbook 'slack'
+include_cookbook 'tig'
+include_cookbook 'tmux'
+include_cookbook 'zsh'
+
+package 'coreutils'
+package 'findutils'
+package 'gawk'
+package 'gnu-sed'
+
+package 'jq'
+package 'mtr'
+package 'tree'
+package 'watch'
+
+cask '1password'
+cask 'atok'
+cask 'google-chrome'
+cask 'karabiner-elements'
+cask 'zoom'

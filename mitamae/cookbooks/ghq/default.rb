@@ -1,6 +1,8 @@
 case node[:platform]
 when 'arch'
   aur 'ghq'
+when 'darwin'
+  package 'ghq'
 when 'ubuntu'
   github_binary 'ghq' do
     repository 'x-motemen/ghq'

@@ -1,6 +1,8 @@
 case node[:platform]
 when 'arch'
   package 'ctags'
+when 'darwin'
+  package 'ctags'
 when 'ubuntu'
   package 'exuberant-ctags'
 else

@@ -1,11 +1,4 @@
-include_recipe File.expand_path('../../../helper', __FILE__)
-
-node.reverse_merge!(
-  user: 'kirikiriyamama',
-  home: '/home/kirikiriyamama',
-  dotfiles: File.expand_path('../../../../home', __FILE__),
-)
-
+node.reverse_merge!(home: '/home/kirikiriyamama')
 
 package 'base-devel'
 # Ensure that all packages of base-devel are installed
