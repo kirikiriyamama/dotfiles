@@ -12,7 +12,11 @@ include_cookbook 'deb'
 include_cookbook 'dotfile'
 include_cookbook 'github_binary'
 
-include_cookbook 'base'
+package 'build-essential'
+package 'cmake'
+package 'curl'
+package 'libssl-dev'
+
 include_cookbook 'git'
 include_cookbook 'unzip'
 
