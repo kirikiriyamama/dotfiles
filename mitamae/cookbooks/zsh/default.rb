@@ -8,3 +8,6 @@ dotfile '.dircolors'
 dotfile '.zshrc'
 dotfile '.zshenv'
 dotfile '.zsh.d'
+
+package 'bat'
+include_cookbook 'peco'
