@@ -5,6 +5,7 @@ alias la='ls -lA'
 alias grep='grep --color=auto --ignore-case'
 alias less='less -R'
 alias tmux='tmux -2 -u'
+alias vim='nvim'
 
 alias g='git'
 alias be='bundle exec'
