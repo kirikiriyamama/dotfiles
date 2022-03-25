@@ -75,8 +75,8 @@ def configure(keymap):
         keymap_general[f"LShift-LAlt-{key}"] = f"Shift-Ctrl-{key}"
 
     keymap_general["LAlt-q"] = "Alt-F4"
-    keymap_general["LShift-LAlt-w"] = "Shift-Ctrl-w"
     keymap_general["LAlt-v"] = "Ctrl-v"
+    keymap_general["LShift-LAlt-w"] = "Shift-Ctrl-w"
 
     # Chromium
     keymap_general["LAlt-Minus"] = "Ctrl-Minus"

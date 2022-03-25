@@ -2,9 +2,9 @@ alias ls='ls -F --color=auto'
 alias ll='ls -l'
 alias la='ls -lA'
 
+alias grep='grep --color=auto --ignore-case'
 alias less='less -R'
 alias tmux='tmux -2 -u'
-alias grep='grep --color=auto --ignore-case'
 
 alias g='git'
 alias be='bundle exec'
