@@ -46,13 +46,13 @@ def configure(keymap):
     keymap_general["LCtrl-f"] = "Right"
     keymap_general["LCtrl-g"] = ignore
     keymap_general["LCtrl-h"] = "Back"
-    keymap_general["LCtrl-i"] = ignore
+    keymap_general["LCtrl-i"] = "F7" # ATOK
     keymap_general["LCtrl-j"] = ignore
     keymap_general["LCtrl-k"] = "Shift-End", "Ctrl-c", "Delete"
     keymap_general["LCtrl-l"] = ignore
     keymap_general["LCtrl-m"] = ignore
     keymap_general["LCtrl-n"] = "Down"
-    keymap_general["LCtrl-o"] = ignore
+    keymap_general["LCtrl-o"] = "F8" # ATOK
     keymap_general["LCtrl-p"] = "Up"
     keymap_general["LCtrl-q"] = ignore
     keymap_general["LCtrl-r"] = ignore
