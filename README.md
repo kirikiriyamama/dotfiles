@@ -3,14 +3,17 @@
 ## Installation
 
 ```
-$ git clone https://github.com/kirikiriyamama/dotfiles.git
-$ cd dotfiles && ./install.sh
+$ git clone --recursive https://github.com/kirikiriyamama/dotfiles.git ~/ghq/github.com/kirikiriyamama/dotfiles
+$ cd !$
+$ sudo mitamae/setup.sh
 
-# echo $(type zsh) | sudo tee -a /etc/shells
-$ chsh -s $(tail -1 /etc/shells)
+# macOS
+$ mitamae local run.rb
+
+# other
+$ sudo mitamae local run.rb
 ```
 
 ## Requirements
 
-- Git
-- [Homebrew](https://brew.sh/)
+- [Homebrew](https://brew.sh/) (macOS)
