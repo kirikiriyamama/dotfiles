@@ -17,7 +17,7 @@ export PATH="${GOPATH}/bin:${PATH}"
 export PATH="${HOME}/.local/bin:${PATH}"
 export PATH="${HOME}/bin.local:${HOME}/bin:${PATH}"
 
-if [[ ${OSTYPE} =~ darwin* ]]; then
+if [[ "$(uname -s)" = "Darwin" ]]; then
   export PATH="/usr/local/opt/coreutils/libexec/gnubin:${PATH}"
   export PATH="/usr/local/opt/findutils/libexec/gnubin:${PATH}"
   export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:${PATH}"
