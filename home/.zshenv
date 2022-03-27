@@ -18,10 +18,10 @@ export PATH="${HOME}/.local/bin:${PATH}"
 export PATH="${HOME}/bin.local:${HOME}/bin:${PATH}"
 
 if [[ "$(uname -s)" = "Darwin" ]]; then
-  export PATH="/usr/local/opt/coreutils/libexec/gnubin:${PATH}"
-  export PATH="/usr/local/opt/findutils/libexec/gnubin:${PATH}"
-  export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:${PATH}"
+  export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:${PATH}"
+  export PATH="/opt/homebrew/opt/findutils/libexec/gnubin:${PATH}"
+  export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:${PATH}"
 
-  export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:${MANPATH}"
-  export MANPATH="/usr/local/opt/findutils/libexec/gnuman:${MANPATH}"
+  export MANPATH="/opt/homebrew/opt/coreutils/libexec/gnuman:${MANPATH}"
+  export MANPATH="/opt/homebrew/opt/findutils/libexec/gnuman:${MANPATH}"
 fi
