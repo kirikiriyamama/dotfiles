@@ -10,7 +10,7 @@ $ sudo mitamae/setup.sh
 # macOS
 $ mitamae local run.rb
 
-# other
+# others
 $ sudo mitamae local run.rb
 ```
 
