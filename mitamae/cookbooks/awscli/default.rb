@@ -1,6 +1,6 @@
 case node[:platform]
 when 'arch'
-  package 'aws-cli'
+  aur 'aws-cli-v2-bin'
   aur 'aws-session-manager-plugin'
 when 'darwin'
   package 'awscli'
