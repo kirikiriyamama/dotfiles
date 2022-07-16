@@ -25,6 +25,7 @@ package 'gnu-sed'
 
 package 'jq'
 package 'mtr'
+package 'parallel'
 package 'tree'
 package 'watch'
 
