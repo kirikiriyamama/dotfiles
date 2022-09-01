@@ -573,6 +573,9 @@ key_bindings:
   #- { key: N,      mods: Command,            action: SpawnNewInstance }
   #- { key: F,      mods: Command|Control,    action: ToggleFullscreen }
 
+  # https://github.com/alacritty/alacritty/issues/1108
+  - { key: Key6, mods: Control, chars: "\x1e" }
+
 #debug:
   # Display the time it takes to redraw each frame.
   #render_timer: false
