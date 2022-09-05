@@ -1,4 +1,5 @@
 /home/.vim/plugged/*
+/home/.vim/plugin/*
 /home/.tmux/plugins/*
 !/home/.tmux/plugins/tpm
 /home/.bundle/cache
