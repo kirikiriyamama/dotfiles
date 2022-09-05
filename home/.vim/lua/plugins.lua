@@ -8,10 +8,19 @@ return require('packer').startup(function(use)
   use 'prabirshrestha/asyncomplete-tags.vim'
   use 'ctrlpvim/ctrlp.vim'
   use 'lukas-reineke/indent-blankline.nvim'
-  use 'itchyny/lightline.vim'
+  use { 'itchyny/lightline.vim',
+    config = function()
+      vim.opt.laststatus = 2
+    end
+  }
   use 'scrooloose/nerdtree'
   use 'Xuyuanp/nerdtree-git-plugin'
-  use 'altercation/vim-colors-solarized'
+  use { 'altercation/vim-colors-solarized',
+    config = function()
+      vim.opt.background = 'dark'
+      vim.cmd('colorscheme solarized')
+    end
+  }
   use 'junegunn/vim-easy-align'
   use 'tpope/vim-fugitive'
   use 'airblade/vim-gitgutter'
