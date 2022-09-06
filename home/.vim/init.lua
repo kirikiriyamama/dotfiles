@@ -28,8 +28,6 @@ vim.opt.smartindent = true
 
 vim.opt.wrap = false
 
-vim.opt.wildmode = 'list:longest'
-
 vim.opt.scrolloff = 1
 vim.opt.sidescrolloff = 5
 
