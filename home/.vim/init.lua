@@ -17,3 +17,25 @@ vim.cmd [[
     autocmd Syntax * syntax match FullWidthSpace containedin=ALL /　/
   augroup END
 ]]
+
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
+
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+
+vim.opt.wrap = false
+
+vim.opt.wildmode = 'list:longest'
+
+vim.opt.scrolloff = 1
+vim.opt.sidescrolloff = 5
+
+vim.opt.lazyredraw = true
+vim.opt.ttyfast = true
+
+vim.opt.autoread = true
+
+vim.cmd [[autocmd QuickFixCmdPost *grep* cwindow]]
