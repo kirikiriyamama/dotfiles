@@ -35,5 +35,6 @@ vim.opt.lazyredraw = true
 vim.opt.ttyfast = true
 
 vim.opt.autoread = true
+vim.opt.swapfile = false
 
 vim.cmd [[autocmd QuickFixCmdPost *grep* cwindow]]
