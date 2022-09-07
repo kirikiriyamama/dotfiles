@@ -41,3 +41,30 @@ vim.cmd [[
   autocmd QuickFixCmdPost *grep* if len(getqflist()) != 0 | tabnew | copen | endif
   autocmd bufenter * if (winnr("$") == 1 && &filetype == 'qf') | q | endif
 ]]
+
+for _, map in ipairs({
+  { 'n', 'ZZ', '<Nop>' },
+  { 'n', 'ZQ', '<Nop>' },
+  { 'n', 'Q', '<Nop>' },
+  { 'n', 'K', '<Nop>' },
+  { 'n', ';', ':' },
+  { 'n', '<C-c>', '<Nop>' },
+  { 'i', '<C-c>', '<Nop>' },
+  { 'n', '<C-w>c', ':tabnew %' },
+  { 'n', '<C-w>s', ':split %' },
+  { 'n', '<C-w>v', ':vsplit %' },
+  { 'n', '<C-w>n', 'gt' },
+  { 'n', '<C-w>p', 'gT' },
+  { 'n', '<C-w>z', '<C-w>_<C-w>|' },
+  { 'n', '<C-]>', 'g<C-]>' },
+  { 'n', '<C-w><C-]>', '<C-w>g<C-]>' },
+  { 'c', '<C-p>', '<Up>' },
+  { 'c', '<C-n>', '<Down>' },
+  { 'c', '<C-b>', '<Left>' },
+  { 'c', '<C-f>', '<Right>' },
+  { 'c', '<C-a>', '<Home>' },
+  { 'c', '<C-e>', '<End>' },
+  { 'c', '<C-d>', '<Del>' },
+}) do
+  vim.keymap.set(map[1], map[2], map[3])
+end
