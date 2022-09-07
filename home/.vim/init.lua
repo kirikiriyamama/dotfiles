@@ -37,4 +37,7 @@ vim.opt.ttyfast = true
 vim.opt.autoread = true
 vim.opt.swapfile = false
 
-vim.cmd [[autocmd QuickFixCmdPost *grep* if len(getqflist()) != 0 | tabnew | copen | endif]]
+vim.cmd [[
+  autocmd QuickFixCmdPost *grep* if len(getqflist()) != 0 | tabnew | copen | endif
+  autocmd bufenter * if (winnr("$") == 1 && &filetype == 'qf') | q | endif
+]]
