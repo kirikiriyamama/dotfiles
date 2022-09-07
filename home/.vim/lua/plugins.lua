@@ -13,8 +13,45 @@ return require('packer').startup(function(use)
       vim.opt.laststatus = 2
     end
   }
-  use 'scrooloose/nerdtree'
-  use 'Xuyuanp/nerdtree-git-plugin'
+  use { 'scrooloose/nerdtree', requires = { 'Xuyuanp/nerdtree-git-plugin' },
+    config = function()
+      vim.cmd [[
+        " Mirror the NERDTree before showing it. This makes it the same on all tabs.
+        function! s:toggle()
+          if g:NERDTree.IsOpen()
+            NERDTreeClose
+          else
+            NERDTreeMirror
+            NERDTreeFocus
+          endif
+        endfunction
+        nnoremap <silent> <Space>e :call <SID>toggle()<CR>
+
+        " Exit Vim if NERDTree is the only window left.
+        autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+      ]]
+
+      vim.g.NERDTreeQuitOnOpen = true
+      vim.g.NERDTreeShowHidden = true
+
+      vim.g.NERDTreeMapOpenSplit = 's'
+      vim.g.NERDTreeMapPreviewSplit = 'gs'
+      vim.g.NERDTreeMapOpenVSplit = 'v'
+      vim.g.NERDTreeMapPreviewVSplit = 'gv'
+      vim.g.NERDTreeMapToggleZoom = 'z'
+
+      vim.g.NERDTreeGitStatusIndicatorMapCustom = {
+        Modified  = 'M',
+        Staged    = 'A',
+        Untracked = '?',
+        Renamed   = 'R',
+        Unmerged  = 'U',
+        Deleted   = 'D',
+        Dirty     = 'x',
+        Unknown   = '',
+      }
+    end
+  }
   use { 'yssl/QFEnter',
     config = function()
       vim.g.qfenter_keymap = {
