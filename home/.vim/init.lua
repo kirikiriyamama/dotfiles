@@ -37,4 +37,4 @@ vim.opt.ttyfast = true
 vim.opt.autoread = true
 vim.opt.swapfile = false
 
-vim.cmd [[autocmd QuickFixCmdPost *grep* cwindow]]
+vim.cmd [[autocmd QuickFixCmdPost *grep* if len(getqflist()) != 0 | tabnew | copen | endif]]
