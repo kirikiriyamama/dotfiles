@@ -15,6 +15,16 @@ return require('packer').startup(function(use)
   }
   use 'scrooloose/nerdtree'
   use 'Xuyuanp/nerdtree-git-plugin'
+  use { 'yssl/QFEnter',
+    config = function()
+      vim.g.qfenter_keymap = {
+        open = { '<CR>' },
+        vopen = { '<C-v>' },
+        hopen = { '<C-s>' },
+      }
+      vim.cmd('autocmd FileType qf nnoremap <buffer> <C-t> <C-w><CR><C-w>T')
+    end
+  }
   use { 'altercation/vim-colors-solarized',
     config = function()
       vim.opt.background = 'dark'
