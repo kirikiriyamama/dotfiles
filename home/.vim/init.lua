@@ -48,6 +48,9 @@ for _, map in ipairs({
   { 'n', 'Q', '<Nop>' },
   { 'n', 'K', '<Nop>' },
   { 'n', ';', ':' },
+  { 'n', 'n', 'nzz' },
+  { 'n', 'N', 'Nzz' },
+  { 'n', '<Esc><Esc>', ':nohlsearch<CR>' },
   { 'n', '<C-c>', '<Nop>' },
   { 'i', '<C-c>', '<Nop>' },
   { 'n', '<C-w>c', '<Nop>' },
@@ -68,3 +71,6 @@ for _, map in ipairs({
 }) do
   vim.keymap.set(map[1], map[2], map[3], map[4])
 end
+
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
