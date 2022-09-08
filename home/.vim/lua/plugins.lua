@@ -14,7 +14,13 @@ return require('packer').startup(function(use)
       vim.g.ctrlp_switch_buffer = 0
     end
   }
-  use 'lukas-reineke/indent-blankline.nvim'
+  use { 'lukas-reineke/indent-blankline.nvim',
+    config = function()
+      require('indent_blankline').setup({
+        show_first_indent_level = false,
+      })
+    end
+  }
   use { 'itchyny/lightline.vim',
     config = function()
       vim.opt.laststatus = 2
