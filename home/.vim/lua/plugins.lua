@@ -6,7 +6,13 @@ return require('packer').startup(function(use)
   use 'prabirshrestha/asyncomplete-file.vim'
   use 'prabirshrestha/asyncomplete-lsp.vim'
   use 'prabirshrestha/asyncomplete-tags.vim'
-  use 'ctrlpvim/ctrlp.vim'
+  use { 'ctrlpvim/ctrlp.vim',
+    config = function()
+      vim.g.ctrlp_map = '<Space>p'
+      vim.g.ctrlp_show_hidden = true
+      vim.g.ctrlp_custom_ignore = '\\.git\\|node_modules\\|tmp/cache'
+    end
+  }
   use 'lukas-reineke/indent-blankline.nvim'
   use { 'itchyny/lightline.vim',
     config = function()
