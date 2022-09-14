@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
   }
   use { 'ellisonleao/gruvbox.nvim',
     config = function()
+      require('gruvbox').setup({ italic = false })
       vim.opt.background = 'dark'
       vim.opt.termguicolors = true
       vim.cmd('colorscheme gruvbox')
