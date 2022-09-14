@@ -10,10 +10,10 @@ vim.cmd [[
   augroup AdditionalHighlights
     autocmd!
 
-    autocmd ColorScheme * highlight TrailingSpaces term=NONE ctermbg=Red
+    autocmd ColorScheme * highlight TrailingSpaces term=NONE ctermbg=Red guibg=#cc241d
     autocmd Syntax * syntax match TrailingSpaces containedin=ALL /\s\+$/
 
-    autocmd ColorScheme * highlight FullWidthSpace term=NONE ctermbg=Red
+    autocmd ColorScheme * highlight FullWidthSpace term=NONE ctermbg=Red guibg=#cc241d
     autocmd Syntax * syntax match FullWidthSpace containedin=ALL /　/
   augroup END
 ]]

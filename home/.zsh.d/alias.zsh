@@ -31,7 +31,7 @@ else
 fi
 
 if type bat &>/dev/null; then
-  alias cat="BAT_THEME=ansi bat --style=plain --pager=never"
+  alias cat="BAT_THEME='Monokai Extended' bat --style=plain --pager=never"
 fi
 
 # completion isn't working if using alias

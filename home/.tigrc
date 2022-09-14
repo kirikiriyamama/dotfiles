@@ -1,3 +1,7 @@
+color cursor default green bold
+color title-focus default blue bold
+color title-blur default blue
+
 bind generic g move-first-line
 bind generic G move-last-line
 

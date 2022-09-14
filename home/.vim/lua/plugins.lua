@@ -14,6 +14,13 @@ return require('packer').startup(function(use)
       vim.g.ctrlp_switch_buffer = 0
     end
   }
+  use { 'ellisonleao/gruvbox.nvim',
+    config = function()
+      vim.opt.background = 'dark'
+      vim.opt.termguicolors = true
+      vim.cmd('colorscheme gruvbox')
+    end
+  }
   use { 'lukas-reineke/indent-blankline.nvim',
     config = function()
       require('indent_blankline').setup({
@@ -73,12 +80,6 @@ return require('packer').startup(function(use)
         hopen = { '<C-s>' },
       }
       vim.cmd('autocmd FileType qf nnoremap <buffer> <C-t> <C-w><CR><C-w>T')
-    end
-  }
-  use { 'altercation/vim-colors-solarized',
-    config = function()
-      vim.opt.background = 'dark'
-      vim.cmd('colorscheme solarized')
     end
   }
   use 'junegunn/vim-easy-align'

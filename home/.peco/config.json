@@ -2,8 +2,5 @@
   "InitialFilter": "SmartCase",
   "Keymap": {
     "C-v": "peco.ToggleSelection"
-  },
-  "Style": {
-    "Matched": ["white", "on_default"]
   }
 }
