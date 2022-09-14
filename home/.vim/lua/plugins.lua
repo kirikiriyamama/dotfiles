@@ -85,7 +85,6 @@ return require('packer').startup(function(use)
   use 'junegunn/vim-easy-align'
   use 'tpope/vim-fugitive'
   use 'airblade/vim-gitgutter'
-  use 'mattn/vim-goimports'
   use 'ludovicchabant/vim-gutentags'
   use { 'Shougo/vimproc.vim', run = 'make' }
   use 'tpope/vim-rhubarb'
