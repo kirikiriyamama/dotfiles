@@ -1,11 +1,11 @@
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
-  use 'prabirshrestha/asyncomplete.vim'
-  use 'prabirshrestha/asyncomplete-buffer.vim'
-  use 'prabirshrestha/asyncomplete-file.vim'
-  use 'prabirshrestha/asyncomplete-lsp.vim'
-  use 'prabirshrestha/asyncomplete-tags.vim'
+  use { 'neoclide/coc.nvim', branch = 'release',
+    config = function()
+      require('coc')
+    end
+  }
   use { 'ctrlpvim/ctrlp.vim',
     config = function()
       vim.g.ctrlp_map = '<Space>p'
@@ -87,7 +87,6 @@ return require('packer').startup(function(use)
   use 'airblade/vim-gitgutter'
   use 'mattn/vim-goimports'
   use 'ludovicchabant/vim-gutentags'
-  use 'prabirshrestha/vim-lsp'
   use { 'Shougo/vimproc.vim', run = 'make' }
   use 'tpope/vim-rhubarb'
   use 'tpope/vim-surround'
