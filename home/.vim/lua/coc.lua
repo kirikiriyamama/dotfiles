@@ -51,10 +51,25 @@ vim.cmd [[
   nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
   " GoTo code navigation.
-  nmap <silent> gd <Plug>(coc-definition)
+  nmap <silent> gd :call JumpDefinition()<CR>
   nmap <silent> gt <Plug>(coc-type-definition)
   nmap <silent> gi <Plug>(coc-implementation)
   nmap <silent> gr <Plug>(coc-references)
+
+  function JumpDefinition() abort
+    let actions = { 'e': 'edit', 's': 'split', 'v': 'vsplit', 't': 'tabedit', "\r": 'edit' }
+
+    echo '(E)dit, (s)plit, (v)split, (t)abedit: '
+    let c = getcharstr()
+    call feedkeys(':', 'nx') " https://neovim.discourse.group/t/how-to-clear-the-echo-message-in-the-command-line/268
+
+    let action = get(actions, c, 0)
+    if empty(action)
+      return
+    endif
+
+    call CocActionAsync('jumpDefinition', action)
+  endfunction
 
   " Use K to show documentation in preview window.
   nnoremap <silent> K :call ShowDocumentation()<CR>
