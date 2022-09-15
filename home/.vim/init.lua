@@ -50,6 +50,7 @@ for _, map in ipairs({
   { 'n', ';', ':' },
   { 'n', '<C-c>', '<Nop>' },
   { 'i', '<C-c>', '<Nop>' },
+  { 'n', '<C-w>c', '<Nop>' },
   { 'n', '<C-w>n', 'gt' },
   { 'n', '<C-w>p', 'gT' },
   { 'n', '<C-w>z', '<C-w>_<C-w>|' },
@@ -62,6 +63,7 @@ for _, map in ipairs({
   { 'c', '<C-a>', '<Home>' },
   { 'c', '<C-e>', '<End>' },
   { 'c', '<C-d>', '<Del>' },
+  { 'c', '<C-k>', '<Nop>' },
 }) do
   vim.keymap.set(map[1], map[2], map[3])
 end
