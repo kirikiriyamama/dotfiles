@@ -64,6 +64,7 @@ for _, map in ipairs({
   { 'c', '<C-e>', '<End>' },
   { 'c', '<C-d>', '<Del>' },
   { 'c', '<C-k>', '<Nop>' },
+  { 'c', '<C-u>', '<End><C-u>' },
 }) do
   vim.keymap.set(map[1], map[2], map[3])
 end
