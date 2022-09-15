@@ -11,6 +11,7 @@ return require('packer').startup(function(use)
       vim.g.ctrlp_map = '<Space>p'
       vim.g.ctrlp_show_hidden = true
       vim.g.ctrlp_custom_ignore = '\\.git\\|node_modules\\|tmp/cache'
+      vim.g.ctrlp_switch_buffer = 0
     end
   }
   use 'lukas-reineke/indent-blankline.nvim'
@@ -43,6 +44,8 @@ return require('packer').startup(function(use)
       vim.g.NERDTreeMapOpenSplit = 's'
       vim.g.NERDTreeMapOpenVSplit = 'v'
       vim.g.NERDTreeMapToggleZoom = 'z'
+
+      vim.g.NERDTreeCustomOpenArgs = { file = { where = 'p' }, dir = vim.empty_dict() }
 
       vim.g.NERDTreeGitStatusIndicatorMapCustom = {
         Modified  = 'M',
