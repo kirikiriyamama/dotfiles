@@ -28,6 +28,7 @@ vim.opt.autoindent = true
 vim.opt.smartindent = true
 
 vim.opt.wrap = false
+vim.cmd('autocmd FileType qf set wrap')
 
 vim.opt.scrolloff = 1
 vim.opt.sidescrolloff = 5
