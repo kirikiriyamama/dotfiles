@@ -35,9 +35,7 @@ return require('packer').startup(function(use)
       vim.g.NERDTreeShowHidden = true
 
       vim.g.NERDTreeMapOpenSplit = 's'
-      vim.g.NERDTreeMapPreviewSplit = 'gs'
       vim.g.NERDTreeMapOpenVSplit = 'v'
-      vim.g.NERDTreeMapPreviewVSplit = 'gv'
       vim.g.NERDTreeMapToggleZoom = 'z'
 
       vim.g.NERDTreeGitStatusIndicatorMapCustom = {
