@@ -4,6 +4,7 @@ alias la='ls -lA'
 
 alias grep='grep --color=auto --ignore-case'
 alias less='less -R'
+alias tig='TERM=xterm-256color tig'
 alias tmux='tmux -2 -u'
 alias vim='nvim'
 
