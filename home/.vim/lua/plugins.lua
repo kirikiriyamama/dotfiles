@@ -84,7 +84,11 @@ return require('packer').startup(function(use)
     end
   }
   use 'junegunn/vim-easy-align'
-  use 'tpope/vim-fugitive'
+  use { 'tpope/vim-fugitive', requires = 'tpope/vim-rhubarb',
+    config = function()
+      vim.g.netrw_browsex_viewer = 'open'
+    end
+  }
   use { 'airblade/vim-gitgutter',
     config = function()
       vim.g.gitgutter_map_keys = 0
@@ -92,7 +96,6 @@ return require('packer').startup(function(use)
   }
   use 'ludovicchabant/vim-gutentags'
   use { 'Shougo/vimproc.vim', run = 'make' }
-  use 'tpope/vim-rhubarb'
   use 'tpope/vim-surround'
   use 'kana/vim-textobj-user'
 
