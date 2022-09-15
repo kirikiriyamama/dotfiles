@@ -56,15 +56,15 @@ for _, map in ipairs({
   { 'n', '<C-w>z', '<C-w>_<C-w>|' },
   { 'n', '<C-]>', 'g<C-]>' },
   { 'n', '<C-w><C-]>', '<C-w>g<C-]>' },
-  { 'c', '<C-p>', '<Up>' },
-  { 'c', '<C-n>', '<Down>' },
+  { 'c', '<C-p>', 'wildmenumode() ? "<C-p>" : "<Up>"', { expr = true } },
+  { 'c', '<C-n>', 'wildmenumode() ? "<C-n>" : "<Down>"', { expr = true } },
   { 'c', '<C-b>', '<Left>' },
   { 'c', '<C-f>', '<Right>' },
   { 'c', '<C-a>', '<Home>' },
-  { 'c', '<C-e>', '<End>' },
+  { 'c', '<C-e>', 'wildmenumode() ? "<C-e>" : "<End>"', { expr = true } },
   { 'c', '<C-d>', '<Del>' },
   { 'c', '<C-k>', '<Nop>' },
   { 'c', '<C-u>', '<End><C-u>' },
 }) do
-  vim.keymap.set(map[1], map[2], map[3])
+  vim.keymap.set(map[1], map[2], map[3], map[4])
 end
