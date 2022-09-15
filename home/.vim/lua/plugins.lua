@@ -33,7 +33,7 @@ return require('packer').startup(function(use)
       vim.opt.laststatus = 2
     end
   }
-  use { 'scrooloose/nerdtree', requires = { 'Xuyuanp/nerdtree-git-plugin' },
+  use { 'preservim/nerdtree', requires = { 'Xuyuanp/nerdtree-git-plugin' },
     config = function()
       vim.cmd [[
         " Mirror the NERDTree before showing it. This makes it the same on all tabs.
