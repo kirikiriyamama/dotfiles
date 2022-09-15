@@ -25,10 +25,8 @@ return require('packer').startup(function(use)
 
   use { 'othree/html5.vim', ft = 'html' }
   use { 'vim-scripts/nginx.vim', ft = 'nginx' }
-  use { 'puppetlabs/puppet-syntax-vim', ft = 'puppet' }
   use { 'vim-scripts/ruby-matchit', ft = 'ruby' }
   use 'leafgarland/typescript-vim'
-  use { 'kchmck/vim-coffee-script', ft = 'coffee' }
   use { 'elixir-lang/vim-elixir', ft = 'elixir' }
   use { 'tpope/vim-endwise', ft = 'ruby' }
   use { 'jparise/vim-graphql', ft = 'graphql' }
