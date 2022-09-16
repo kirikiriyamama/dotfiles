@@ -59,6 +59,8 @@ for _, map in ipairs({
   { 'n', '<C-w>z', '<C-w>_<C-w>|' },
   { 'n', '<C-]>', 'g<C-]>' },
   { 'n', '<C-w><C-]>', '<C-w>g<C-]>' },
+  { 'c', '<Up>', 'wildmenumode() ? "<Left>" : "<Up>"', { expr = true } },
+  { 'c', '<Down>', 'wildmenumode() ? "<Right>" : "<Down>"', { expr = true } },
   { 'c', '<C-p>', 'wildmenumode() ? "<C-p>" : "<Up>"', { expr = true } },
   { 'c', '<C-n>', 'wildmenumode() ? "<C-n>" : "<Down>"', { expr = true } },
   { 'c', '<C-b>', '<Left>' },
