@@ -95,7 +95,6 @@ return require('packer').startup(function(use)
     end
   }
   use 'ludovicchabant/vim-gutentags'
-  use { 'Shougo/vimproc.vim', run = 'make' }
   use 'tpope/vim-surround'
   use 'kana/vim-textobj-user'
 
