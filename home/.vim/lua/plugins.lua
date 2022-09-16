@@ -89,6 +89,12 @@ return require('packer').startup(function(use)
       end, kopts)
     end
   }
+  use { 'petertriho/nvim-scrollbar', requires = 'kevinhwang91/nvim-hlslens',
+    config = function()
+      require('scrollbar').setup()
+      require('scrollbar.handlers.search').setup()
+    end
+  }
   use { 'yssl/QFEnter',
     config = function()
       vim.g.qfenter_keymap = {
