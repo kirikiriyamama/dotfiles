@@ -75,8 +75,9 @@ return require('packer').startup(function(use)
       vim.g.NERDTreeQuitOnOpen = true
       vim.g.NERDTreeShowHidden = true
 
-      vim.g.NERDTreeMapOpenSplit = 's'
-      vim.g.NERDTreeMapOpenVSplit = 'v'
+      vim.g.NERDTreeMapOpenSplit = '<C-s>'
+      vim.g.NERDTreeMapOpenVSplit = '<C-v>'
+      vim.g.NERDTreeMapOpenInTab = '<C-t>'
       vim.g.NERDTreeMapToggleZoom = 'z'
 
       vim.g.NERDTreeCustomOpenArgs = { file = { where = 'p' }, dir = vim.empty_dict() }
