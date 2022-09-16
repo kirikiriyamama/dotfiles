@@ -29,9 +29,29 @@ return require('packer').startup(function(use)
       })
     end
   }
-  use { 'itchyny/lightline.vim',
+  use { 'nvim-lualine/lualine.nvim',
     config = function()
       vim.opt.laststatus = 2
+      vim.opt.showmode = false
+
+      require('lualine').setup({
+        options = {
+          icons_enabled = false,
+          theme = 'gruvbox',
+          component_separators = { left = '|', right = '|' },
+          section_separators = { left = '', right = '' },
+          disabled_filetypes = { statusline = { 'ctrlp' } },
+        },
+        sections = {
+          lualine_b = { 'g:coc_status', 'gutentags#statusline', 'branch', 'diff', 'diagnostics' },
+          lualine_c = { { 'filename', path = 1 } }
+        },
+        inactive_sections = {
+          lualine_c = { { 'filename', path = 1 } }
+        },
+      })
+
+      vim.cmd('autocmd User CocStatusChange,CocDiagnosticChange lua require("lualine").refresh()')
     end
   }
   use { 'preservim/nerdtree', requires = { 'Xuyuanp/nerdtree-git-plugin' },
