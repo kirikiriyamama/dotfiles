@@ -57,20 +57,11 @@ return require('packer').startup(function(use)
   use { 'preservim/nerdtree',
     config = function()
       vim.cmd [[
-        " Mirror the NERDTree before showing it. This makes it the same on all tabs.
-        function! s:toggle()
-          if g:NERDTree.IsOpen()
-            NERDTreeClose
-          else
-            NERDTreeMirror
-            NERDTreeFocus
-          endif
-        endfunction
-        nnoremap <silent> <Space>e :call <SID>toggle()<CR>
-
         " Close the tab if NERDTree is the only window remaining in it.
         autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
       ]]
+
+      vim.keymap.set('n', '<Space>e', 'g:NERDTree.IsOpen() ? ":NERDTreeClose<CR>" : ":NERDTreeFind<CR>"', { silent = true, expr = true })
 
       vim.g.NERDTreeQuitOnOpen = true
       vim.g.NERDTreeShowHidden = true
