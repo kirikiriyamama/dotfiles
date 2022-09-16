@@ -14,6 +14,11 @@ return require('packer').startup(function(use)
       vim.g.ctrlp_switch_buffer = 0
     end
   }
+  use { 'lewis6991/gitsigns.nvim',
+    config = function()
+      require('gitsigns').setup()
+    end
+  }
   use { 'ellisonleao/gruvbox.nvim',
     config = function()
       require('gruvbox').setup({ italic = false })
@@ -115,11 +120,6 @@ return require('packer').startup(function(use)
   use { 'tpope/vim-fugitive', requires = 'tpope/vim-rhubarb',
     config = function()
       vim.g.netrw_browsex_viewer = 'open'
-    end
-  }
-  use { 'airblade/vim-gitgutter',
-    config = function()
-      vim.g.gitgutter_map_keys = 0
     end
   }
   use 'ludovicchabant/vim-gutentags'
