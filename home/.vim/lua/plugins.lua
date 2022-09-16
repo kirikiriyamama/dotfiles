@@ -54,7 +54,7 @@ return require('packer').startup(function(use)
       vim.cmd('autocmd User CocStatusChange,CocDiagnosticChange lua require("lualine").refresh()')
     end
   }
-  use { 'preservim/nerdtree', requires = { 'Xuyuanp/nerdtree-git-plugin' },
+  use { 'preservim/nerdtree',
     config = function()
       vim.cmd [[
         " Mirror the NERDTree before showing it. This makes it the same on all tabs.
@@ -81,17 +81,6 @@ return require('packer').startup(function(use)
       vim.g.NERDTreeMapToggleZoom = 'z'
 
       vim.g.NERDTreeCustomOpenArgs = { file = { where = 'p' }, dir = vim.empty_dict() }
-
-      vim.g.NERDTreeGitStatusIndicatorMapCustom = {
-        Modified  = 'M',
-        Staged    = 'A',
-        Untracked = '?',
-        Renamed   = 'R',
-        Unmerged  = 'U',
-        Deleted   = 'D',
-        Dirty     = 'x',
-        Unknown   = '',
-      }
     end
   }
   use { 'kevinhwang91/nvim-hlslens', requires = 'rapan931/lasterisk.nvim',
