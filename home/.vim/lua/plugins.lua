@@ -96,6 +96,11 @@ return require('packer').startup(function(use)
       require('scrollbar.handlers.search').setup()
     end
   }
+  use { 'kylechui/nvim-surround',
+   config = function()
+     require('nvim-surround').setup()
+   end
+  }
   use { 'yssl/QFEnter',
     config = function()
       vim.g.qfenter_keymap = {
@@ -118,7 +123,6 @@ return require('packer').startup(function(use)
     end
   }
   use 'ludovicchabant/vim-gutentags'
-  use 'tpope/vim-surround'
   use 'kana/vim-textobj-user'
 
   use { 'othree/html5.vim', ft = 'html' }
