@@ -48,7 +48,6 @@ for _, map in ipairs({
   { 'n', 'ZZ', '<Nop>' },
   { 'n', 'ZQ', '<Nop>' },
   { 'n', 'Q', '<Nop>' },
-  { 'n', 'K', '<Nop>' },
   { 'n', ';', ':' },
   { 'n', '<Esc><Esc>', ':nohlsearch<CR>' },
   { 'n', '<C-c>', '<Nop>' },
