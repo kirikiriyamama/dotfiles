@@ -1,6 +1,3 @@
-[submodule "home/.vim/vim-plug"]
-	path = home/.vim/vim-plug
-	url = git@github.com:junegunn/vim-plug.git
 [submodule "home/.tmux/plugins/tpm"]
 	path = home/.tmux/plugins/tpm
 	url = git@github.com:tmux-plugins/tpm.git
