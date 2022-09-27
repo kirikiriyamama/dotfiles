@@ -1,5 +1,4 @@
 {
-  "suggest.noselect": true,
   "list.normalMappings": {
     "<C-t>": "action:tabe",
     "<C-v>": "action:vsplit",
