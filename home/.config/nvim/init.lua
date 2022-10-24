@@ -5,7 +5,6 @@ vim.cmd('syntax on')
 vim.opt.signcolumn = 'yes'
 vim.opt.number = true
 vim.opt.colorcolumn = '120'
-vim.opt.synmaxcol = 256
 
 vim.cmd [[
   augroup AdditionalHighlights
