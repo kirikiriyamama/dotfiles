@@ -42,6 +42,7 @@ return require('packer').startup(function(use)
       })
     end
   }
+  use { 'mizlan/iswap.nvim' }
   use { 'nvim-lualine/lualine.nvim',
     config = function()
       vim.opt.laststatus = 2
