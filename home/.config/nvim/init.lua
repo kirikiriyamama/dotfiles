@@ -31,7 +31,6 @@ vim.opt.autoindent = true
 vim.opt.smartindent = true
 
 vim.opt.wrap = false
-vim.cmd('autocmd FileType qf set wrap')
 
 vim.opt.scrolloff = 1
 vim.opt.sidescrolloff = 5
@@ -43,8 +42,14 @@ vim.opt.autoread = true
 vim.opt.swapfile = false
 
 vim.cmd [[
-  autocmd QuickFixCmdPost *grep* if len(getqflist()) != 0 | tabnew | copen | endif
-  autocmd bufenter * if (winnr("$") == 1 && &filetype == 'qf') | q | endif
+  augroup qf
+    autocmd!
+
+    autocmd FileType qf set wrap
+
+    autocmd QuickFixCmdPost *grep* if len(getqflist()) != 0 | tabnew | copen | endif
+    autocmd bufenter * if (winnr("$") == 1 && &filetype == 'qf') | q | endif
+  augroup END
 ]]
 
 for _, map in ipairs({
