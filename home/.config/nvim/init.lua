@@ -17,6 +17,8 @@ vim.cmd [[
 
     autocmd ColorScheme * highlight FullWidthSpace term=NONE ctermbg=Red guibg=#cc241d
     autocmd Syntax * syntax match FullWidthSpace containedin=ALL /　/
+
+    autocmd Syntax * call matchadd('Todo', '\W\zs\(FIXME\|NOTE\|TODO\)')
   augroup END
 ]]
 
