@@ -45,69 +45,17 @@ return require('packer').startup(function(use)
   use { 'mizlan/iswap.nvim' }
   use { 'nvim-lualine/lualine.nvim',
     config = function()
-      vim.opt.laststatus = 2
-      vim.opt.showmode = false
-
-      local gruvbox = require('lualine.themes.gruvbox')
-      for _, mode in ipairs({ 'insert', 'visual', 'replace', 'command' }) do
-        gruvbox[mode].c.bg = '#3c3836' -- darkgray
-        gruvbox[mode].c.fg = '#a89984' -- gray
-      end
-
-      require('lualine').setup({
-        options = {
-          icons_enabled = false,
-          theme = gruvbox,
-          component_separators = { left = '|', right = '|' },
-          section_separators = { left = '', right = '' },
-          disabled_filetypes = { statusline = { 'ctrlp' } },
-        },
-        sections = {
-          lualine_b = { 'g:coc_status', 'gutentags#statusline', 'branch', 'diff', 'diagnostics' },
-          lualine_c = { { 'filename', path = 1 } }
-        },
-        inactive_sections = {
-          lualine_c = { { 'filename', path = 1 } }
-        },
-      })
-
-      vim.cmd('autocmd User CocStatusChange,CocDiagnosticChange lua require("lualine").refresh()')
+      require('config/lualine')
     end
   }
   use { 'preservim/nerdtree',
     config = function()
-      vim.cmd [[
-        " Close the tab if NERDTree is the only window remaining in it.
-        autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-      ]]
-
-      vim.keymap.set('n', '<Space>e', 'g:NERDTree.IsOpen() ? ":NERDTreeClose<CR>" : ":NERDTreeFind<CR>"', { silent = true, expr = true })
-
-      vim.g.NERDTreeQuitOnOpen = true
-      vim.g.NERDTreeShowHidden = true
-
-      vim.g.NERDTreeMapOpenSplit = '<C-s>'
-      vim.g.NERDTreeMapOpenVSplit = '<C-v>'
-      vim.g.NERDTreeMapOpenInTab = '<C-t>'
-      vim.g.NERDTreeMapToggleZoom = 'z'
-
-      vim.g.NERDTreeCustomOpenArgs = { file = { where = 'p' }, dir = vim.empty_dict() }
+      require('config/nerdtree')
     end
   }
   use { 'kevinhwang91/nvim-hlslens', requires = 'rapan931/lasterisk.nvim',
     config = function()
-      local kopts = { silent = true }
-
-      vim.keymap.set('n', 'n', [[<Cmd>execute('normal! ' . v:count1 . 'n')<CR><Cmd>lua require('hlslens').start()<CR>zz]], kopts)
-      vim.keymap.set('n', 'N', [[<Cmd>execute('normal! ' . v:count1 . 'N')<CR><Cmd>lua require('hlslens').start()<CR>zz]], kopts)
-      vim.keymap.set('n', '*', function()
-        require('lasterisk').search()
-        require('hlslens').start()
-      end)
-      vim.keymap.set({ 'n', 'x' }, 'g*', function()
-        require('lasterisk').search({ is_whole = false })
-        require('hlslens').start()
-      end, kopts)
+      require('config/hlslens')
     end
   }
   use { 'petertriho/nvim-scrollbar', requires = 'kevinhwang91/nvim-hlslens',
