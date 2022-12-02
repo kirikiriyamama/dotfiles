@@ -47,10 +47,16 @@ return require('packer').startup(function(use)
       vim.opt.laststatus = 2
       vim.opt.showmode = false
 
+      local gruvbox = require('lualine.themes.gruvbox')
+      for _, mode in ipairs({ 'insert', 'visual', 'replace', 'command' }) do
+        gruvbox[mode].c.bg = '#3c3836' -- darkgray
+        gruvbox[mode].c.fg = '#a89984' -- gray
+      end
+
       require('lualine').setup({
         options = {
           icons_enabled = false,
-          theme = 'gruvbox',
+          theme = gruvbox,
           component_separators = { left = '|', right = '|' },
           section_separators = { left = '', right = '' },
           disabled_filetypes = { statusline = { 'ctrlp' } },
