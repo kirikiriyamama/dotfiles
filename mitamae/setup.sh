@@ -1,7 +1,7 @@
 #!/bin/bash
 set -o errexit -o pipefail -o xtrace
 
-version=1.12.7
+version=1.14.0
 
 case "$(uname -m)" in
   x86_64) arch=x86_64 ;;
