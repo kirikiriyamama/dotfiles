@@ -6,6 +6,7 @@
     "<C-j>": "do:next",
     "<C-k>": "do:previous"
   },
+  "diagnostic.warningSign": "!",
   "diagnostic.checkCurrentLine": true,
   "coc.preferences.formatOnSaveFiletypes": ["go"],
   "coc.source.tag.filetypes": ["ruby"]
