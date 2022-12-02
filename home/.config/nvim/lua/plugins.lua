@@ -43,7 +43,7 @@ return require('packer').startup(function(use)
     end
   }
   use { 'mizlan/iswap.nvim' }
-  use { 'nvim-lualine/lualine.nvim',
+  use { 'nvim-lualine/lualine.nvim', requires = 'neoclide/coc.nvim',
     config = function()
       require('config/lualine')
     end
