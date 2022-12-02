@@ -6,6 +6,7 @@ vim.opt.mouse = nil
 
 vim.opt.signcolumn = 'yes'
 vim.opt.number = true
+vim.opt.cursorline = true
 
 vim.cmd [[
   augroup AdditionalHighlights
