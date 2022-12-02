@@ -6,6 +6,13 @@ return require('packer').startup(function(use)
       require('config/coc')
     end
   }
+  use { 'numToStr/Comment.nvim', requires = 'JoosepAlviste/nvim-ts-context-commentstring',
+    config = function()
+      require('Comment').setup({
+        pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook(),
+      })
+    end
+  }
   use { 'ctrlpvim/ctrlp.vim',
     config = function()
       vim.g.ctrlp_map = '<Space>p'
@@ -111,6 +118,7 @@ return require('packer').startup(function(use)
     requires = {
       'RRethy/nvim-treesitter-endwise',
       'nvim-treesitter/nvim-treesitter-textobjects',
+      'JoosepAlviste/nvim-ts-context-commentstring',
     },
     config = function()
       require('config/treesitter')
