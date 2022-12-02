@@ -836,8 +836,8 @@ key_bindings:
   # (Windows, Linux, and BSD only)
   - { key: V,              mods: Super,                           action: Paste            }
   - { key: C,              mods: Super,                           action: Copy             }
-  #- { key: F,              mods: Control|Shift, mode: ~Search,    action: SearchForward    }
-  #- { key: B,              mods: Control|Shift, mode: ~Search,    action: SearchBackward   }
+  - { key: F,              mods: Super,         mode: ~Search,    action: ReceiveChar      }
+  - { key: B,              mods: Super,         mode: ~Search,    action: ReceiveChar      }
   #- { key: C,              mods: Control|Shift, mode: Vi|~Search, action: ClearSelection   }
   #- { key: Insert,         mods: Shift,                           action: PasteSelection   }
   - { key: Key0,           mods: Super,                           action: ResetFontSize    }
@@ -869,8 +869,8 @@ key_bindings:
   #- { key: W,              mods: Command,                    action: Quit                  }
   #- { key: N,              mods: Command,                    action: SpawnNewInstance      }
   #- { key: F,              mods: Command|Control,            action: ToggleFullscreen      }
-  #- { key: F,              mods: Command, mode: ~Search,     action: SearchForward         }
-  #- { key: B,              mods: Command, mode: ~Search,     action: SearchBackward        }
+  - { key: F,              mods: Command, mode: ~Search,     action: ReceiveChar           }
+  - { key: B,              mods: Command, mode: ~Search,     action: ReceiveChar           }
 
 #debug:
   # Display the time it takes to redraw each frame.
