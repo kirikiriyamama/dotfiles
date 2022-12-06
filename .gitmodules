@@ -1,12 +1,12 @@
 [submodule "home/.tmux/plugins/tpm"]
 	path = home/.tmux/plugins/tpm
-	url = git@github.com:tmux-plugins/tpm.git
+	url = https://github.com/tmux-plugins/tpm.git
 [submodule "home/.zsh.d/plugin/oh-my-zsh"]
 	path = home/.zsh.d/plugin/oh-my-zsh
-	url = git@github.com:robbyrussell/oh-my-zsh.git
+	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "home/.zsh.d/plugin/tmux-xpanes"]
 	path = home/.zsh.d/plugin/tmux-xpanes
-	url = git@github.com:greymd/tmux-xpanes.git
+	url = https://github.com/greymd/tmux-xpanes.git
 [submodule "home/.zsh.d/plugin/zsh-syntax-highlighting"]
 	path = home/.zsh.d/plugin/zsh-syntax-highlighting
-	url = git@github.com:zsh-users/zsh-syntax-highlighting.git
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
