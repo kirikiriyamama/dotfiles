@@ -1,0 +1,1 @@
+deb [<%= @options.map { |k, v| "#{k}=#{v}" }.join(' ') %>] <%= @uri %> <%= @suite %> <%= @components.join(' ') %>

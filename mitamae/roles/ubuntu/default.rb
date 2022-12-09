@@ -1,6 +1,6 @@
 node.reverse_merge!(home: '/home/kirikiriyamama')
 
-include_cookbook 'apt-key'
+include_cookbook 'apt_repository'
 include_cookbook 'deb'
 include_cookbook 'dotfile'
 include_cookbook 'github_binary'
@@ -49,7 +49,6 @@ else
   include_cookbook 'alacritty'
   include_cookbook 'appearance'
   include_cookbook 'docker'
-  include_cookbook 'docker-compose'
   include_cookbook 'keybindings'
   include_cookbook 'kubectl'
   include_cookbook 'peripherals'
