@@ -1,0 +1,123 @@
+# this file is generated automatically with xremap.gen
+---
+modmap:
+- remap:
+    capslock: ctrl_l
+    super_l: alt_l
+    alt_l:
+      held: super_l
+      alone: muhenkan
+    alt_r:
+      held: super_r
+      alone: henkan
+    f7: previoussong
+    f8: playpause
+    f9: nextsong
+    f10: mute
+    f11: volumedown
+    f12: volumeup
+keymap:
+- remap:
+    ctrl-b: left
+    ctrl-f: right
+    ctrl-p: up
+    ctrl-n: down
+    ctrl-a: home
+    ctrl-e: end
+    ctrl-h: backspace
+    ctrl-d: delete
+    ctrl-k:
+    - shift-end
+    - ctrl-x
+    ctrl-y: ctrl-v
+  application:
+    not: Alacritty
+- remap:
+    super-a: ctrl-a
+    super-shift-a: ctrl-shift-a
+    super-b: ctrl-b
+    super-shift-b: ctrl-shift-b
+    super-c: ctrl-c
+    super-shift-c: ctrl-shift-c
+    super-d: ctrl-d
+    super-shift-d: ctrl-shift-d
+    super-e: ctrl-e
+    super-shift-e: ctrl-shift-e
+    super-f: ctrl-f
+    super-shift-f: ctrl-shift-f
+    super-g: ctrl-g
+    super-shift-g: ctrl-shift-g
+    super-h: ctrl-h
+    super-shift-h: ctrl-shift-h
+    super-i: ctrl-i
+    super-shift-i: ctrl-shift-i
+    super-j: ctrl-j
+    super-shift-j: ctrl-shift-j
+    super-k: ctrl-k
+    super-shift-k: ctrl-shift-k
+    super-l: ctrl-l
+    super-shift-l: ctrl-shift-l
+    super-m: ctrl-m
+    super-shift-m: ctrl-shift-m
+    super-n: ctrl-n
+    super-shift-n: ctrl-shift-n
+    super-o: ctrl-o
+    super-shift-o: ctrl-shift-o
+    super-p: ctrl-p
+    super-shift-p: ctrl-shift-p
+    super-q: ctrl-q
+    super-shift-q: ctrl-shift-q
+    super-r: ctrl-r
+    super-shift-r: ctrl-shift-r
+    super-s: ctrl-s
+    super-shift-s: ctrl-shift-s
+    super-t: ctrl-t
+    super-shift-t: ctrl-shift-t
+    super-u: ctrl-u
+    super-shift-u: ctrl-shift-u
+    super-v: ctrl-v
+    super-shift-v: ctrl-shift-v
+    super-w: ctrl-w
+    super-shift-w: ctrl-shift-w
+    super-x: ctrl-x
+    super-shift-x: ctrl-shift-x
+    super-y: ctrl-y
+    super-shift-y: ctrl-shift-y
+    super-z: ctrl-z
+    super-shift-z: ctrl-shift-z
+    super-minus: ctrl-minus
+    super-equal: ctrl-equal
+    super-alt-left: ctrl-shift-tab
+    super-alt-right: ctrl-tab
+    super-shift-up: alt-shift-up
+    super-shift-down: alt-shift-down
+  application:
+    not: Alacritty
+- remap:
+    super-0: ctrl-0
+    super-1: ctrl-1
+    super-2: ctrl-2
+    super-3: ctrl-3
+    super-4: ctrl-4
+    super-5: ctrl-5
+    super-6: ctrl-6
+    super-7: ctrl-7
+    super-8: ctrl-8
+    super-9: ctrl-9
+  application:
+    not:
+    - Alacritty
+    - firefox
+- remap:
+    super-0: ctrl-0
+    super-1: alt-1
+    super-2: alt-2
+    super-3: alt-3
+    super-4: alt-4
+    super-5: alt-5
+    super-6: alt-6
+    super-7: alt-7
+    super-8: alt-8
+    super-9: alt-9
+  application:
+    only: firefox

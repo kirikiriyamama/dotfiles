@@ -23,6 +23,7 @@ package 'findutils'
 package 'gawk'
 package 'gnu-sed'
 
+package 'reattach-to-user-namespace'
 package 'jq'
 package 'mtr'
 package 'parallel'

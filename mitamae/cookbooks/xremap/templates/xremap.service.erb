@@ -1,0 +1,10 @@
+[Unit]
+Description=xremap
+
+[Service]
+KillMode=process
+ExecStart=/usr/local/bin/xremap --watch=device <%= node[:home] %>/.xremap.yml
+Restart=always
+
+[Install]
+WantedBy=graphical-session.target

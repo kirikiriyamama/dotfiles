@@ -1,0 +1,69 @@
+#!/usr/bin/env ruby
+
+require 'json'
+require 'yaml'
+
+config = {
+  modmap: [
+    {
+      remap: {
+        capslock: 'ctrl_l',
+        super_l: 'alt_l',
+        alt_l: { held: 'super_l', alone: 'muhenkan' },
+        alt_r: { held: 'super_r', alone: 'henkan' },
+        f7: 'previoussong',
+        f8: 'playpause',
+        f9: 'nextsong',
+        f10: 'mute',
+        f11: 'volumedown',
+        f12: 'volumeup',
+      },
+    },
+  ],
+  keymap: [
+    {
+      remap: {
+        'ctrl-b': 'left',
+        'ctrl-f': 'right',
+        'ctrl-p': 'up',
+        'ctrl-n': 'down',
+        'ctrl-a': 'home',
+        'ctrl-e': 'end',
+        'ctrl-h': 'backspace',
+        'ctrl-d': 'delete',
+        'ctrl-k': ['shift-end', 'ctrl-x'],
+        'ctrl-y': 'ctrl-v',
+      },
+      application: { not: 'Alacritty' },
+    },
+    {
+      remap: {
+        **(?a..?z).map { |c| [["super-#{c}", "ctrl-#{c}"], ["super-shift-#{c}", "ctrl-shift-#{c}"]] }.flatten(1).to_h,
+        'super-minus': 'ctrl-minus',
+        'super-equal': 'ctrl-equal',
+        'super-alt-left': 'ctrl-shift-tab',
+        'super-alt-right': 'ctrl-tab',
+        'super-shift-up': 'alt-shift-up',
+        'super-shift-down': 'alt-shift-down',
+      },
+      application: { not: 'Alacritty' },
+    },
+    {
+      remap: {
+        **(0..9).map { |c| ["super-#{c}", "ctrl-#{c}"] }.to_h,
+      },
+      application: { not: ['Alacritty', 'firefox'] },
+    },
+    {
+      remap: {
+        'super-0': 'ctrl-0',
+        **(1..9).map { |c| ["super-#{c}", "alt-#{c}"] }.to_h,
+      },
+      application: { only: 'firefox' },
+    },
+  ],
+}
+
+puts '# this file is generated automatically with xremap.gen'
+# deep_stringify めんどうだから to_json しちゃう
+puts JSON.parse(config.to_json).to_yaml

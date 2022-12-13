@@ -43,9 +43,6 @@ else
 
   include_cookbook 'dconf'
 
-  include_cookbook 'python3'
-  include_cookbook 'xkeysnail'
-
   include_cookbook 'alacritty'
   include_cookbook 'appearance'
   include_cookbook 'docker'

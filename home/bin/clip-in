@@ -5,6 +5,8 @@ if type win32yank.exe &>/dev/null; then
   win32yank.exe -i
 elif type xclip &>/dev/null; then
   xclip -in -selection clipboard
+elif type wl-copy &>/dev/null; then
+  wl-copy
 elif type pbcopy &>/dev/null && type reattach-to-user-namespace &>/dev/null; then
   reattach-to-user-namespace pbcopy
 else
