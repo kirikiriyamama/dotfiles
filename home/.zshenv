@@ -1,7 +1,7 @@
 export LANG='en_US.UTF-8'
 export LC_CTYPE="${LANG}"
 
-export GREP_COLOR='1;32'
+export GREP_COLOR='mt=1;32'
 
 export EDITOR='nvim'
 export PAGER='less'
