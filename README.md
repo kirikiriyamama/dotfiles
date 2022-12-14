@@ -8,10 +8,10 @@ $ cd !$
 $ sudo mitamae/setup.sh
 
 # macOS
-$ mitamae local run.rb
+$ mitamae local mitamae/run.rb
 
 # others
-$ sudo mitamae local run.rb
+$ sudo mitamae local mitamae/run.rb
 ```
 
 ## Requirements
