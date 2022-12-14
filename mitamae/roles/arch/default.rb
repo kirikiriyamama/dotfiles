@@ -40,6 +40,7 @@ aur 'nkf'
 package 'openssh'
 package 'pacman-contrib'
 package 'parallel'
+package 'rustup'
 package 'strace'
 package 'tree'
 package 'uucp' # cu(1)

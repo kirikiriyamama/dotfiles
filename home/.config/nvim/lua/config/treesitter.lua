@@ -14,6 +14,7 @@ require('nvim-treesitter.configs').setup({
     'markdown_inline',
     'proto',
     'ruby',
+    'rust',
     'sql',
     'tsx',
     'typescript',

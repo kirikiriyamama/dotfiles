@@ -4,6 +4,7 @@ vim.g.coc_global_extensions = {
   'coc-go',
   'coc-json',
   'coc-lists',
+  'coc-rust-analyzer',
   'coc-sh',
   'coc-solargraph',
   'coc-styled-components',
