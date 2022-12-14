@@ -1,4 +1,4 @@
-ver = '1.3.1'
+ver = '2.20.2'
 arch = 'amd64'
 
 deb 'gh' do
