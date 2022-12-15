@@ -1,1 +1,1 @@
-aur 'unzip-iconv'
+package 'unzip'
