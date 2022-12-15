@@ -12,7 +12,7 @@ package 'libssl-dev'
 include_cookbook 'git'
 include_cookbook 'unzip'
 
-include_cookbook 'amazon-ecr-credential-helper'
+include_cookbook 'amazon_ecr_credential_helper'
 include_cookbook 'asdf'
 include_cookbook 'awscli'
 include_cookbook 'bin'
