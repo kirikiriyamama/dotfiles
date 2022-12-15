@@ -44,11 +44,9 @@ else
   include_cookbook 'dconf'
 
   include_cookbook 'alacritty'
-  include_cookbook 'appearance'
   include_cookbook 'docker'
-  include_cookbook 'keybindings'
+  include_cookbook 'gnome_settings'
   include_cookbook 'kubectl'
-  include_cookbook 'peripherals'
   include_cookbook 'slack'
 
   package 'chromium-browser'
