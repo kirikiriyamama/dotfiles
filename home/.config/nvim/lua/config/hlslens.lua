@@ -1,3 +1,5 @@
+require('hlslens').setup({ nearest_only = true })
+
 local kopts = { silent = true }
 
 vim.keymap.set('n', 'n', [[<Cmd>execute('normal! ' . v:count1 . 'n')<CR><Cmd>lua require('hlslens').start()<CR>zz]], kopts)
