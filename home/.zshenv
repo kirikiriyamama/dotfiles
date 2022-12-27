@@ -12,10 +12,7 @@ setopt no_global_rcs
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:${PATH}"
 
 export GOPATH="${HOME}/.go"
-
 export PATH="${GOPATH}/bin:${PATH}"
-export PATH="${HOME}/.local/bin:${PATH}"
-export PATH="${HOME}/bin.local:${HOME}/bin:${PATH}"
 
 if [[ "$(uname -s)" = "Darwin" ]]; then
   export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:${PATH}"

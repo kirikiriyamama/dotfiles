@@ -1,0 +1,30 @@
+#!/bin/bash
+set -o errexit -o pipefail
+
+system=/usr/bin/go
+
+bin="${GOPATH}/bin"
+available="$(find "${bin}" -name 'go*' | sed -e 's/.\+go\([0-9.]\+\)$/\1/')"
+
+if target="$(cat .go-version 2>/dev/null | sed -e 's/\([0-9]\+\.[0-9]\+\)\.0/\1/')"; then
+  if echo "${available}" | grep "^${target}$" &> /dev/null; then
+    ${bin}/go${target} "${@}"
+    exit 0
+  else
+    echo "go${target} not found" >&2
+    exit 1
+  fi
+fi
+
+if major="$(grep '^go' go.mod 2>/dev/null | sed -e 's/^go\s\([0-9]\+\)\.[0-9]\+$/\1/')"; then
+  if target="$(echo "${available}" | sort -V | grep "^${major}" | tail -1)"; then
+    ${bin}/go${target} "${@}"
+    exit 0
+  else
+    echo "go${major}.* not found" >&2
+    exit 1
+  fi
+fi
+
+${system} "${@}"
+exit 0
