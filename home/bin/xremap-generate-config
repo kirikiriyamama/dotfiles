@@ -64,6 +64,6 @@ config = {
   ],
 }
 
-puts '# this file is generated automatically with xremap.gen'
+puts '# this file is generated automatically with xremap-generate-config'
 # deep_stringify めんどうだから to_json しちゃう
 puts JSON.parse(config.to_json).to_yaml
