@@ -60,15 +60,18 @@ return require('packer').startup(function(use)
       require('config/nerdtree')
     end
   }
-  use { 'kevinhwang91/nvim-hlslens', requires = 'rapan931/lasterisk.nvim',
+  use { 'kevinhwang91/nvim-hlslens',
+    requires = {
+      'rapan931/lasterisk.nvim',
+      'petertriho/nvim-scrollbar',
+    },
     config = function()
       require('config/hlslens')
     end
   }
-  use { 'petertriho/nvim-scrollbar', requires = 'kevinhwang91/nvim-hlslens',
+  use { 'petertriho/nvim-scrollbar',
     config = function()
       require('scrollbar').setup()
-      require('scrollbar.handlers.search').setup()
     end
   }
   use { 'kylechui/nvim-surround',
