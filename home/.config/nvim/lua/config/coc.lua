@@ -1,4 +1,5 @@
 vim.g.coc_global_extensions = {
+  'coc-copilot',
   'coc-eslint',
   'coc-docker',
   'coc-go',
