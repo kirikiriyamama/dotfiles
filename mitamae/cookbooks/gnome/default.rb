@@ -7,6 +7,7 @@ package 'gnome-tweaks'
 aur 'gnome-browser-connector'
 
 package 'gnome-shell-extension-appindicator'
+aur 'gnome-shell-extension-clipboard-indicator'
 package 'power-profiles-daemon'
 
 service 'gdm.service' do
