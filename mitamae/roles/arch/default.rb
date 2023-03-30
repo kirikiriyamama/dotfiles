@@ -73,8 +73,8 @@ else
 
   include_cookbook 'alacritty'
   include_cookbook 'docker'
-  include_cookbook 'fcitx'
   include_cookbook 'gnome'
+  include_cookbook 'ibus'
   include_cookbook 'network'
   include_cookbook 'slack'
   include_cookbook 'xremap'
