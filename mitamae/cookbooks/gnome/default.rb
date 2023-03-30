@@ -10,8 +10,4 @@ package 'gnome-shell-extension-appindicator'
 aur 'gnome-shell-extension-clipboard-indicator'
 package 'power-profiles-daemon'
 
-service 'gdm.service' do
-  action :enable
-end
-
 include_cookbook 'gnome_settings'
