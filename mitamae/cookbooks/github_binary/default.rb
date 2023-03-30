@@ -22,7 +22,11 @@ define :github_binary, repository: nil, version: nil, asset: nil, extract: nil, 
     end
   end
 
-  execute "mv #{workdir}/#{source} #{bin} && chmod +x #{bin}" do
+  execute "mv #{workdir}/#{source} #{bin}" do
     not_if "test -f #{bin}"
+  end
+
+  file bin do
+    mode '755'
   end
 end
