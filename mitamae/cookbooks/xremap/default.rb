@@ -2,7 +2,7 @@ asset = 'xremap-linux-x86_64-gnome.zip'
 
 github_binary 'xremap' do
   repository 'k0kubun/xremap'
-  version 'v0.7.10'
+  version 'v0.8.9'
   asset asset
   extract "unzip #{asset}"
 end
