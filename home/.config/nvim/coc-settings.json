@@ -8,6 +8,8 @@
   },
   "diagnostic.warningSign": "!",
   "diagnostic.checkCurrentLine": true,
-  "coc.preferences.formatOnSaveFiletypes": ["go"],
+  "[go]": {
+    "coc.preferences.formatOnSave": true,
+  },
   "coc.source.tag.filetypes": ["ruby"]
 }
