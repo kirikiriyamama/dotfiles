@@ -113,6 +113,6 @@ return require('packer').startup(function(use)
   use 'ludovicchabant/vim-gutentags'
 
   use { 'vim-scripts/nginx.vim', ft = 'nginx' }
-  use 'hashivim/vim-terraform'
+  use { 'hashivim/vim-terraform', ft = 'terraform' }
   use { 'nelstrom/vim-textobj-rubyblock', ft = 'ruby', requires = 'kana/vim-textobj-user' }
 end)
