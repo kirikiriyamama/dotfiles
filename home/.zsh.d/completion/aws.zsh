@@ -1,2 +1,1 @@
-autoload -Uz bashcompinit && bashcompinit
-complete -C $(which aws_completer) aws
+source /usr/bin/aws_zsh_completer.sh
