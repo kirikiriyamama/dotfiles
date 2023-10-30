@@ -4,6 +4,10 @@ set -o errexit -o pipefail
 system=/usr/bin/go
 
 bin="${GOPATH}/bin"
+if [[ ! -d "${bin}" ]]; then
+  ${system} "${@}"
+  exit 0
+fi
 available="$(find "${bin}" -name 'go*' | sed -e 's/.\+go\([0-9.]\+\)$/\1/')"
 
 if target="$(cat .go-version 2>/dev/null | sed -e 's/\([0-9]\+\.[0-9]\+\)\.0/\1/')"; then
