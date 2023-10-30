@@ -11,7 +11,7 @@ export WORDCHARS="${WORDCHARS//[\/=.-]/}"
 setopt no_global_rcs
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:${PATH}"
 
-export GOPATH="${HOME}/.go"
+export GOPATH="${HOME}/go"
 export PATH="${GOPATH}/bin:${PATH}"
 
 if [[ "$(uname -s)" = "Darwin" ]]; then
