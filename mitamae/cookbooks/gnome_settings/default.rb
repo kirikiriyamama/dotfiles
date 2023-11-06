@@ -21,7 +21,7 @@ end
 # peripherals
 #
 dconf '/org/gnome/desktop/peripherals/keyboard/delay' do
-  value 'uint32 200'
+  value 'uint32 300'
 end
 
 dconf '/org/gnome/desktop/peripherals/keyboard/repeat-interval' do
