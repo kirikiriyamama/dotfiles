@@ -31,7 +31,6 @@ package 'tree'
 package 'watch'
 
 cask '1password'
-cask 'atok'
 cask 'google-chrome'
 cask 'karabiner-elements'
 cask 'zoom'
