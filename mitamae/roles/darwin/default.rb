@@ -27,6 +27,7 @@ package 'reattach-to-user-namespace'
 package 'jq'
 package 'mtr'
 package 'parallel'
+package 'telnet'
 package 'tree'
 package 'watch'
 
