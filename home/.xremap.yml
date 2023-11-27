@@ -1,4 +1,4 @@
-# this file is generated automatically with xremap.gen
+# this file is generated automatically with xremap-generate-config
 ---
 modmap:
 - remap:
@@ -59,8 +59,6 @@ keymap:
     super-shift-l: ctrl-shift-l
     super-m: ctrl-m
     super-shift-m: ctrl-shift-m
-    super-n: ctrl-n
-    super-shift-n: ctrl-shift-n
     super-o: ctrl-o
     super-shift-o: ctrl-shift-o
     super-p: ctrl-p
@@ -85,6 +83,7 @@ keymap:
     super-shift-y: ctrl-shift-y
     super-z: ctrl-z
     super-shift-z: ctrl-shift-z
+    super-n: ctrl-n
     super-minus: ctrl-minus
     super-equal: ctrl-equal
     super-alt-left: ctrl-shift-tab
@@ -104,6 +103,7 @@ keymap:
     super-7: ctrl-7
     super-8: ctrl-8
     super-9: ctrl-9
+    super-shift-n: ctrl-shift-n
   application:
     not:
     - Alacritty
@@ -119,5 +119,6 @@ keymap:
     super-7: alt-7
     super-8: alt-8
     super-9: alt-9
+    super-shift-n: ctrl-shift-p
   application:
     only: firefox

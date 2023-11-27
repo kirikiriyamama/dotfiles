@@ -38,7 +38,8 @@ config = {
     },
     {
       remap: {
-        **(?a..?z).map { |c| [["super-#{c}", "ctrl-#{c}"], ["super-shift-#{c}", "ctrl-shift-#{c}"]] }.flatten(1).to_h,
+        **((?a..?z).to_a - [?n]).map { |c| [["super-#{c}", "ctrl-#{c}"], ["super-shift-#{c}", "ctrl-shift-#{c}"]] }.flatten(1).to_h,
+        'super-n': 'ctrl-n',
         'super-minus': 'ctrl-minus',
         'super-equal': 'ctrl-equal',
         'super-alt-left': 'ctrl-shift-tab',
@@ -51,6 +52,7 @@ config = {
     {
       remap: {
         **(0..9).map { |c| ["super-#{c}", "ctrl-#{c}"] }.to_h,
+        'super-shift-n': 'ctrl-shift-n',
       },
       application: { not: ['Alacritty', 'firefox'] },
     },
@@ -58,6 +60,7 @@ config = {
       remap: {
         'super-0': 'ctrl-0',
         **(1..9).map { |c| ["super-#{c}", "alt-#{c}"] }.to_h,
+        'super-shift-n': 'ctrl-shift-p',
       },
       application: { only: 'firefox' },
     },
