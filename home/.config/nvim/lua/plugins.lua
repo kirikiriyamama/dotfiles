@@ -88,10 +88,16 @@ return require('packer').startup(function(use)
     requires = {
       'RRethy/nvim-treesitter-endwise',
       'nvim-treesitter/nvim-treesitter-textobjects',
-      'JoosepAlviste/nvim-ts-context-commentstring',
     },
     config = function()
       require('config/treesitter')
+    end
+  }
+  use { 'JoosepAlviste/nvim-ts-context-commentstring', requires = 'nvim-treesitter/nvim-treesitter',
+    config = function()
+      require('ts_context_commentstring').setup({
+        enable_autocmd = false,
+      })
     end
   }
   use { 'yssl/QFEnter',
