@@ -61,6 +61,7 @@ for _, map in ipairs({
   { 'n', '<C-c>', '<Nop>' },
   { 'i', '<C-c>', '<Nop>' },
   { 'n', '<C-w>c', '<Nop>' },
+  { 'n', '<C-w><C-n>', '<Nop>' },
   { 'n', '<C-w>n', 'gt' },
   { 'n', '<C-w>p', 'gT' },
   { 'n', '<C-w>z', '<C-w>_<C-w>|' },
