@@ -119,5 +119,10 @@ vim.cmd [[
 ]]
 
 vim.cmd [[
+  let s:rubocop_ls_config = { 'rubocop': { 'command': 'bundle', 'args': ['exec', 'rubocop', '--lsp'], 'filetypes': ['ruby'] } }
+  autocmd FileType ruby if filereadable(getcwd() . '/.rubocop.yml') | call coc#config('languageserver', s:rubocop_ls_config) | endif
+]]
+
+vim.cmd [[
   autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 ]]
