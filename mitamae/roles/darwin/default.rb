@@ -24,6 +24,7 @@ package 'gawk'
 package 'gnu-sed'
 
 package 'reattach-to-user-namespace'
+package 'ipcalc'
 package 'jq'
 package 'mtr'
 package 'parallel'
