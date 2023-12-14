@@ -1,3 +1,0 @@
-ec2-hosts \
-| peco \
-| xpanes --ssh

@@ -1,4 +1,0 @@
-ec2-hosts \
-| peco \
-| head -n 1 \
-| xargs -r -t -o ssh

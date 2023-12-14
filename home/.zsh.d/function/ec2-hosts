@@ -1,1 +1,0 @@
-sed -n '/### EC2SSH BEGIN ###/,/### EC2SSH END ###/p' ~/.ssh/config | grep -w 'Host' | awk '$0 = $2'
