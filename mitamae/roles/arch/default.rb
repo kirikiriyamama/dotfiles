@@ -42,7 +42,7 @@ include_cookbook 'zsh'
 
 aur 'apg'
 package 'bind' # dnsutils
-aur 'google-cloud-sdk'
+aur 'google-cloud-cli'
 package 'inetutils'
 package 'ipcalc'
 package 'iputils'
