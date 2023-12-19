@@ -55,6 +55,7 @@ package 'pacman-contrib'
 package 'parallel'
 package 'rustup'
 package 'strace'
+package 'tcpdump'
 package 'tree'
 package 'uucp' # cu(1)
 package 'whois'
