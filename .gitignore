@@ -1,5 +1,5 @@
 /home/.config/nvim/plugin/*
-/home/.config/alacritty/local.yml
+/home/.config/alacritty/local.toml
 /home/.tmux/plugins/*
 !/home/.tmux/plugins/tpm
 /home/.bundle/cache
