@@ -1,18 +1,27 @@
 #!/bin/bash
 set -o errexit -o pipefail
 
-system=/usr/bin/go
+system() {
+  bin=/usr/bin/go
 
-bin="${GOPATH}/bin"
-if [[ ! -d "${bin}" ]]; then
-  ${system} "${@}"
+  if [[ ! -x "${bin}" ]]; then
+    echo "${bin} not found" >&2
+    exit 1
+  fi
+  ${bin} "${@}"
+}
+
+bindir="${GOPATH}/bin"
+if [[ ! -d "${bindir}" ]]; then
+  system ${@}
   exit 0
 fi
-available="$(find "${bin}" -regextype posix-basic -regex '.*/go[0-9]\+\.[0-9]\+\(\.[0-9]\+\)\?' | sed -e 's/.\+go\([0-9.]\+\)$/\1/')"
+
+available="$(find "${bindir}" -regextype posix-basic -regex '.*/go[0-9]\+\.[0-9]\+\(\.[0-9]\+\)\?' | sed -e 's/.\+go\([0-9.]\+\)$/\1/')"
 
 if target="$(cat .go-version 2>/dev/null | sed -e 's/\([0-9]\+\.[0-9]\+\)\.0/\1/')"; then
   if echo "${available}" | grep "^${target}$" &> /dev/null; then
-    ${bin}/go${target} "${@}"
+    ${bindir}/go${target} "${@}"
     exit 0
   else
     echo "go${target} not found" >&2
@@ -22,7 +31,7 @@ fi
 
 if major="$(grep '^go' go.mod 2>/dev/null | sed -e 's/^go\s\([0-9]\+\)\.[0-9]\+$/\1/')"; then
   if target="$(echo "${available}" | sort -V | grep "^${major}" | tail -1)"; then
-    ${bin}/go${target} "${@}"
+    ${bindir}/go${target} "${@}"
     exit 0
   else
     echo "go${major}.* not found" >&2
@@ -30,5 +39,5 @@ if major="$(grep '^go' go.mod 2>/dev/null | sed -e 's/^go\s\([0-9]\+\)\.[0-9]\+$
   fi
 fi
 
-${system} "${@}"
+system ${@}
 exit 0
