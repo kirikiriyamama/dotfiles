@@ -1,4 +1,5 @@
 package 'docker'
+package 'docker-buildx'
 package 'docker-compose'
 
 service 'docker.service' do
