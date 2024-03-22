@@ -13,7 +13,7 @@ system() {
 
 bindir="${GOPATH}/bin"
 if [[ ! -d "${bindir}" ]]; then
-  system ${@}
+  system "${@}"
   exit 0
 fi
 
@@ -39,5 +39,5 @@ if major="$(grep '^go' go.mod 2>/dev/null | sed -e 's/^go\s\([0-9]\+\)\.[0-9]\+$
   fi
 fi
 
-system ${@}
+system "${@}"
 exit 0
