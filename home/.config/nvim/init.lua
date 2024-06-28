@@ -2,7 +2,7 @@ require('plugins')
 
 vim.cmd('syntax on')
 
-vim.opt.mouse = nil
+vim.opt.mouse = ''
 
 vim.opt.signcolumn = 'yes'
 vim.opt.number = true
