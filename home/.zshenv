@@ -5,6 +5,7 @@ export GREP_COLOR='mt=1;32'
 
 export EDITOR='nvim'
 export PAGER='less'
+export SYSTEMD_LESS='FRXMK'
 
 export WORDCHARS="${WORDCHARS//[\/=.-]/}"
 
