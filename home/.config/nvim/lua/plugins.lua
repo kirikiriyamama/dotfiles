@@ -13,7 +13,6 @@ return require('packer').startup(function(use)
       })
     end
   }
-  use 'github/copilot.vim'
   use { 'ctrlpvim/ctrlp.vim',
     config = function()
       vim.g.ctrlp_map = '<Space>p'
