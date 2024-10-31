@@ -1,4 +1,3 @@
-import = ["/home/kirikiriyamama/.config/alacritty/local.toml"]
 
 [colors]
 draw_bold_text_with_bright_colors = false
@@ -81,3 +80,6 @@ action = "ReceiveChar"
 key = "B"
 mode = "~Search"
 mods = "Command"
+
+[general]
+import = ["/home/kirikiriyamama/.config/alacritty/local.toml"]
