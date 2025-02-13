@@ -56,6 +56,7 @@ package 'pacman-contrib'
 package 'parallel'
 package 'rustup'
 package 'strace'
+package 'sysstat'
 package 'tcpdump'
 package 'tree'
 package 'uucp' # cu(1)
