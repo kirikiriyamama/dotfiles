@@ -1,4 +1,5 @@
 /home/.config/nvim/plugin/*
+/home/.config/nvim/lazy-lock.json
 /home/.config/alacritty/local.toml
 /home/.tmux/plugins/*
 !/home/.tmux/plugins/tpm

@@ -1,5 +1,3 @@
-require('plugins')
-
 vim.cmd('syntax on')
 
 vim.opt.mouse = ''
@@ -81,3 +79,5 @@ end
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.incsearch = false
+
+require('config/lazy')
