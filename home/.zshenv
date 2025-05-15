@@ -7,7 +7,7 @@ export EDITOR='nvim'
 export PAGER='less'
 export SYSTEMD_LESS='FRXMK'
 
-export WORDCHARS="${WORDCHARS//[\/_.-=]/}"
+export WORDCHARS="${WORDCHARS//[\/_.\-=]/}"
 
 setopt no_global_rcs
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:${PATH}"
