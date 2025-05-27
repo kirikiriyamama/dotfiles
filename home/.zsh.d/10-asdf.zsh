@@ -1,7 +1,5 @@
-if [ ! -f ${HOME}/.asdf/asdf.sh ]; then
-  return
-fi
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:${PATH}"
 
-. ${HOME}/.asdf/asdf.sh
+# asdf completion zsh > "${ASDF_DATA_DIR:-$HOME/.asdf}/completions/_asdf"
 # must be executed before compinit (in completion.zsh)
-fpath=(${HOME}/.asdf/completions ${fpath})
+fpath=(${ASDF_DATA_DIR:-$HOME/.asdf}/completions ${fpath})

@@ -1,9 +1,11 @@
-asdf = "#{node[:home]}/.asdf"
+version = 'v0.17.0'
+asset = "asdf-#{version}-linux-amd64.tar.gz"
 
-git asdf do
-  repository 'https://github.com/asdf-vm/asdf.git'
-  user node[:user]
-  not_if "test -d #{asdf}"
+github_binary 'asdf' do
+  repository 'asdf-vm/asdf'
+  version version
+  asset asset
+  extract "tar -xzf #{asset}"
 end
 
 dotfile '.asdfrc'
