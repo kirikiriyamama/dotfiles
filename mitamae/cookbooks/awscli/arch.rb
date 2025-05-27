@@ -1,2 +1,2 @@
-package 'aws-cli-v2'
+package 'aws-cli-bin'
 aur 'aws-session-manager-plugin'
