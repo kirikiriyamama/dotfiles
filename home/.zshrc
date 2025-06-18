@@ -17,7 +17,9 @@ done
 . ${HOME}/.zsh.d/plugin/tmux-xpanes/tmux-xpanes.plugin.zsh
 
 # Load local settings
-[[ -f ~/.zshrc.local ]] && . ~/.zshrc.local
+for f in ~/.zshrc.local ~/.config/zsh/local.zsh; do
+  [[ -f "${f}" ]] && . "${f}"
+done
 
 # Remove duplicated entries from $PATH
 typeset -U PATH path
