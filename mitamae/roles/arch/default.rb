@@ -24,6 +24,7 @@ include_cookbook 'unzip'
 include_cookbook 'github_binary'
 
 include_cookbook 'amazon_ecr_credential_helper'
+include_cookbook 'amazon_q'
 include_cookbook 'asdf'
 include_cookbook 'awscli'
 include_cookbook 'bin'
