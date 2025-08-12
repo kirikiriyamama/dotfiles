@@ -4,5 +4,5 @@ github_binary 'win32yank.exe' do
   asset 'win32yank-x64.zip'
 
   extract 'unzip win32yank-x64.zip -d win32yank-x64'
-  source 'win32yank-x64/win32yank.exe'
+  bin 'win32yank-x64/win32yank.exe'
 end

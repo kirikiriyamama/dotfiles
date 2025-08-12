@@ -4,5 +4,5 @@ github_binary 'ghq' do
   asset 'ghq_linux_amd64.zip'
 
   extract 'unzip ghq_linux_amd64.zip'
-  source 'ghq_linux_amd64/ghq'
+  bin 'ghq_linux_amd64/ghq'
 end
