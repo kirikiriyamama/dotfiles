@@ -17,7 +17,7 @@
       "command": "bundle",
       "args": ["exec", "rubocop", "--lsp"],
       "filetypes": ["ruby"],
-      "rootPatterns": [".git", "Gemfile"],
+      "rootPatterns": ["Gemfile"],
       "requireRootPattern": true
     }
   }
