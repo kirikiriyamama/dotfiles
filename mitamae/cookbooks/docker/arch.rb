@@ -8,7 +8,7 @@ end
 
 github_binary 'docker-mcp' do
   repository 'docker/mcp-gateway'
-  version 'v0.13.0'
+  version 'v0.14.0'
   asset 'docker-mcp-linux-amd64.tar.gz'
   extract 'tar -xzf docker-mcp-linux-amd64.tar.gz'
   dest "#{node[:home]}/.docker/cli-plugins/docker-mcp"
