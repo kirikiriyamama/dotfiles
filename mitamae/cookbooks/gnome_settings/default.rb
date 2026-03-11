@@ -71,6 +71,10 @@ dconf '/org/gnome/shell/keybindings/toggle-message-tray' do
   value '@as []'
 end
 
+dconf '/org/gnome/shell/keybindings/toggle-quick-settings' do
+  value '@as []'
+end
+
 dconf '/org/gnome/settings-daemon/plugins/media-keys/screensaver' do
   value '@as []'
 end
